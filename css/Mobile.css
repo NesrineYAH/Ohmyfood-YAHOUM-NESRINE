@@ -10,8 +10,8 @@ body {
 
 header {
 align-items: center;
+font-size: 14px;
 }
-
 #Logo {
     width: 60%;
     font-size: 14px;
