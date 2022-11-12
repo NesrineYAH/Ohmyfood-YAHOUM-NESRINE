@@ -76,13 +76,6 @@ button {
     box-shadow: 3px 2px 2px lightgrey;
    
 }
-
-
-
-.Fonctionnement {}
-
-.classe1 {}
-
 #conteneur {
     display: flex;
     flex-direction: column;
