@@ -185,27 +185,49 @@ footer {
   background-color: #353535;
   color: #ffffff;
 }
+.titre-footer {
+  font-family: "shrikhand";
+}
 .lien-info {
   color: #ffffff;
   text-decoration: none;
 }
-/*            la palette du gout              */
+
+/* la palette du gout              */
+
+.lien-retour {
+  margin-bottom: 50px;
+}
+.Titre-de-page {
+  font-weight: "shrikhand";
+  font-size: 25px;
+  display: flex;
+  padding-top: 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 16px;
+}
 #la-palette {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border: 3px solid #f95fff;
+  border-radius: 20px 20px 0px 0px;
 }
-
 .carte-page1 img {
   width: 100%;
-  height: 200px;
-  border-radius: 20px 20px 0 0;
+  height: 300px;
 }
-
 .carte-page1 {
-  width: 94%;
+  width: 100%;
   border: 3px solid #ffffff;
-  border-radius: 20px;
   background-color: #ffffff;
+  margin-bottom: -50px;
+  z-index: 0;
 }
 
 .commande {
