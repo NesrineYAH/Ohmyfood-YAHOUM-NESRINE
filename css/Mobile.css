@@ -69,7 +69,7 @@ button {
   color: #ffffff;
   border-radius: 50px;
   border: none;
-  padding: 12px;
+  padding: 15px 20px 15px 20px;
   box-shadow: 3px 2px 2px lightgrey;
 }
 
@@ -78,7 +78,7 @@ button {
 #Fonctionnement {
   margin: 20px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .classe1 {
   display: flex;
@@ -119,11 +119,21 @@ button {
 }
 
 /***********************Section Restaurants*****************/
+.titre-restaurant {
+  margin-left: 20px;
+  padding-top: 50px;
+}
+#Restaurants {
+  width: 100%;
+  background-color: #eeeeee;
+  padding-bottom: 50px;
+}
+
 #conteneur-Resto {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 95%;
+  width: 100%;
+  margin-left: 10px;
   gap: 20px;
 }
 
@@ -137,27 +147,70 @@ button {
   width: 94%;
   border: 3px solid #ffffff;
   border-radius: 20px;
-  background-color: #f6f4f4;
+  background-color: #ffffff;
 }
-
-#Restaurants {
-  width: 100%;
-  /*background-color: #f6f4f4;*/
-  left: 15px;
+.Nouveau {
+  color: #3b8468;
+  background-color: #a9e0d1;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 25px;
+  margin-top: 20px;
+  font-size: 15px;
 }
 .info-text P {
   padding-left: 0px;
   margin-top: -10px;
+  margin-bottom: -10px;
   font-size: 16px;
 }
 .info-text {
-  margin-left: 10px;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
-#Restaurants,
-.far {
-  position: absolute;
-  right: 60px;
-  margin-top: -55px;
-  font-size: 20px;
+.coeur {
+  font-size: 22px;
+  position: relative;
+  left: 300px;
+  bottom: 30px;
 }
+.coeur a:hover {
+  background-color: linear-gradient(170deg, #ff79da, #9356dc);
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+.lien-info {
+  color: #ffffff;
+  text-decoration: none;
+}
+/*            la palette du gout              */
+#la-palette {
+  display: flex;
+  justify-content: center;
+}
+
+.carte-page1 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte-page1 {
+  width: 94%;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px 20px 40px;
+}
+/****************** la note enchantée **************************/
