@@ -69,7 +69,7 @@ p {
   padding: 0px 20px 0px 20px;
 }
 
-.partie1 {
+.btn-explorer {
   display: flex;
   justify-content: center;
 }
@@ -102,6 +102,9 @@ button {
 }
 .classe1:hover {
   background-color: #f5edff;
+  transform: scale(1.1);
+  transition: 400ms;
+  cursor: pointer;
 }
 .nomber {
   background-color: #9356dc;
