@@ -1,58 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link
-      rel="stylesheet"
-      media="all and (min-width:375px) and (max-width: 700px)"
-      href="/css/Mobile.css"
-    />
-    <title>A la française</title>
-  </head>
-  <body>
-    <header>
-      <img id="Logo" src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
-    </header>
 
-    <section id="A-la-francaise"></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" media="all and (min-width:375px) and (max-width: 700px)" href="/css/Mobile.css" />
+  <title>A la française</title>
+</head>
 
-    <div class="carte-page3">
-      <img
-        src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="À la française"
-      />
+<body>
+
+  <header>
+    <img id="Logo" src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+
+    <a class="lien-retour" href="/ohmyfood.html">
+      <i class="fa-sharp fa-solid fa-arrow-left"></i>
+    </a>
+  </header>
+
+  <section>
+
+    <div class="carte-page1">
+      <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" />
     </div>
 
-    <h1>À la française</h1>
+    <div id="page-restaurant">
+      <h1 id="Titre-de-page">À la française</h1>
 
-    <h2>Entrées</h2>
+      <div class="coeur-page">
+        <i class="far fa-heart favorite__ico"></i>
+      </div>
 
-    <div class="liste-entrees">
-      <h3>Tartare de poulpe acidulé</h3>
-      <p>Aux zestes d'orang</p>
-      <span class="prix-menu">25€</span>
-    </div>
-    <div class="liste-entrees">
-      <h3>Velouté de légumes d'antan</h3>
-      <p>Carotte, panais, topinambour</p>
-      <span class="prix-menu">35€</span>
-    </div>
-    <div class="liste-entrees">
-      <h3>Soupe à l'oignon</h3>
-      <p>Revisitée</p>
-      <span>20€</span>
-    </div>
+      <h2 id="Titre-article">Entrées</h2>
 
-    <h2>Plats</h2>
-    <div class="palts-A-la-francaise">
-      <p>Coquilles Saint-Jacques Accompagnées d'une purée de panais 40€</p>
+      <article class="liste-menu">
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Tartare de poulpe acidulé</h3>
+            <p>Aux zestes d'orang</p>
+          </div>
+          <span class="prix-menu">25€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Velouté de légumes d'antan</h3>
+            <p>Carotte, panais, topinambour</p>
+          </div>
+          <span class="prix-menu">35€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Soupe à l'oignon</h3>
+            <p>Revisitée</p>
+          </div>
+          <span class="prix-menu">20€</span>
+        </div>
+
+      </article>
+
+      <h2 id="Titre-article">Plats</h2>
+
+      <article class="liste-menu">
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Coquilles Saint-Jacques</h3>
+            <p> Accompagnées d'une purée de panais </p>
+          </div>
+          <span class="prix-menu">40€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Magret de canard</h3>
+            <p>Et parmentier de pommes de terre </p>
+          </div>
+          <span class="prix-menu">35€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+            <p>Sur son lit de gnocchis aux légumes </p>
+          </div>
+          <span class="prix-menu">44€</span>
+        </div>
+
+      </article>
+
+      <h2 id="Titre-article">Desserts</h2>
+
+      <article class="liste-menu">
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Pétales de violettes glacés</h3>
+            <p> Et purée de noisettes </p>
+          </div>
+          <span class="prix-menu">18€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Fondant au chocolat</h3>
+            <p>Revisité</p>
+          </div>
+          <span class="prix-menu">22€</span>
+        </div>
+
+        <div class="liste-repas">
+          <div class="liste-texte">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtilles et pâte d’amande</p>
+          </div>
+          <span class="prix-menu">23€</span>
+        </div>
+
+      </article>
+
     </div>
-    <div class="palts-A-la-francaise">
-      <h3>Magret de canard</h3>
-      <p>Et parmentier de pommes de terre <span>35€</span></p>
-    </div>
-  </body>
+  </section>
+
+  <footer>
+    <h3 class="titre-footer">ohmyfood</h3>
+    <ul>
+      <a href="#" class="lien-info">
+        <li>proposer un restaurant</li>
+        <i class="fa-solid fa-utensils"></i>
+      </a>
+      <a href="#" class="lien-info">
+        <li>Devenir partenaire</li>
+        <i class="fa-solid fa-handshake-angle"></i>
+      </a>
+      <a href="#" class="lien-info">
+        <li>Mentions légales</li>
+      </a>
+      <a href="#" class="lien-info">
+        <li>contact</li>
+      </a>
+    </ul>
+  </footer>
+
+</body>
+
 </html>
