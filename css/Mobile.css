@@ -197,26 +197,26 @@ button {
 }
 
 footer {
-  padding: 40px;
   background-color: #353535;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  list-style-type: none;
+  padding-left: 80px;
 }
 .titre-footer {
   font-family: "shrikhand";
+  font-size: 22px;
 }
-.lien-info {
+.lien-footer {
   color: #ffffff;
   text-decoration: none;
 }
 #icone-footer {
-  display: flex;
-  position: relative;
-  left: 0px;
+  margin: -40px 0px 0px -30px;
 }
-
+.contact {
+  margin-top: 0px;
+}
 /* la palette du gout              */
 
 .lien-retour {
@@ -265,6 +265,17 @@ h3 {
   justify-content: center;
   padding: 20px 40px 20px 40px;
 }
-/****************** la note enchantée **************************/
-
-/************** À la francaise ****************************/
+.liste-menu {
+  display: flex;
+  flex-direction: column;
+}
+.liste-repas {
+  display: flex;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 2px solid #f2f2f2;
+  padding-top: 8px;
+  margin: 25px;
+  box-shadow: 2px 4px 4px 2px lightgray;
+  color: #000000;
+}
