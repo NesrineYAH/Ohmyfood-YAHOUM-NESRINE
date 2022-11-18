@@ -207,6 +207,12 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
+footer,
+.fa-solid {
+  padding: 5px 10px 0px 10px;
+}
+
+/* la palette du gout              */
 
 .lien-retour {
   position: absolute;
@@ -214,8 +220,6 @@ footer {
   left: 10px;
   color: #000000;
 }
-
-/* la palette du gout              */
 
 #Titre-de-page {
   font-family: "Shrikhand";
@@ -230,10 +234,6 @@ footer {
   font-size: 20px;
 }
 
-/*
-h2 {
-  font-size: 22px;
-}*/
 h3 {
   font-size: 16px;
 }
