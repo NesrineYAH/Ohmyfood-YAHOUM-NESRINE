@@ -175,6 +175,11 @@ h2 {
   margin-left: 20px;
   text-decoration-line: var(#ffffff);
   font-size: 10px;
+  text-decoration: none;
+}
+.info-text,
+a {
+  text-decoration: none;
 }
 
 .coeur {
