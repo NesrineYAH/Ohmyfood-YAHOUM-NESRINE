@@ -80,7 +80,7 @@ button {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-.classe1 {
+.carte-info {
   display: flex;
   border-radius: 20px;
   text-decoration: none;
@@ -213,7 +213,7 @@ footer {
 .contact {
   margin-top: 0px;
 }
-/* la palette du gout              */
+/* mise en page         */
 
 .lien-retour {
   position: absolute;
@@ -264,7 +264,7 @@ h3 {
   height: 5px;
   background-color: #99e2d0;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
 }
 
@@ -274,10 +274,10 @@ h3 {
 }
 .liste-repas {
   display: flex;
-  border-radius: 20px;
+  border-radius: 25px;
   text-decoration: none;
   border: 2px solid #f2f2f2;
-  margin: 15px;
+  margin: 16px;
   box-shadow: 2px 4px 4px 2px lightgray;
   color: #000000;
 }
