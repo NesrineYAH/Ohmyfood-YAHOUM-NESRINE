@@ -1,0 +1,37 @@
+keyframes slideup {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes runspinner {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes red-spinner {
+    from {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+
+    to {
+        opacity: 0;
+        visibility: visible;
+        transform: rotate(0deg);
+    }
+}
