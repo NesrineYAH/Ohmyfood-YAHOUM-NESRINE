@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-
 @media (max-width: 768px) {
   body {
     max-width: 768px;
@@ -31,7 +30,7 @@
     border: none;
     background-color: #e4e2e1;
     -webkit-text-decoration: #000000;
-    text-decoration: #000000;
+            text-decoration: #000000;
   }
   .titre-du-site {
     display: flex;
@@ -66,6 +65,9 @@
     border: none;
     padding: 15px 20px 15px 20px;
     box-shadow: 3px 2px 2px lightgrey;
+  }
+  .titre-section {
+    margin-left: 10px;
   }
   #Fonctionnement {
     margin: 20px;
@@ -103,7 +105,7 @@
     display: flex;
     padding: 5px 15px 0px 10px;
     -webkit-text-decoration: black;
-    text-decoration: black;
+            text-decoration: black;
   }
   .icone-info i {
     margin: 12px 5px 5px 40px;
@@ -196,4 +198,4 @@
   .contact {
     margin-top: 0px;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
