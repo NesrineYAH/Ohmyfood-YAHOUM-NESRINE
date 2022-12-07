@@ -42,17 +42,17 @@
   }
   #Titre-article {
     font-size: 22px;
-    margin-top: -15px;
+    margin-top: 10px;
     -webkit-animation: slideup 1s forwards;
             animation: slideup 1s forwards;
   }
-  #Titre-article * :after {
+  #Titre-article::after {
     content: "";
-    width: 5px;
+    display: block;
+    width: 60px;
     height: 5px;
     background-color: #99E2D0;
     position: absolute;
-    bottom: 20px;
     left: 0;
   }
   .liste-menu {

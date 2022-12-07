@@ -10,16 +10,14 @@ keyframes slideup {
     }
 }
 
-@keyframes runspinner {
+@keyframes run-spinner {
     from {
         opacity: 1;
-        transform: rotate(0deg);
     }
 
     to {
         opacity: 0;
-        visibility: hidden;
-        transform: rotate(360deg);
+        position: absolute;
     }
 }
 
@@ -34,4 +32,6 @@ keyframes slideup {
         visibility: visible;
         transform: rotate(0deg);
     }
+
+ 
 }

@@ -54,16 +54,16 @@
 
     #Titre-article {
         font-size: 22px;
-        margin-top: -15px;
+        margin-top: 10px;
         animation: slideup 1s forwards;
 
-        * :after {
+        &::after {
             content: "";
-            width: 5px;
+            display: block;
+            width: 60px;
             height: 5px;
             background-color: $color-three;
             position: absolute;
-            bottom: 20px;
             left: 0;
         }
     }
