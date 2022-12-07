@@ -2,22 +2,23 @@
 @media (max-width: 768px) {
   .lien-retour {
     position: absolute;
-    top: 25px;
+    top: 50px;
     left: 10px;
     color: #000000;
+    font-size: larger;
   }
   #Titre-de-page {
     font-family: "Shrikhand";
     font-size: 25px;
     display: flex;
-    padding: 30px 20px;
-    margin-top: 10px;
+    padding: 20px 40px 0 0px;
+    margin: 10px 0 0 -60px;
   }
   .coeur-page {
     position: relative;
-    left: 320px;
-    bottom: 70px;
-    font-size: 20px;
+    left: 340px;
+    bottom: 35px;
+    font-size: 26px;
   }
   h3 {
     font-size: 16px;
@@ -42,7 +43,7 @@
   }
   #Titre-article {
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 12px;
     -webkit-animation: slideup 1s forwards;
             animation: slideup 1s forwards;
   }
@@ -65,11 +66,11 @@
     border-radius: 20px;
     text-decoration: none;
     border: 2px solid #f2f2f2;
-    margin: 12px;
+    margin: 10px;
     box-shadow: 2px 4px 4px 2px lightgray;
     color: #000000;
-    -webkit-animation: slideup 1s forwards;
-            animation: slideup 1s forwards;
+    -webkit-animation: slideup 5s forwards;
+            animation: slideup 5s forwards;
   }
   .liste-texte {
     align-items: flex-start;

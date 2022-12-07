@@ -9,9 +9,12 @@
     font-size: 14px;
   }
   #Logo {
-    width: 80%;
+    width: 40%;
     font-size: 20px;
     padding: 20px 15px 30px 35px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
   }
   .localisation {
     display: flex;
@@ -63,14 +66,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 7px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 7px solid #9356DC;
-    position: absolute;
-    left: 115px;
-    top: 250px;
-    width: 100px;
-    height: 100px;
     -webkit-animation: run-spinner 1s forwards;
             animation: run-spinner 1s forwards;
     -webkit-animation-delay: 2.5s;
@@ -83,12 +78,12 @@
     justify-content: center;
     align-items: center;
     border: 7px solid #f3f3f3;
-    border-radius: 50%;
     border-top: 7px solid #9356DC;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     position: fixed;
-    left: 115px;
+    left: 135px;
     top: 250px;
     -webkit-animation: red-spinner 1s linear infinite;
             animation: red-spinner 1s linear infinite;
@@ -196,6 +191,10 @@
     font-size: 10px;
     color: #000000;
     text-decoration: none;
+    /*
+    a {
+        text-decoration: none;
+    }*/
   }
   .info-text p {
     padding-left: 0px;
@@ -203,18 +202,21 @@
     margin-bottom: -10px;
     font-size: 14px;
   }
-  .info-text a {
-    text-decoration: none;
-  }
   .coeur {
-    font-size: 18px;
+    display: block;
+    font-size: 24px;
     position: relative;
     left: 300px;
-    bottom: 30px;
+    bottom: 20px;
     color: #000000;
   }
   .coeur:hover {
-    background-color: linear-gradient(170deg, #ff79da, #9356dc);
+    -webkit-animation: bgcolor 0.5s;
+            animation: bgcolor 0.5s;
+    font-weight: 900;
+    /*background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+    color: transparent;*/
+    transition: opacity 0.3s ease-in-out;
   }
   footer {
     max-width: 100%;
@@ -260,6 +262,8 @@
     transform: scale(1.1);
     transition: 400ms;
     cursor: pointer;
+    -webkit-animation: bgcolor 0.5s;
+            animation: bgcolor 0.5s;
   }
   #Restaurants {
     width: 100%;
@@ -327,4 +331,35 @@
     opacity: 0;
     position: absolute;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*
+@keyframes bgcolor {
+    0% {
+        background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 0%, rgba(187, 98, 219, 0) 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30% {
+        background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.452) 0%, rgba(187, 98, 219, 0.452) 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(13deg, rgba(255, 121, 217, 0.582) 0%, rgba(186, 98, 219, 0.582) 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+        font-weight: 900;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}*//*# sourceMappingURL=style.css.map */
