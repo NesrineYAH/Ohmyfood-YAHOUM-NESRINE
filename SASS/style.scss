@@ -67,11 +67,11 @@ $Padding: 20px;
         justify-content: center;
     }
 
-    p {
+    .petit-texte-h1 {
         display: flex;
         text-align: center;
         overflow: hidden;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 40px 0px 20px;
     }
 
     .loadspinner {
@@ -82,6 +82,22 @@ $Padding: 20px;
         animation: run-spinner 1s forwards;
         animation-delay: 2.5s;
         animation-fill-mode: both;
+    }
+
+    .grand-spinner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 8px solid $color-three;
+        border-top: 7px solid $color-two;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        position: fixed;
+        left: 45%;
+        top: 280px;
+        animation: red-spinner 1s linear infinite;
+        animation-duration: 400ms; 
     }
 
     .spinner {
@@ -97,6 +113,7 @@ $Padding: 20px;
         left: 40%;
         top: 250px;
         animation: red-spinner 1s linear infinite;
+        animation-duration: 400ms; 
     }
 
     .btn-explorer {
@@ -193,70 +210,89 @@ $Padding: 20px;
         margin-left: 10px;
         gap: 40px;
     }
+
     .carte-restaurant {
+
         width: 95%;
-        height: 300px;
+        height: 240px;
         border: 3px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
 
-       img {
-        width: 100%;
-        height: 200px;
-        border-radius: 20px 20px 0 0;
-       }
 
-        &:hover{
-            cursor:pointer;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 20px 20px 0 0;
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
-   /* .carte-restaurant-nouveau {
-        width: 90%;
-        height: 300px;
-        border: 3px solid #ffffff;
-        border-radius: 20px;
-        background-color: #ffffff;
-        z-index: 1;
-    }
-/*
+
+    /*.carte-restaurant-nouveau
     .Nouveau {
-        color: #3b8468;
-        background-color: #a9e0d1;
-        font-weight: 500;
-        padding: 10px;
-        border-radius: 5px;
-        position: relative;
-        right: 6%;
-        margin-top: 20px;
-        font-size: 15px;
+        content: "Nouveau";
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 25px;
+        width: 80px;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #3a8266;
+        background-color: #99E2D0;
+        box-shadow: #000000 0px 6px 6px;
+        z-index: 1;
+        top: 15px;
+        left: auto;
+        right: 3%;
+    }*/
+
+    h2 {
+        margin-left: 40px;
+        margin-bottom: 5px;
     }
-*/
-    .carte-restaurant-text {
+
+    .detail-carte-restaurant {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    .carte-restaurant-text {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
         align-items: center;
-        padding: 0.5%;
-        margin-top: -30px;
+        margin-top: -20px;
         font-size: 14px;
+
         color: #000000;
+        margin: -30px -40px;
 
         p {
-            margin-top:35px;
-      
-            font-size: 14px;
+            margin-top: 5px;
+            margin-left: -30px;
+            font-size: 13px;
+            display: inline-flex;
+            justify-content: flex-start;
         }
 
-        a {
-            text-decoration: none;
-        }
     }
 
     .icone-coeur {
-        
-        /* -webkit-text-fill-color: transparent;
-       -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-        z-index: 100;*/
+        font-size: 24px;
+        margin-right: 25px;
 
         &:hover {
 
@@ -267,6 +303,7 @@ $Padding: 20px;
             transition: opacity 0.3s ease-in-out;
         }
     }
+
 
     /*
     .icone-coeur-remplie {
@@ -433,12 +470,6 @@ h1 {
     justify-content: center;
 }
 
-p {
-    display: flex;
-    text-align: center;
-    overflow: hidden;
-    margin-left: 40px;
-}
 
 .loadspinner {
     display: flex;
@@ -449,7 +480,20 @@ p {
     animation-delay: 2.5s;
     animation-fill-mode: both;
 }
-
+.grand-spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid $color-two;
+    border-top: 7px solid $color-three;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    left: 40%;
+    top: 250px;
+    animation: red-spinner 1s linear infinite; 
+}
 .spinner {
     display: flex;
     justify-content: center;
@@ -460,7 +504,7 @@ p {
     width: 100px;
     height: 100px;
     position: fixed;
-    left: 40%;
+    left: 45%;
     top: 250px;
     animation: red-spinner 1s linear infinite;
 }
@@ -570,6 +614,8 @@ button {
 
 .carte-restaurant {
 
+    max-width: 95%;
+    height: 240px;
     border: 3px solid #ffffff;
     border-radius: 20px;
     background-color: #ffffff;
@@ -581,86 +627,109 @@ button {
     }
 }
 
-.carte-restaurant-text {
+h2 {
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.detail-carte-restaurant {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    font-size: 12px;
-    color: #000000;
+    align-items: stretch;
 
-    p {
-        margin-top:35px;
-       
-        font-size: 14px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-
-.icone-coeur {
-    display: flex;
-    font-size: 24px;
-    position: absolute;
-    right: 10%;
-    bottom: 50px;
-    color: #000000;
-    background: transparent;
 }
 
-.Nouveau {
-    color: #3b8468;
-    background-color: #a9e0d1;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    position: relative;
-    left: 72%;
-    bottom: 170px;
-    font-size: 15px;
-}
-
-footer {
-    max-width: 100%;
-    background-color: #353535;
-    color: #ffffff;
+.carte-restaurant-text {
     display: flex;
     flex-direction: column;
+    justify-self: flex-start;
+    align-items: center;
+
+    margin-top: -20px;
+    font-size: 14px;
+
+    color: #000000;
+    margin: -30px -40px;
+
+    p {
+        margin-top: 5px;
+        margin-left: -30px;
+        font-size: 13px;
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+
+}
+
+.icone-coeur {
+    font-size: 24px;
+    margin-right: 25px;
+}   
+.carte-restaurant-nouveau
+.Nouveau {
+    content: "Nouveau";
+     display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding-left: 60px;
+    align-items: center;
+    position: absolute;
+    height: 25px;
+    width: 80px;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #3a8266;
+    background-color: #99E2D0;
+    box-shadow: #000000 0px 6px 6px;
+    z-index: 1;
+    top: 15px;
+    left: auto;
+    right: 3%;
 }
 
 
 
-
-
-
-
-
-@keyframes red-spinner {
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
-        visibility: visible;
+    footer {
+        max-width: 100%;
+        background-color: #353535;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
     }
 
-    100% {
-        opacity: 0;
-        visibility: hidden;
-        transform: rotate(360deg);
-    }
-}
 
-@keyframes run-spinner {
-    from {
-        opacity: 1;
+
+
+
+
+
+
+    @keyframes red-spinner {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg);
+            visibility: visible;
+        }
+
+        100% {
+            opacity: 0;
+            visibility: hidden;
+            transform: rotate(360deg);
+        }
     }
 
-    to {
-        opacity: 0;
-        position: absolute;
+    @keyframes run-spinner {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            position: absolute;
+        }
     }
-}
