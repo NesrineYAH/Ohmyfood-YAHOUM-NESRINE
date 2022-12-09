@@ -325,3 +325,63 @@
 .contact {
     margin-top: 0px;
 }
+
+/***********************version tablette*******************************/
+
+@media (min-width: 770px) and (max-width: 992px) {
+
+    body {
+
+        max-width: 992px;
+        font-family: "Roboto", "shrikhand";
+    }
+
+    .carte-info {
+        display: flex;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 2px solid #f2f2f2;
+        padding: 6px;
+        margin: 25px;
+        box-shadow: 2px 4px 4px 2px lightgray;
+        color: #000000;
+
+        &:hover {
+            background-color: #f5edff;
+            transform: scale(1.1);
+            transition: 400ms;
+            cursor: pointer;
+        }
+    }
+
+    /*
+    #Restaurants {
+        width: 100%;
+        background-color: #eeeeee;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #conteneur-Resto {
+
+        width: 100%;
+        margin-left: 10px;
+       display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }*/
+
+    footer {
+        max-width: 100%;
+        background-color: #353535;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 60px;
+    }
+}
