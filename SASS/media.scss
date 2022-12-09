@@ -9,8 +9,7 @@ $Padding: 20px;
 
 @media (max-width:768px) {
     body {
-        max-width: 768
-        px;
+        max-width: 768 px;
         font-family: "Roboto", "shrikhand";
     }
 
@@ -187,34 +186,34 @@ $Padding: 20px;
     }
 
     #conteneur-Resto {
-         width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 10px;
         gap: 40px;
+
+
     }
 
     .carte-restaurant {
-
         width: 95%;
-        height: 240px;
+        height: 280px;
         border: 3px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
-
 
         img {
             width: 100%;
             height: 200px;
             border-radius: 20px 20px 0 0;
             margin-bottom: 10px;
+            object-fit: cover;
         }
+    
+        }
+    
 
-        &:hover {
-            cursor: pointer;
-        }
-    }
 
     /*.carte-restaurant-nouveau
     .Nouveau {
@@ -270,6 +269,7 @@ $Padding: 20px;
             justify-content: flex-start;
         }
     }
+
     .icone-coeur {
         font-size: 24px;
         margin-right: 25px;
@@ -298,34 +298,35 @@ $Padding: 20px;
             z-index: 50;
         }
     }
-footer {
-    max-width: 100%;
-    background-color: #353535;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 60px;
-}
 
-.titre-footer {
-    font-family: "shrikhand";
-    font-size: 22px;
-}
+    footer {
+        max-width: 100%;
+        background-color: #353535;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
+    }
 
-.lien-footer {
-    color: #ffffff;
-    text-decoration: none;
-}
+    .titre-footer {
+        font-family: "shrikhand";
+        font-size: 22px;
+    }
 
-#icone-footer {
-    margin: -40px 0px 0px -30px;
-}
+    .lien-footer {
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-.contact {
-    margin-top: 0px;
-}
-}
+    #icone-footer {
+        margin: -40px 0px 0px -30px;
+    }
+
+    .contact {
+        margin-top: 0px;
+    }
+
 
 /***********************version tablette*******************************/
 
