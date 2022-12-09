@@ -74,7 +74,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     border: 8px solid #99E2D0;
     border-top: 7px solid #9356DC;
     border-radius: 50%;
@@ -161,12 +160,13 @@
     padding-top: 50px;
   }
   #conteneur-Resto {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     margin-left: 10px;
-    gap: 20px;
+    gap: 40px;
   }
   .carte-restaurant img {
     width: 100%;
@@ -175,33 +175,35 @@
   }
   .carte-restaurant {
     width: 95%;
-    height: 280px;
+    height: 300px;
     border: 3px solid #ffffff;
     border-radius: 20px;
     background-color: #ffffff;
   }
-  .Nouveau1 {
+  .Nouveau {
     color: #3b8468;
     background-color: #a9e0d1;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    position: absolute;
+    position: relative;
     right: 6%;
     margin-top: 20px;
     font-size: 15px;
   }
-  .info-text {
-    margin-left: 20px;
+  .carte-restaurant-text {
+    display: flex;
+    flex-direction: row;
+    /*margin-left: 20px;*/
     font-size: 10px;
     color: #000000;
   }
-  .info-text p {
+  .carte-restaurant-text p {
     padding-left: 0px;
     margin-top: -20px;
     font-size: 14px;
   }
-  .info-text a {
+  .carte-restaurant-text a {
     text-decoration: none;
   }
   .icone-coeur {
@@ -285,7 +287,7 @@
     cursor: pointer;
   }
   #Restaurants {
-    max-width: 100%;
+    width: 100%;
     background-color: #eeeeee;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -298,11 +300,6 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  /* .Nouveau2 {
-       position: absolute;
-       right: 25%;
-       margin-top: 20px;
-   }*/
   footer {
     max-width: 100%;
     background-color: #353535;
@@ -326,7 +323,7 @@ header {
 }
 
 #Logo {
-  width: 50%;
+  width: 20%;
   padding: 20px 60px 30px 60px;
   display: flex;
   justify-content: center;
@@ -341,13 +338,14 @@ header {
   align-items: center;
   border-top: 2px solid #c5c1c1;
   background-color: #e4e2e1;
-  padding-left: 30px;
+  padding-left: 80px;
   padding-right: 100px;
+  padding: 15px;
   margin: 7px 0 7px 0;
 }
 
 .icone-maps {
-  margin-right: 0px;
+  margin-right: 15px;
 }
 
 .localisation-txt {
@@ -400,7 +398,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   border: 8px solid #99E2D0;
   border-top: 7px solid #9356DC;
   border-radius: 50%;
@@ -509,13 +506,11 @@ button {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   margin: 20px;
 }
 
 .carte-restaurant {
-  display: inline-block;
-  height: 280px;
   border: 3px solid #ffffff;
   border-radius: 20px;
   background-color: #ffffff;
@@ -526,31 +521,33 @@ button {
   border-radius: 20px 20px 0 0;
 }
 
-.info-text {
+.carte-restaurant-text {
+  display: flex;
+  flex-direction: row;
   margin-left: 20px;
   font-size: 10px;
   color: #000000;
 }
-.info-text p {
+.carte-restaurant-text p {
   padding-left: 0px;
   margin: 0 0 -10px 0;
   font-size: 14px;
 }
-.info-text a {
+.carte-restaurant-text a {
   text-decoration: none;
 }
 
 .icone-coeur {
-  display: block;
+  display: flex;
   font-size: 24px;
-  position: relative;
+  position: absolute;
   right: 10%;
-  bottom: 20px;
+  bottom: 50px;
   color: #000000;
   background: transparent;
 }
 
-.Nouveau1 {
+.Nouveau {
   color: #3b8468;
   background-color: #a9e0d1;
   font-weight: 500;
