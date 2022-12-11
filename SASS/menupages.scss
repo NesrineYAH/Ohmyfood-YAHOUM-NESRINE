@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
+@import "./mixins.scss";
+
 @media (max-width:768px) {
-    $color-one: #9356DC;
-    $color-two: #FF79DA;
-    $color-three: #99E2D0;
-    $Padding: 20px;
+
 
 
     .lien-retour {

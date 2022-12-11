@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
+
 $color-one: #9356DC;
 $color-two: #FF79DA;
 $color-three: #99E2D0;
 $Padding: 20px;
 
 
-
 @media (max-width:768px) {
     body {
         max-width: 768 px;
         font-family: "Roboto", "shrikhand";
+        opacity: 10;
+        animation: run-spinner 3s;
+
     }
 
     header {
@@ -39,7 +42,7 @@ $Padding: 20px;
     }
 
     .icone-maps {
-        margin-right: 0px;
+        margin-right: 15px;
     }
 
     .localisation-txt {
@@ -67,13 +70,16 @@ $Padding: 20px;
         justify-content: center;
     }
 
-    .petit-texte-h1 {
+    .petit-texte {
+        max-width: 100%;
         display: flex;
         text-align: center;
         overflow: hidden;
-        padding: 0px 40px 0px 20px;
+        margin-left: 40px;
+        justify-content: center;
     }
 
+    /*
     .loadspinner {
         display: flex;
         justify-content: center;
@@ -82,8 +88,8 @@ $Padding: 20px;
         animation: run-spinner 1s forwards;
         animation-delay: 2.5s;
         animation-fill-mode: both;
+        z-index: 999;
     }
-
     .spinner {
         display: flex;
         justify-content: center;
@@ -99,6 +105,55 @@ $Padding: 20px;
         animation: red-spinner 1s linear infinite;
         animation-duration: 400ms;
     }
+*/
+    .loadingscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 95%;
+        animation: loading 1s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loading {
+        width: 200px;
+        height: 20px;
+        border: 5px solid $color-one;
+        position: absolute;
+
+        border-radius: 10px;
+
+        .textload {
+            font-family: 'Shrikhand', cursive;
+            margin-left: 15%;
+            padding-top: 25px;
+            position: absolute;
+            font-size: 20px;
+            color: $color-two;
+        }
+
+        .ball {
+            display: block;
+            width: 20px;
+            height: 100%;
+            background-color: $color-three;
+            -moz-animation: slide 2s infinite ease-in-out alternate;
+            -webkit-animation: slide 2s infinite ease-in-out alternate;
+            -ms-animation: slide 2s infinite ease-in-out alternate;
+            -o-animation: slide 2s infinite ease-in-out alternate;
+            animation: slide 2s infinite ease-in-out alternate;
+            border-radius: 5px;
+        }
+
+    }
+
 
     .btn-explorer {
         display: flex;
@@ -117,13 +172,16 @@ $Padding: 20px;
 
     .titre-section {
         margin-left: 10px;
+        display: flex;
+        width: 100%;
+
     }
 
     #Fonctionnement {
+        width: 100%;
         margin: 20px;
         margin-top: 60px;
         margin-bottom: 50px;
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -131,7 +189,7 @@ $Padding: 20px;
 
     .carte-info {
         display: flex;
-        width: 90%;
+        width: 75%;
         border-radius: 20px;
         text-decoration: none;
         border: 2px solid #f2f2f2;
@@ -190,14 +248,15 @@ $Padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 10px;
+        margin-left: 0;
+        margin-right: 25px;
         gap: 40px;
 
 
     }
 
     .carte-restaurant {
-        width: 95%;
+        width: 92%;
         height: 280px;
         border: 3px solid #ffffff;
         border-radius: 20px;
@@ -210,9 +269,25 @@ $Padding: 20px;
             margin-bottom: 10px;
             object-fit: cover;
         }
-    
-        }
-    
+
+    }
+
+    /*
+    .Nouveau {
+        color: #3b8468;
+        background-color: #a9e0d1;
+        font-weight: 500;
+        padding: 10px;
+        border-radius: 5px;
+        width: 40px;
+        position: absolute;
+        right: 10%;
+        bottom: 20px;
+        font-size: 15px;
+        box-shadow: #000000 0px 2px 2px;
+        padding: $Padding;
+    }
+
 
 
     /*.carte-restaurant-nouveau
@@ -274,28 +349,30 @@ $Padding: 20px;
         font-size: 24px;
         margin-right: 25px;
 
-        &:hover {
 
-            transition: opacity 0.3s ease-in-out;
+        &:hover {
+            transition: opacity 1 0.3s ease-in-out;
+            animation: coeur 2.5s linear forwards;
+            opacity: 1;
         }
 
         .fas {
-
-            opacity: 1;
+            opacity: 0;
             color: transparent;
             background: linear-gradient(170deg, #ff79da, #9356dc);
             background-clip: text;
             -webkit-background-clip: text;
-            z-index: 100;
+            z-index: -1;
+
         }
 
         .far {
-            z-index: 50;
             background: linear-gradient(#9356DC, #FF79DA);
+            background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: black;
             overflow: hidden;
-            z-index: 50;
+            z-index: 1;
         }
     }
 
@@ -326,7 +403,159 @@ $Padding: 20px;
     .contact {
         margin-top: 0px;
     }
+}
 
+
+/********************* mise en page Page Restaurant ***************/
+
+
+@media (max-width: 768px) {
+    .lien-retour {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        color: #000000;
+        font-size: larger;
+    }
+
+    #Logo {
+        width: 25%;
+        padding: 20px 80px 30px 50px;
+        display: inline-block;
+        justify-content: center;
+        align-self: center;
+        margin-left: 100px;
+    }
+
+    #Titre-de-page {
+        font-family: "Shrikhand";
+        font-size: 25px;
+        display: flex;
+        padding: 20px 40px 0 0px;
+        margin: 10px 0 0 -60px;
+    }
+
+    .coeur-page {
+        position: relative;
+        right: 15%;
+        bottom: 35px;
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    #page-restaurant {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        border: 3px solid #ffffff;
+        background-color: #ffffff;
+        border-radius: 60px 60px 0px 0px;
+        position: relative;
+        top: -50px;
+        background: color #f4f4f4;
+    }
+
+    .carte-page img {
+        width: 100%;
+        height: 280px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    #Titre-article {
+        font-size: 22px;
+        margin-top: 12px;
+        -webkit-animation: slideup 1s forwards;
+        animation: slideup 1s forwards;
+    }
+
+    #Titre-article::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 5px;
+        background-color: #99E2D0;
+        position: absolute;
+        left: 0;
+    }
+
+    .liste-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liste-repas {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 2px solid #f2f2f2;
+        margin: 10px;
+        box-shadow: 2px 4px 4px 2px lightgray;
+        color: #000000;
+        -webkit-animation: slideup 5s forwards;
+        animation: slideup 5s forwards;
+    }
+
+    .liste-texte {
+        align-items: flex-start;
+        margin-left: 0 -10px 0 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .liste-texte p {
+        margin-top: -10px;
+        white-space: nowrap;
+    }
+
+    .prix-menu {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        right: 30px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+
+    .commande {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px 20px 40px;
+    }
+
+
+    footer {
+        background-color: #353535;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+    }
+
+    .titre-footer {
+        font-family: "shrikhand";
+        font-size: 22px;
+    }
+
+    .lien-footer {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #icone-footer {
+        margin: -40px 0px 0px -30px;
+    }
+
+    .contact {
+        margin-top: 0px;
+    }
+
+}
 
 /***********************version tablette*******************************/
 

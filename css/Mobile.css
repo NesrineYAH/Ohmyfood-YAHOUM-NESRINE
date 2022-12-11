@@ -192,27 +192,6 @@ a {
   background-color: linear-gradient(170deg, #ff79da, #9356dc);
 }
 
-footer {
-  background-color: #353535;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding-left: 80px;
-}
-.titre-footer {
-  font-family: "shrikhand";
-  font-size: 22px;
-}
-.lien-footer {
-  color: #ffffff;
-  text-decoration: none;
-}
-#icone-footer {
-  margin: -40px 0px 0px -30px;
-}
-.contact {
-  margin-top: 0px;
-}
 /* mise en page         */
 
 .lien-retour {
