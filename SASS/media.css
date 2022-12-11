@@ -12,12 +12,14 @@
     font-size: 14px;
   }
   #Logo {
-    max-width: 40%;
+    max-width: 50%;
     font-size: 20px;
     padding: 20px 15px 30px 35px;
     display: flex;
     justify-content: center;
-    margin-left: 70px;
+    position: absolute;
+    left: 1%;
+    top: 1%;
   }
   .localisation {
     display: flex;
@@ -27,7 +29,7 @@
     border-top: 2px solid #c5c1c1;
     background-color: #e4e2e1;
     padding-left: 30px;
-    margin: 7px 0 7px 0;
+    margin: 80px 0 10px 0;
   }
   .icone-maps {
     margin-right: 15px;
@@ -216,6 +218,7 @@
     margin-left: 0;
     margin-right: 25px;
     gap: 40px;
+    overflow-anchor: none;
   }
   .carte-restaurant {
     width: 92%;
@@ -223,12 +226,12 @@
     border: 3px solid #ffffff;
     border-radius: 20px;
     background-color: #ffffff;
+    overflow: hidden;
   }
   .carte-restaurant img {
     width: 100%;
     height: 200px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 10px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -275,7 +278,7 @@
   }*/
   h2 {
     margin-left: 40px;
-    margin-bottom: 5px;
+    margin-top: 0;
   }
   .detail-carte-restaurant {
     display: flex;
@@ -286,45 +289,64 @@
   .carte-restaurant-text {
     display: flex;
     flex-direction: column;
-    justify-self: flex-start;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: -20px;
+    /*   margin-top: -20px;*/
     font-size: 14px;
     color: #000000;
-    margin: -30px -40px;
   }
   .carte-restaurant-text p {
-    margin-top: 5px;
-    margin-left: -30px;
+    margin-top: -10px;
     font-size: 13px;
-    display: inline-flex;
-    justify-content: flex-start;
   }
   .icone-coeur {
     font-size: 24px;
     margin-right: 25px;
   }
-  .icone-coeur:hover {
-    transition: opacity 1 0.3s ease-in-out;
-    -webkit-animation: coeur 2.5s linear forwards;
-            animation: coeur 2.5s linear forwards;
-    opacity: 1;
+  /*
+      &:hover {
+          transition: opacity 1 0.3s ease-in-out;
+          animation: coeur 2.5s linear forwards;
+          opacity: 1;
+      }
+
+      .fas {
+          opacity: 0;
+          color: transparent;
+          background: linear-gradient(170deg, #ff79da, #9356dc);
+          background-clip: text;
+          -webkit-background-clip: text;
+          z-index: -1;
+
+      }
+
+      .far {
+          background: linear-gradient(#9356DC, #FF79DA);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: black;
+          overflow: hidden;
+          z-index: 1;
+      }
+  }*/
+  .coeur-full {
+    color: #ffffff;
   }
-  .icone-coeur .fas {
-    opacity: 0;
-    color: transparent;
-    background: linear-gradient(170deg, #ff79da, #9356dc);
+  .coeur-empty {
+    color: #000000;
+  }
+  .icone-coeur:hover .coeur-empty {
+    color: #ffffff;
+  }
+  .icone-coeur:hover .coeur-full {
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
-    z-index: -1;
-  }
-  .icone-coeur .far {
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: black;
-    overflow: hidden;
-    z-index: 1;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    transition: 0.5s;
   }
   footer {
     max-width: 100%;
@@ -343,7 +365,7 @@
     color: #ffffff;
     text-decoration: none;
   }
-  #icone-footer {
+  .icone-footer {
     margin: -40px 0px 0px -30px;
   }
   .contact {
@@ -470,7 +492,7 @@
     color: #ffffff;
     text-decoration: none;
   }
-  #icone-footer {
+  .icone-footer {
     margin: -40px 0px 0px -30px;
   }
   .contact {
@@ -499,25 +521,6 @@
     transition: 400ms;
     cursor: pointer;
   }
-  /*
-  #Restaurants {
-      width: 100%;
-      background-color: #eeeeee;
-      padding-bottom: 50px;
-      padding-top: 50px;
-      display: flex;
-      justify-content: center;
-  }
-
-  #conteneur-Resto {
-
-      width: 100%;
-      margin-left: 10px;
-     display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-  }*/
   footer {
     max-width: 100%;
     background-color: #353535;
