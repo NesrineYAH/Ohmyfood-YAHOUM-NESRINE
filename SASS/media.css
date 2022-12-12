@@ -462,18 +462,18 @@
   .liste-repas {
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
+    width: 100%;
+    transition: 0.8s ease-in-out;
     text-decoration: none;
     border: 2px solid #f2f2f2;
     margin: 10px;
     box-shadow: 2px 4px 4px 2px lightgray;
     color: #000000;
-    -webkit-animation: slideup 5s forwards;
-    animation: slideup 5s forwards;
+    /* -webkit-animation: slideup 5s forwards;
+    animation: slideup 5s forwards;*/
   }
   .liste-texte {
-    align-items: flex-start;
-    margin-left: 0 -10px 0 0;
+    margin: 0 -10px 0 0;
     overflow: hidden;
     text-overflow: ellipsis;
   }
