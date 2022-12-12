@@ -446,7 +446,7 @@ h3 {
 }
 
 .carte-page {
-  /* margin: 100px 60px 80px 80px;*/
+  margin-top: 120px;
   border-top: 2px solid #c5c1c1;
 }
 .carte-page img {
