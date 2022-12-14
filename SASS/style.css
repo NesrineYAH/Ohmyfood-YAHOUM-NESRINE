@@ -453,6 +453,7 @@ body {
 h3 {
   font-size: 16px;
   margin-left: 20px;
+  font-weight: 500;
 }
 
 #page-restaurant {
@@ -531,20 +532,20 @@ h3 {
   justify-content: center;
   align-items: stretch;
   min-width: 30%;
-  margin-left: 30px;
+  /* margin-left: 10px;*/
   -webkit-animation: slideup 5s forwards;
           animation: slideup 5s forwards;
 }
 
 .liste-repas {
   min-width: 40%;
-  height: 75px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid #f2f2f2;
-  margin: 10px;
+  margin: 5px;
   box-shadow: 2px 4px 4px 2px lightgray;
   color: #000000;
   overflow: hidden;
@@ -564,7 +565,7 @@ h3 {
   white-space: nowrap;
 }
 .liste-texte p {
-  margin-top: -10px;
+  margin-top: -15px;
   margin-left: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -574,13 +575,18 @@ h3 {
 
 .prix-menu {
   font-size: 14px;
+  font-weight: 100;
   font-weight: 700;
   color: #2c2b2b;
   align-self: flex-end;
-  padding: 15px 15px 15px 15px;
-  margin-left: 15px;
+  padding-bottom: 20px;
+  margin-left: 10px;
   align-items: stretch;
   white-space: nowrap;
+}
+.prix-menu:hover {
+  transform: translateX(-35%);
+  transition: 0.2s;
 }
 
 .validation__box {
@@ -589,22 +595,32 @@ h3 {
   align-self: flex-end;
   align-items: center;
   padding: 15px 15px 0 15px;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
   color: #ffffff;
   height: 100%;
+  width: 10%;
   font-size: 20px;
-  font-weight: bold;
   opacity: 0;
   margin-left: 20px;
 }
+.validation__box .icone-chekmark {
+  color: white;
+  transform: rotateZ(0deg);
+  font-size: 25px;
+  font-weight: 700;
+}
+.validation__box .icone-chekmark:hover {
+  -webkit-animation: icone-rotate 400ms forwards;
+          animation: icone-rotate 400ms forwards;
+}
 .validation__box:hover {
-  /*animation: chekmark 1s linear;*/
+  transform: translateX(-30%);
   transform: scale(1.1);
-  transition: ease-out width 1s;
-  transition: 0.2s;
+  margin-left: 35px;
   opacity: 1;
   margin-left: 0px;
+  z-index: 100;
 }
 
 .commande {
@@ -706,19 +722,30 @@ h3 {
     transform: scale3d(1, 1, 1);
   }
 }
-@-webkit-keyframes chekmark {
+/*@keyframes chekmark {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+    }
+}*/
+@-webkit-keyframes icone-rotate {
   0% {
-    transform: rotate(0);
+    transform: rotateZ(-180deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotateZ(0deg);
   }
 }
-@keyframes chekmark {
+@keyframes icone-rotate {
   0% {
-    transform: rotate(0);
+    transform: rotateZ(-180deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotateZ(0deg);
   }
 }/*# sourceMappingURL=style.css.map */
