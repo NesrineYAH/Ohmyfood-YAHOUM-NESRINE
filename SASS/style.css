@@ -414,7 +414,7 @@ body {
 }
 
 #Logo-page {
-  max-width: 25%;
+  max-width: 15%;
   font-size: 20px;
   padding: 20px 15px 30px 35px;
   display: flex;
@@ -512,9 +512,10 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-left: -1%;
-  margin-right: 20%;
+  flex-basis: auto;
+  gap: 5px;
+  /*margin-left: -1%;
+  margin-right: 20%;*/
 }
 
 .Bloc-repas {
@@ -529,32 +530,31 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  min-width: 32%;
+  min-width: 30%;
   margin-left: 30px;
   -webkit-animation: slideup 5s forwards;
           animation: slideup 5s forwards;
 }
 
 .liste-repas {
-  min-width: 45%;
+  min-width: 40%;
+  height: 75px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-basis: 100%;
   border-radius: 20px;
-  text-decoration: none;
   border: 2px solid #f2f2f2;
   margin: 10px;
   box-shadow: 2px 4px 4px 2px lightgray;
   color: #000000;
   overflow: hidden;
-  gap: 10px;
   padding: 0;
   transition: 0.7s ease-in-out;
   transition: 1s;
 }
 
 .liste-texte {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -569,6 +569,7 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 100;
 }
 
 .prix-menu {
@@ -577,6 +578,33 @@ h3 {
   color: #2c2b2b;
   align-self: flex-end;
   padding: 15px 15px 15px 15px;
+  margin-left: 15px;
+  align-items: stretch;
+  white-space: nowrap;
+}
+
+.validation__box {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  align-items: center;
+  padding: 15px 15px 0 15px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: #ffffff;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  margin-left: 20px;
+}
+.validation__box:hover {
+  /*animation: chekmark 1s linear;*/
+  transform: scale(1.1);
+  transition: ease-out width 1s;
+  transition: 0.2s;
+  opacity: 1;
+  margin-left: 0px;
 }
 
 .commande {
@@ -676,5 +704,21 @@ h3 {
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes chekmark {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes chekmark {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
   }
 }/*# sourceMappingURL=style.css.map */
