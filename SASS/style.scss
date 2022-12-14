@@ -250,6 +250,10 @@ button {
 }
 
 .carte-restaurant {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     min-width: 45%;
     height: 280px;
     border: 3px solid #ffffff;
@@ -358,7 +362,26 @@ button {
     transition: 0.5s;
 }
 
-.Nouveau {
+.Nouveau::after {
+    width: 60px;
+    height: 15px;
+    display: block;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    *background: $color-three;
+
+    /*content: "Nouveau";
+    display: block;
+    height: 10px;
+    width: 50px;
     border-radius: 4px;
     font-size: 13px;
     padding: 12px;
@@ -366,9 +389,10 @@ button {
     color: #3a8266;
     background-color: #99E2D0;
     position: relative;
-    left: 75%;
-    bottom: 200px;
+    left: 82%;
+    bottom: 145px;*/
 }
+
 
 
 footer {
@@ -427,11 +451,11 @@ body {
 
 #Titre-de-page {
     font-family: "Shrikhand";
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     margin: 40px -20px 20px 0;
     font-weight: lighter;
-    transform: translateX(-170%);
+    transform: translateX(-100%);
 }
 
 .titre-et-coeur {
@@ -489,22 +513,25 @@ h3 {
     margin-left: 0px;
     animation: slideup 1s forwards;
     display: flex;
-
+    min-width: 10%;
     justify-content: flex-start;
     text-transform: uppercase;
     color: #353535;
     font-weight: normal;
     position: relative;
+    left: 10%;
+
 
     &::after {
         content: "";
         display: block;
-        width: 70px;
-        height: 5px;
+        width: 80px;
+        height: 4px;
         background-color: $color-three;
-        position: absolute;
-        left: 10%;
+        position: relative;
+        left: -16%;
         margin-top: 35px;
+        z-index: 5;
     }
 }
 
@@ -514,7 +541,10 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-left: -1%;
+    margin-right: 20%;
 }
 
 .Bloc-repas {
@@ -539,7 +569,7 @@ h3 {
     min-width: 45%;
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-evenly;
     flex-basis: 100%;
     border-radius: 20px;
     text-decoration: none;
@@ -549,38 +579,39 @@ h3 {
     color: #000000;
     overflow: hidden;
     gap: 10px;
-    overflow: hidden;
+    padding: 0;
     transition: 0.7s ease-in-out;
     transition: 1s;
 }
 
 .liste-texte {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: stretch;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal;
-}
-
-.liste-texte p {
+    white-space: nowrap;
+p {
     margin-top: -10px;
     margin-left: 20px;
-    white-space: normal;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 }
 
 .prix-menu {
-    box-sizing: border-box;
+
     font-size: 14px;
     font-weight: 700;
-    color: #000000;
+    color: #2c2b2b;
     align-self: flex-end;
-    position: relative;
-    top: -20px;
-    left: 35%;
-
+    padding: 15px 15px 15px 15px;
 }
-
+.validation__box{
+    
+}
 
 .commande {
     display: flex;
