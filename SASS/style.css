@@ -550,8 +550,9 @@ h3 {
   color: #000000;
   overflow: hidden;
   padding: 0;
-  transition: 0.7s ease-in-out;
-  transition: 1s;
+  animation: slideup 5s forwards;
+  -webkit-animation: slideup 5s forwards;
+  -moz-animation: slideup 5s forwards;
 }
 
 .liste-texte {
@@ -575,18 +576,12 @@ h3 {
 
 .prix-menu {
   font-size: 14px;
-  font-weight: 100;
   font-weight: 700;
   color: #2c2b2b;
   align-self: flex-end;
   padding-bottom: 20px;
-  margin-left: 10px;
   align-items: stretch;
   white-space: nowrap;
-}
-.prix-menu:hover {
-  transform: translateX(-35%);
-  transition: 0.2s;
 }
 
 .validation__box {
@@ -603,6 +598,11 @@ h3 {
   font-size: 20px;
   opacity: 0;
   margin-left: 20px;
+  /* &:hover {
+      transform: translateX(-30%);
+      transform: scale(1.1);
+      z-index: 100
+  }*/
 }
 .validation__box .icone-chekmark {
   color: white;
@@ -613,14 +613,7 @@ h3 {
 .validation__box .icone-chekmark:hover {
   -webkit-animation: icone-rotate 400ms forwards;
           animation: icone-rotate 400ms forwards;
-}
-.validation__box:hover {
-  transform: translateX(-30%);
-  transform: scale(1.1);
-  margin-left: 35px;
-  opacity: 1;
-  margin-left: 0px;
-  z-index: 100;
+  visibility: visible;
 }
 
 .commande {
@@ -632,6 +625,37 @@ h3 {
   transform: scale(1.1);
   transition: 0.2s;
   font-weight: bold;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.titre-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  font-family: "shrikhand";
+  font-size: 22px;
+}
+
+.lien-footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icone-footer {
+  margin-top: 50px;
+}
+
+.contact {
+  margin-top: 20px;
 }
 
 /***********Animation*******************/
