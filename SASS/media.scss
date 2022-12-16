@@ -554,17 +554,26 @@ $Padding: 20px;
         text-decoration: none;
         border: 2px solid #f2f2f2;
         margin: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         box-shadow: 2px 4px 4px 2px lightgray;
         color: #000000;
         -webkit-animation: slideup 5s forwards;
+        -moz-animation: slideup 5s forwards;
         animation: slideup 5s forwards;
     }
 
     .liste-texte {
+        width: 100%;
         align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
         margin: 0 -10px 0 0;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
 
         p {
             margin-top: -15px;
@@ -579,6 +588,8 @@ $Padding: 20px;
         right: 30px;
         margin-top: 30px;
         font-weight: 100;
+
+
     }
 
     .validation__box {
