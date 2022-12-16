@@ -619,7 +619,6 @@ h3 {
   justify-content: center;
   align-items: stretch;
   min-width: 30%;
-  /* margin-left: 10px;*/
   -webkit-animation: slideup 5s forwards;
           animation: slideup 5s forwards;
 }
@@ -643,11 +642,8 @@ h3 {
   -webkit-animation: slideup 5s forwards;
   -moz-animation: slideup 5s forwards;
 }
-.liste-repas:hover {
-  margin-left: 50px;
-  transform: translateX(20%);
-}
-.liste-repas .liste-texte {
+
+.liste-texte {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -657,7 +653,8 @@ h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.liste-repas p {
+
+p {
   margin-top: -15px;
   margin-left: 20px;
   white-space: nowrap;
@@ -665,7 +662,8 @@ h3 {
   text-overflow: ellipsis;
   font-weight: 300;
 }
-.liste-repas .prix-menu {
+
+.prix-menu {
   font-size: 14px;
   font-weight: 700;
   color: #2c2b2b;
@@ -674,7 +672,8 @@ h3 {
   align-items: stretch;
   white-space: nowrap;
 }
-.liste-repas .validation__box {
+
+.validation__box {
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
@@ -689,7 +688,7 @@ h3 {
   opacity: 0;
   margin-left: 10px;
 }
-.liste-repas .validation__box:hover {
+.validation__box:hover {
   width: 12%;
   padding: 35px 15px 0px 20px;
   align-items: center;
@@ -697,19 +696,14 @@ h3 {
   margin-left: 50px;
   transform: translateX(20%);
 }
-.liste-repas .validation__box .icone-chekmark {
+.validation__box .icone-chekmark {
   color: white;
   transform: rotateZ(-180deg);
   font-size: 28px;
   font-weight: bold;
   opacity: 1;
-  /* &:hover {
-      transform: translateX(-30%);
-      transform: scale(1.1);
-      z-index: 100
-  }*/
 }
-.liste-repas .validation__box .icone-chekmark:hover {
+.validation__box .icone-chekmark:hover {
   -webkit-animation: icone-rotate 1s forwards;
           animation: icone-rotate 1s forwards;
   opacity: 1;

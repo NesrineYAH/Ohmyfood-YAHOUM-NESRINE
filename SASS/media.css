@@ -266,7 +266,6 @@
     font-size: 15px;
   }
   h2 {
-    /*margin-left: 25px;*/
     margin-top: 10px;
   }
   .detail-carte-restaurant {
@@ -331,16 +330,20 @@
       left: 82%;
       bottom: 145px;
   }*/
-  .Nouveau::after {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    *background: #99E2D0;
-  }
+  /* .Nouveau::after {
+
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: flex-end;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      *background: $color-three;
+  }*/
   .coeur-full {
     color: #ffffff;
   }
@@ -576,7 +579,7 @@
   }
   .validation__box:hover {
     opacity: 1;
-    margin-left: 50px;
+    margin-left: 20px;
     transform: translateX(20%);
   }
   .validation__box .icone-chekmark {

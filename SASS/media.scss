@@ -275,7 +275,6 @@ $Padding: 20px;
     }
 
     .Nouveau1 {
-
         width: 70px;
         height: 20px;
         color: #3b8468;
@@ -291,7 +290,6 @@ $Padding: 20px;
     }
 
     .Nouveau2 {
-
         width: 70px;
         height: 20px;
         color: #3b8468;
@@ -307,7 +305,6 @@ $Padding: 20px;
     }
 
     h2 {
-        /*margin-left: 25px;*/
         margin-top: 10px;
     }
 
@@ -380,7 +377,7 @@ $Padding: 20px;
         bottom: 145px;
     }*/
 
-    .Nouveau::after {
+    /* .Nouveau::after {
 
         display: flex;
         flex-direction: row;
@@ -393,7 +390,7 @@ $Padding: 20px;
         top: 5%;
         right: 5%;
         *background: $color-three;
-    }
+    }*/
 
     .coeur-full {
         color: #ffffff;
@@ -669,7 +666,7 @@ $Padding: 20px;
         &:hover {
 
             opacity: 1;
-            margin-left: 50px;
+            margin-left: 20px;
             transform: translateX(20%);
 
         }
