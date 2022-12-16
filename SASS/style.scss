@@ -492,7 +492,30 @@ body {
     margin-top: 45px;
     font-size: 25px;
     transform: translateX(300px);
+}
+.coeur-full-page {
+    color: #ffffff;
 
+}
+
+.coeur-empty-page {
+    color: #000000;
+}
+
+.icone-coeur:hover .coeur-empty-page {
+    color: #ffffff;
+    animation: coeur 2s linear infinite;
+}
+
+.icone-coeur:hover .coeur-full-page {
+    background: -webkit-linear-gradient($color-two, $color-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    transition: 0.5s;
 }
 
 h3 {
@@ -621,8 +644,6 @@ h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
 
-
-
 }
 
 p {
@@ -665,6 +686,7 @@ p {
 
         opacity: 1;
         margin-left: 50px;
+        transform: translateX(20%);
 
     }
 
