@@ -17,12 +17,12 @@ header {
 }
 
 #Logo {
-    min-width: 25%;
+    max-width: 15%;
     padding: 20px 100px 30px 100px;
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 1%;
 }
 
@@ -399,13 +399,31 @@ footer {
     background-color: #353535;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
-    padding-left: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    width: 93%;
 }
 
 .titre-footer {
+    align-content: stretch;
+    display: flex;
+    justify-content: stretch;
+    margin-top: -30px;
     font-family: "shrikhand";
     font-size: 22px;
+    width: 100%;
+    position: absolute;
+    left: 45%
+}
+
+.conatiner-lien-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 25px 50px 0 -50px;
 }
 
 .lien-footer {
@@ -414,11 +432,13 @@ footer {
 }
 
 .icone-footer {
-    margin: -40px 0px 0px -30px;
+    margin-top: -40px;
+    margin-left: -25px;
 }
 
 .contact {
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-right: 5px;
 }
 
 /**************** Mise en page -page resaturant-**********/
@@ -442,7 +462,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 20%;
+    left: 30%;
     top: 1%;
     margin-bottom: 50px;
     transform: translateX(40%);
@@ -542,9 +562,10 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-basis: auto;
-    gap: 5px;
-    /*margin-left: -1%;
-    margin-right: 20%;*/
+    gap: 15px;
+    margin: 25px;
+    margin-left: 0%;
+    margin-right: 10%;
 }
 
 .Bloc-repas {
@@ -566,24 +587,29 @@ h3 {
 }
 
 .liste-repas {
-    min-width: 40%;
-    height: 70px;
+    min-width: 35%;
+    height: 72px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 2px solid #f2f2f2;
-    margin: 5px;
+    margin: 10px;
     box-shadow: 2px 4px 4px 2px lightgray;
     color: #000000;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     padding: 0;
     animation: slideup 5s forwards;
     -webkit-animation: slideup 5s forwards;
     -moz-animation: slideup 5s forwards;
+    /*&:hover{
 
-
+}*/
 }
+
+
 
 .liste-texte {
     width: 100%;
@@ -596,18 +622,20 @@ h3 {
     white-space: nowrap;
 
 
-    p {
-        margin-top: -15px;
-        margin-left: 20px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: 100;
-    }
+
 }
 
-.prix-menu {
+p {
+    margin-top: -15px;
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 100;
+}
 
+
+.prix-menu {
     font-size: 14px;
     font-weight: 700;
     color: #2c2b2b;
@@ -615,8 +643,6 @@ h3 {
     padding-bottom: 20px;
     align-items: stretch;
     white-space: nowrap;
-
-
 }
 
 
@@ -626,34 +652,43 @@ h3 {
     align-self: flex-end;
     align-items: center;
     padding: 15px 15px 0 15px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 12px 12px 0;
     background-color: $color-three;
     color: #ffffff;
     height: 100%;
     width: 10%;
     font-size: 20px;
     opacity: 0;
-    margin-left: 20px;
+    margin-left: 10px;
 
+    &:hover {
 
+        opacity: 1;
+        margin-left: 50px;
+
+    }
 
     .icone-chekmark {
         color: white;
-        transform: rotateZ(0deg);
-        font-size: 25px;
-        font-weight: 700;
+        transform: rotateZ(-180deg);
+        font-size: 28px;
+        font-weight: bold;
+        opacity: 1;
 
         &:hover {
-            animation: icone-rotate 400ms forwards;
-            visibility: visible;
+            animation: icone-rotate 1s forwards;
+            opacity: 1;
+            font-size: 30px;
+            font-weight: bold;
+            z-index: 100
         }
-    }
 
-    /* &:hover {
+        /* &:hover {
         transform: translateX(-30%);
         transform: scale(1.1);
         z-index: 100
     }*/
+    }
 }
 
 .commande {
@@ -667,46 +702,6 @@ h3 {
         font-weight: bold;
     }
 }
-
-footer {
-    background-color: #353535;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 50px;
-    width: 100%;
-}
-
-.titre-footer {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    font-family: "shrikhand";
-    font-size: 22px;
-    width: 100%;
-
-}
-.conatiner-lien-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.lien-footer {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.icone-footer {
-    margin-top: 50px;
-}
-
-.contact {
-    margin-top: 20px;
-}
-
-
 
 /***********Animation*******************/
 
@@ -825,5 +820,17 @@ footer {
 
     100% {
         transform: rotateZ(0deg);
+    }
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
