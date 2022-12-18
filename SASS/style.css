@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
   max-width: 1500px;
@@ -713,6 +714,92 @@ p {
   padding-right: 20px;
 }
 
+/*début de teste de Bloc-repas page à la française*/
+.Bloc-repasX {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.validation__boxX {
+  background-color: #99E2D0;
+  color: #ffffff;
+  width: 10%;
+  border-radius: 0 12px 12px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  transition: 0.5s;
+  margin: -10px -80px -10px 10px;
+}
+.validation__boxX i {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.liste-repasX {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #f2f2f2;
+  box-shadow: 2px 4px 4px 2px lightgray;
+  border-radius: 0 12px 12px 0;
+  opacity: 0;
+  -webkit-animation: delais 1s;
+          animation: delais 1s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.liste-repasX:hover .liste-texteX {
+  max-width: 180px;
+  min-width: 180px;
+}
+.liste-repasX:hover .validation__boxX {
+  border-radius: 0 12px 12px 0;
+}
+.liste-repasX:hover .validation__boxX i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
+
+.text-checkX {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.text-checkX:hover .validation__boxX {
+  margin: -10px -10px -10px 10px;
+}
+.text-checkX:hover .validation__boxX i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
+
+.titre3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pgh3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.prix-menuX {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 -60px 20px 0;
+}
+
+/*fin de teste*/
 .commande {
   display: flex;
   justify-content: center;
@@ -727,29 +814,29 @@ p {
 /***********Animation*******************/
 /*@keyframes red-spinner {
 
-0% {
-    opacity: 1;
-    transform: rotate(0deg);
-    visibility: visible;
-}
-
-100% {
-    opacity: 0;
-    visibility: hidden;
-    transform: rotate(360deg);
-}
-
-@keyframes run-spinner {
-
-    from {
+    0% {
         opacity: 1;
+        transform: rotate(0deg);
+        visibility: visible;
     }
 
-    to {
+    100% {
         opacity: 0;
-        position: absolute;
+        visibility: hidden;
+        transform: rotate(360deg);
     }
-}*/
+
+    @keyframes run-spinner {
+
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            position: absolute;
+        }
+    }*/
 @-webkit-keyframes loading {
   to {
     opacity: 0;
@@ -857,5 +944,21 @@ p {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes delais {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes delais {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
   }
 }/*# sourceMappingURL=style.css.map */

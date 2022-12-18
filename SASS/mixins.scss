@@ -2,3 +2,27 @@ $color-one: #9356DC;
 $color-two: #FF79DA;
 $color-three: #99E2D0;
 $padding: 20px;
+
+@mixin carte-info {
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid #f2f2f2;
+    padding: 6px;
+    margin: 25px;
+    box-shadow: 2px 4px 4px 2px lightgray;
+    color: #000000;
+}
+
+@mixin button {
+    max-width: 100%;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    box-shadow: 3px 2px 2px lightgrey;
+}
+
+@mixin shadow {
+    box-shadow: 3px 2px 2px lightgrey;
+}
