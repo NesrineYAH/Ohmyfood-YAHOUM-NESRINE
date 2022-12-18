@@ -714,7 +714,7 @@ p {
 .validation__box {
     display: flex;
     justify-content: flex-end;
-    align-self: flex-end;
+    /*align-self: flex-end;*/
     align-items: center;
     padding: 35px 15px 0px 15px;
     border-radius: 0 12px 12px 0;
@@ -736,6 +736,7 @@ p {
 
     }
 
+    /*
     .icone-chekmark {
         color: white;
         transform: rotateZ(-180deg);
@@ -752,7 +753,7 @@ p {
             padding-right: 20px;
         }
 
-    }
+    }*/
 }
 
 /*début de teste de Bloc-repas page à la française*/
@@ -760,23 +761,24 @@ p {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    min-width: 25%;
 }
 
 .validation__boxX {
     background-color: $color-three;
     color: #ffffff;
     width: 10%;
-    border-radius: 0 12px 12px 0;
-    padding: $padding;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 10px 10px 0;
+    padding: $padding;
+    border-radius: 0 12px 12px 0;
     transition: 0.5s;
     margin: -10px -80px -10px 10px;
 
-    i {
-
+    .icone-chekmark {
+        font-size: 28px;
+        font-weight: bold;
         transform: rotate(180deg);
         transition: 0.5s;
     }
@@ -787,7 +789,7 @@ p {
     border-radius: 12px;
     border: 2px solid #f2f2f2;
     box-shadow: 2px 4px 4px 2px lightgray;
-    border-radius: 0 12px 12px 0;
+    border-radius: 12px;
     opacity: 0;
     animation: delais 1s;
     animation-delay: 0.25s;
@@ -800,9 +802,7 @@ p {
         }
 
         .validation__boxX {
-            border-radius: 0 12px 12px 0;
-
-            i {
+            .icone-chekmark {
                 transform: rotate(0);
                 transition: 0.5s;
             }
@@ -821,7 +821,7 @@ p {
         .validation__boxX {
             margin: -10px -10px -10px 10px;
 
-            i {
+            .icone-chekmark {
                 transform: rotate(0);
                 transition: 0.5s;
             }
@@ -845,7 +845,7 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0 -60px 20px 0;
+    margin: 0 -90px 20px 0;
 }
 
 /*fin de teste*/
