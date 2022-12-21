@@ -153,7 +153,7 @@ h1 {
 }
 
 button {
-    max-width: 100%;
+    /* max-width: 100%;*/
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: #ffffff;
     border-radius: 50px;
@@ -194,7 +194,7 @@ button {
 
 .nomber {
     background-color: #9356dc;
-    color: white;
+    color: $color-white;
     width: 10px;
     height: 10px;
     padding: 2px 6px 10px 7px;
@@ -202,6 +202,13 @@ button {
     border-radius: 50px;
     text-align: center;
     font-size: 14px;
+    transform: rotate(0deg);
+    transition: 0.5s;
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
 }
 
 .icone-info {
@@ -254,9 +261,9 @@ button {
     -webkit-box-direction: normal;
     min-width: 45%;
     height: 280px;
-    border: 3px solid #ffffff;
+    border: 3px solid $color-white;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: $color-white;
     overflow: hidden;
 
 
@@ -334,105 +341,38 @@ button {
 .icone-coeur {
     font-size: 28px;
     margin-top: 10px;
+    cursor: pointer;
 
-    /*
-     &:hover {
-        transition: 0.3s ease-in-out;
-        animation: coeur 2.5s linear forwards;
-        opacity: 1;
-   * /
 
-/* .fas {
-        opacity: 1;
-        color: transparent;
-        background: linear-gradient(170deg, #ff79da, #9356dc);
-        background-clip: text;
-        -webkit-background-clip: text;
-        transform: translateX(-100%);
-        margin-right: 15px;
-
-        &:hover {
-            opacity: 0;
-            transition: 0.3s ease-in-out;
-            animation: coeur 2.5s linear forwards;
-            -webkit-text-fill-color: transparent;
-        }
-
-    }
-
-    .far {
-        background: linear-gradient(#9356DC, #FF79DA);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: black;
-        margin-right: -6px;
-
-    }
-
-}*/
-    .coeur-full {
-        color: #ffffff;
-
-    }
-
-    .coeur-empty {
-        color: #000000;
-    }
-
-    .icone-coeur:hover .coeur-empty {
-        color: #ffffff;
-        animation: coeur 2s linear infinite;
-    }
-
-    .icone-coeur:hover .coeur-full {
-        background: -webkit-linear-gradient($color-two, $color-one);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        position: relative;
-        transition: 0.5s;
-    }
 }
 
-/*.Nouveau::after {
-    content: "Nouveau";
-    width: 70px;
-    height: 20px;
-  padding: 10px;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    position: absolute;
-    left: 40%;
-    bottom: -35%;
+.coeur-full {
+    color: $color-white;
 
-    background: $color-three;
-    color: #0f9070;
 
-*/
-/*content: "Nouveau";
-    display: block;
-    height: 10px;
-    width: 50px;
-    border-radius: 4px;
-    font-size: 13px;
-    padding: 12px;
-    font-weight: 500;
-    color: #3a8266;
-    background-color: #99E2D0;
+}
+
+.coeur-empty {
+    color: #000000;
+}
+
+.icone-coeur:hover .coeur-empty {
+    color: $color-white;
+    animation: coeur 2s linear infinite;
+}
+
+.icone-coeur:hover .coeur-full {
+    color: linear-gradient($color-two, $color-one);
+    background: -webkit-linear-gradient($color-two, $color-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     position: relative;
-    left: 82%;
-    bottom: 145px;
-}*/
-
-
+    animation: coeur 2s linear infinite;
+    transition: 0.5s;
+}
 
 footer {
     background-color: #353535;
@@ -468,7 +408,7 @@ footer {
 }
 
 .lien-footer {
-    color: #ffffff;
+    color: $color-white;
     text-decoration: none;
     display: flex;
     min-width: 10%;
@@ -542,7 +482,7 @@ body {
 }
 
 .coeur-full-page {
-    color: #ffffff;
+    color: $color-white;
 
 }
 
@@ -551,8 +491,9 @@ body {
 }
 
 .icone-coeur:hover .coeur-empty-page {
-    color: #ffffff;
+    color: $color-white;
     animation: coeur 2s linear infinite;
+    opacity: 0;
 }
 
 .icone-coeur:hover .coeur-full-page {
@@ -564,24 +505,20 @@ body {
     -moz-text-fill-color: transparent;
     position: relative;
     transition: 0.5s;
-}
+    animation: coeur 2s linear infinite;
 
-h3 {
-    font-size: 16px;
-    margin-left: 20px;
-    font-weight: 500;
 }
 
 #page-restaurant {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    border: 3px solid #ffffff;
-    background-color: #ffffff;
+    border: 3px solid $color-white;
+    background-color: $color-white;
     border-radius: 30px 30px 0px 0px;
     position: relative;
     top: -50px;
-    background: color #f4f4f4;
+    background-color: #f6f6f6;
 }
 
 .carte-page {
@@ -639,11 +576,18 @@ h3 {
     margin-right: 10%;
 }
 
+h3 {
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
 .Bloc-repas {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     min-width: 32%;
+    row-gap: 10px;
 }
 
 .liste-menu {
@@ -652,7 +596,6 @@ h3 {
     justify-content: center;
     align-items: stretch;
     min-width: 30%;
-
     animation: slideup 5s forwards;
 
 }
@@ -663,11 +606,11 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-radius: 12px;
+    @include box;
+    /* border-radius: 12px;
     border: 2px solid #f2f2f2;
+    box-shadow: 2px 4px 4px 2px lightgray;*/
     margin: 10px;
-    box-shadow: 2px 4px 4px 2px lightgray;
-    color: #000000;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -675,19 +618,20 @@ h3 {
     animation: slideup 5s forwards;
     -webkit-animation: slideup 5s forwards;
     -moz-animation: slideup 5s forwards;
-}
 
 
-.liste-texte {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 
+    .liste-texte {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
 }
 
 p {
@@ -704,8 +648,8 @@ p {
     font-size: 14px;
     font-weight: 700;
     color: #2c2b2b;
-    align-self: flex-end;
     padding-bottom: 20px;
+    align-self: flex-end;
     align-items: stretch;
     white-space: nowrap;
 }
@@ -714,10 +658,10 @@ p {
 .validation__box {
     display: flex;
     justify-content: flex-end;
-    /*align-self: flex-end;*/
+    align-self: flex-end;
     align-items: center;
     padding: 35px 15px 0px 15px;
-    border-radius: 0 12px 12px 0;
+    border-radius: 0px 12px 12px 0px;
     background-color: $color-three;
     color: #ffffff;
     height: 100%;
@@ -761,18 +705,21 @@ p {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    min-width: 25%;
+    min-width: 32%;
 }
 
 .validation__boxX {
     background-color: $color-three;
-    color: #ffffff;
-    width: 10%;
+    color: $color-white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-self: center;
     align-items: center;
+    border-radius: 0 10px 10px 0px;
     padding: $padding;
-    border-radius: 0 12px 12px 0;
+    height: 100%;
+    width: 6%;
+    font-size: 20px;
     transition: 0.5s;
     margin: -10px -80px -10px 10px;
 
@@ -785,18 +732,22 @@ p {
 }
 
 .liste-repasX {
-    width: 100%;
-    border-radius: 12px;
-    border: 2px solid #f2f2f2;
-    box-shadow: 2px 4px 4px 2px lightgray;
-    border-radius: 12px;
+
+    min-width: 30%;
+    height: 68px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+    margin: 10px;
     opacity: 0;
     animation: delais 1s;
-    animation-delay: 0.25s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+    transform: scale(0);
 
     &:hover {
-        .liste-texteX {
+        .liste-detail {
             max-width: 180px;
             min-width: 180px;
         }
@@ -810,7 +761,7 @@ p {
     }
 }
 
-.text-checkX {
+.liste-texteX {
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -819,7 +770,7 @@ p {
 
     &:hover {
         .validation__boxX {
-            margin: -10px -10px -10px 10px;
+            margin: -10px 0px -10px 10px;
 
             .icone-chekmark {
                 transform: rotate(0);
@@ -829,13 +780,13 @@ p {
     }
 }
 
-.titre3 {
+.liste-texte-titre {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.pgh3 {
+.liste-texte-p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -844,8 +795,11 @@ p {
 .prix-menuX {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    margin: 0 -90px 20px 0;
+    align-items: stretch;
+    align-self: flex-end;
+    white-space: nowrap;
+    margin: 30px -70px 20px 0;
+
 }
 
 /*fin de teste*/
@@ -863,31 +817,7 @@ p {
 
 /***********Animation*******************/
 
-/*@keyframes red-spinner {
 
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
-        visibility: visible;
-    }
-
-    100% {
-        opacity: 0;
-        visibility: hidden;
-        transform: rotate(360deg);
-    }
-
-    @keyframes run-spinner {
-
-        from {
-            opacity: 1;
-        }
-
-        to {
-            opacity: 0;
-            position: absolute;
-        }
-    }*/
 
 @keyframes loading {
     to {
@@ -934,43 +864,9 @@ p {
     }
 }
 
-@keyframes coeur {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
 
-    35% {
-        transform: scale3d(1.4, 1.4, 1);
-    }
 
-    50% {
-        transform: scale3d(1.05, 1.05, 1);
-    }
 
-    65% {
-        transform: scale3d(1.2, 1.2, 1);
-    }
-
-    80% {
-        transform: scale3d(1.4, 1.4, 1);
-    }
-
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-/*@keyframes chekmark {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-
-    100% {
-        -webkit-transform: rotateX(90deg);
-        transform: rotateX(90deg);
-    }
-}*/
 @keyframes icone-rotate {
     0% {
         transform: rotateZ(-180deg);
@@ -994,6 +890,7 @@ p {
 }
 
 @keyframes delais {
+
     from {
         opacity: 0;
 
@@ -1001,6 +898,14 @@ p {
 
     to {
         opacity: 100;
+    }
+
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -1016,6 +921,8 @@ p {
 }
 
 @-moz-keyframes delais {
+
+
     from {
         opacity: 0;
 
@@ -1023,5 +930,54 @@ p {
 
     to {
         opacity: 100;
+    }
+}
+
+/*
+@keyframes coeur {
+
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 100;
+    }
+
+    0% {
+        transform: scale(0)
+        
+    }
+
+    100% {
+        transform: scale(1);
+       
+    }
+}*/
+
+@keyframes coeur {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    35% {
+        transform: scale3d(1.4, 1.4, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    65% {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+
+    80% {
+        transform: scale3d(1.4, 1.4, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
     }
 }
