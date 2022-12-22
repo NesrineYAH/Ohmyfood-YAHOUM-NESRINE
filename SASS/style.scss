@@ -413,7 +413,7 @@ footer {
 /**************** Mise en page -page resaturant-**********/
 body {
     max-width: 1500px;
-    font-family: "Roboto", "shrikhand"; 
+    font-family: "Roboto", "shrikhand";
 }
 
 .lien-retour {
@@ -467,6 +467,7 @@ body {
     top: -50px;
     background-color: #f6f6f6;
 }
+
 .carte-page {
     margin-top: 80px;
     border-top: 2px solid #c5c1c1;
@@ -479,6 +480,7 @@ body {
         object-fit: fill;
     }
 }
+
 .coeur-page {
     display: flex;
     margin-top: 45px;
@@ -514,11 +516,6 @@ body {
     animation: coeur 2s linear infinite;
 }
 
-
-
-
-
-
 #Titre-article {
 
     font-size: 22px;
@@ -541,9 +538,9 @@ body {
         width: 60px;
         height: 4px;
         background-color: $color-three;
-        position: relative;
-        left: -13%;
-        margin-top: 35px;
+        position: absolute;
+        left: 0;
+        bottom: -12px;
         z-index: 5;
     }
 }
@@ -557,7 +554,6 @@ body {
     align-items: center;
     flex-basis: auto;
     gap: 15px;
-   /* margin: 25px;*/
     margin-right: 3%;
     margin-left: 0%;
 
@@ -575,12 +571,13 @@ h3 {
     justify-content: space-around;
     row-gap: 10px;
     min-width: 32%;
+    overflow: hidden;
 }
 
 .liste-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     min-width: 32%;
     gap: 15px;
 }
@@ -589,7 +586,6 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  /*  align-content: stretch;*/
     min-width: 30%;
     height: 70px;
     border-radius: 12px;
@@ -623,7 +619,6 @@ h3 {
     flex-direction: row;
     overflow: hidden;
     justify-content: space-between;
-  /*  font-size: 14px;*/
     cursor: pointer;
 
     &:hover {
@@ -640,7 +635,7 @@ h3 {
 }
 
 .liste-detail {
-    min-width: 65%;
+    width: 65%;
 }
 
 .liste-texte-titre {
@@ -679,13 +674,14 @@ h3 {
 }
 
 .prix-menu {
-    width: 10%;
+    max-width: 10%;
+    min-width: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     align-self: center;
     font-weight: 400;
-    margin: -100px;
+
 }
 
 .commande {

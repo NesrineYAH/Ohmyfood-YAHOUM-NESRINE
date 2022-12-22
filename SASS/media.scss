@@ -505,10 +505,9 @@ $padding: 20px;
         align-items: center;
         align-self: center;
         gap: 20px;
-        /*margin-left: -6%;
-        margin-right: 5%;*/
-        margin-right: 3%;
-        margin-left: -3%;
+
+        /* margin-right: 3%;
+        margin-left: -3%;*/
     }
 
     .Bloc-repas {
@@ -532,9 +531,9 @@ $padding: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        max-width: 100%;
         height: 70px;
-        border-radius: 10px;
+        border-radius: 12px;
         border: 1px solid #f2f2f2;
         box-shadow: 0px 4px 4px 2px lightgrey;
         margin: 10px;
@@ -560,8 +559,8 @@ $padding: 20px;
     }
 
     .liste-detail {
-        min-width: 70%;
-      
+        min-width: 60%;
+
     }
 
     .liste-texte {
@@ -606,6 +605,7 @@ $padding: 20px;
         align-self: center;
         white-space: nowrap;
         font-weight: 400;
+        margin-left: -15px;
     }
 
     .validation__box {
@@ -673,7 +673,6 @@ $padding: 20px;
             cursor: pointer;
         }
     }
-
 }
 
 .validation__box {
@@ -690,10 +689,7 @@ $padding: 20px;
         transition: 0.5s;
     }
 }
-/*
-#container{
 
-}*/
 
 /*            Animation             */
 
