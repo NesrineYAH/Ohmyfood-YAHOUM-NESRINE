@@ -2,7 +2,7 @@
 
 Le troisième projet du parcours "Développeur web" chez OpenClassroom qui est pour but d'intégrer une maquette et puis dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
-          ./images/capture_maquette_omf.png
+![screenshot du site](./images/capture_maquette_omf.png);
 
 Vous pouvez retrouver le [brief complet ici] https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf
 
