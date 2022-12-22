@@ -1,19 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
 
-$color-one: #9356DC;
-$color-two: #FF79DA;
-$color-three: #99E2D0;
-$Padding: 20px;
-
-
 @media (max-width:768px) {
     body {
         max-width: 768 px;
         font-family: "Roboto", "shrikhand";
-        opacity: 10;
-        animation: run-spinner 3s;
-
+        opacity: 100;
+        animation: loading 3s;
     }
 
     header {
@@ -39,7 +32,7 @@ $Padding: 20px;
         justify-content: center;
         border-top: 2px solid #c5c1c1;
         background-color: #e4e2e1;
-        padding-left: $Padding;
+        padding-left: 20px;
         margin: 80px 0 10px 0;
     }
 
@@ -162,7 +155,6 @@ $Padding: 20px;
     }
 
     button {
-        /* max-width: 100%;*/
         background: linear-gradient(170deg, #ff79da, #9356dc);
         color: #ffffff;
         border-radius: 50px;
@@ -337,60 +329,6 @@ $Padding: 20px;
         font-size: 24px;
         margin-right: 5px;
     }
-
-    /*
-        &:hover {
-            transition: opacity 1 0.3s ease-in-out;
-            animation: coeur 2.5s linear forwards;
-            opacity: 1;
-        }
-
-        .fas {
-            opacity: 0;
-            color: transparent;
-            background: linear-gradient(170deg, #ff79da, #9356dc);
-            background-clip: text;
-            -webkit-background-clip: text;
-            z-index: -1;
-
-        }
-
-        .far {
-            background: linear-gradient(#9356DC, #FF79DA);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: black;
-            overflow: hidden;
-            z-index: 1;
-        }
-    }*/
-    /*.Nouveau {
-
-        border-radius: 4px;
-        font-size: 13px;
-        padding: 12px;
-        font-weight: 500;
-        color: #3a8266;
-        background-color: #99E2D0;
-        position: relative;
-        left: 82%;
-        bottom: 145px;
-    }*/
-
-    /* .Nouveau::after {
-
-        display: flex;
-        flex-direction: row;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: flex-end;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        *background: $color-three;
-    }*/
 
     .coeur-full {
         color: #ffffff;
@@ -589,6 +527,7 @@ $Padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        row-gap: 10px;
         width: 100%;
     }
 
@@ -602,95 +541,115 @@ $Padding: 20px;
     }
 
     .liste-repas {
-        width: 100%;
-        height: 70px;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-       @include box;
+        width: 100%;
+        height: 70px;
+        /*  @include box;*/
+        border-radius: 10px;
+        border: 1px solid #f2f2f2;
+        box-shadow: 0px 4px 4px 2px lightgrey;
         margin: 10px;
+        opacity: 0;
         overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        box-shadow: 2px 4px 4px 2px lightgray;
+        /*  white-space: nowrap;
+        text-overflow: ellipsis;*/
         color: #000000;
-        -webkit-animation: slideup 5s forwards;
-        -moz-animation: slideup 5s forwards;
-        animation: slideup 5s forwards;
+        animation-delay: 0.6s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+        transform: scale(0);
+
+        &:hover {
+            .liste-detail {
+                max-width: 100px;
+                min-width: 100px;
+            }
+
+        }
+
+        .validation__box {
+            .icone-chekmark {
+                transform: rotate(0);
+                transition: 0.5s;
+            }
+        }
     }
 
     .liste-texte {
         width: 100%;
         align-items: flex-start;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
+        cursor: pointer;
         align-items: stretch;
-        margin: 0 -10px 0 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
 
-        p {
-            margin-top: -15px;
-            white-space: nowrap;
-            margin-left: 20px;
+        /* overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;*/
+
+
+        &:hover {
+            .validation__box {
+                margin: -20px 0px -10px 10px;
+
+                .icone-chekmark {
+                    transform: rotate(0);
+                    transition: 0.5s;
+                }
+            }
         }
+    }
+
+    .liste-texte-titre {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .liste-texte-p {
+        margin-top: -10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .prix-menu {
         display: flex;
-        align-items: flex-end;
-        position: absolute;
-        right: 30px;
-        margin-top: 30px;
+        justify-content: flex-end;
+        align-items: stretch;
+        align-self: flex-end;
+        white-space: nowrap;
         font-weight: 100;
     }
 
+
+
     .validation__box {
+        background-color: $color-three;
+        color: $color-white;
         display: flex;
         justify-content: flex-end;
-        align-self: flex-end;
+        align-self: center;
         align-items: center;
-        padding: 15px 15px 0 15px;
-        border-radius: 0 12px 12px 0;
-        background-color: $color-three;
-        color: #ffffff;
+        border-radius: 0 10px 10px 0px;
+        padding: $padding;
         height: 100%;
-        width: 10%;
+        width: 6%;
         font-size: 20px;
-        opacity: 0;
-        margin-left: 10px;
-
-        &:hover {
-
-            opacity: 1;
-            margin-left: 20px;
-            transform: translateX(20%);
-
-        }
+        transition: 0.5s;
+        margin: -10px -80px -10px 10px;
 
         .icone-chekmark {
-            color: white;
-            transform: rotateZ(-180deg);
             font-size: 28px;
             font-weight: bold;
-            opacity: 1;
-
-            &:hover {
-                animation: icone-rotate 1s forwards;
-                opacity: 1;
-                font-size: 30px;
-                font-weight: bold;
-                z-index: 100
-            }
-
-            /* &:hover {
-        transform: translateX(-30%);
-        transform: scale(1.1);
-        z-index: 100
-    }*/
+            transform: rotate(180deg);
+            transition: 0.5s;
         }
     }
+
 
     .commande {
         display: flex;

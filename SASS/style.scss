@@ -6,8 +6,9 @@
 body {
     max-width: 1500px;
     font-family: "Roboto", "shrikhand";
-    opacity: 10;
+    opacity: 100;
     animation: run-spinner 3s;
+    /* animation: loading 3s;*/
 }
 
 header {
@@ -109,7 +110,7 @@ h1 {
     opacity: 95%;
     animation: loading 1s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-delay: 3s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +121,6 @@ h1 {
     height: 20px;
     border: 5px solid $color-one;
     position: absolute;
-
     border-radius: 10px;
 
     .textload {
@@ -153,7 +153,6 @@ h1 {
 }
 
 button {
-    /* max-width: 100%;*/
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: #ffffff;
     border-radius: 50px;
@@ -241,7 +240,6 @@ button {
     padding-top: 50px;
 
 }
-
 #conteneur-Resto {
     width: 100%;
     display: flex;
@@ -266,22 +264,13 @@ button {
     background-color: $color-white;
     overflow: hidden;
 
-
-    /*&:hover {
-        transform: scale(1.02);
-        box-shadow: 1px 1px 1px 1px $color-two;
-        transition: 0.5s;
-    }*/
-
     img {
         width: 100%;
         height: 200px;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
-
 }
-
 
 .Nouveau1 {
 
@@ -422,16 +411,17 @@ footer {
     bottom: -35%;
 
 }
-
+/*
 .contact {
     margin-top: 20px;
     margin-right: 5px;
-}
+}*/
 
 /**************** Mise en page -page resaturant-**********/
 body {
     max-width: 1500px;
     font-family: "Roboto", "shrikhand";
+    opacity: 100;
 }
 
 .lien-retour {
@@ -572,9 +562,10 @@ body {
     flex-basis: auto;
     gap: 15px;
     margin: 25px;
-    margin-left: 0%;
-    margin-right: 10%;
+
+
 }
+
 
 h3 {
     font-size: 16px;
@@ -582,140 +573,103 @@ h3 {
     font-weight: 500;
 }
 
+
 .Bloc-repas {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
-    min-width: 32%;
+    justify-content: space-around;
     row-gap: 10px;
+    min-width: 32%;
 }
 
 .liste-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
-    min-width: 30%;
-    animation: slideup 5s forwards;
+    /* align-items: stretch;*/
+    min-width: 32%;
+    gap: 15px;
+    /* animation: slideup 5s forwards;*/
 
 }
 
 .liste-repas {
-    min-width: 35%;
-    height: 72px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    @include box;
-    /* border-radius: 12px;
-    border: 2px solid #f2f2f2;
-    box-shadow: 2px 4px 4px 2px lightgray;*/
-    margin: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    padding: 0;
-    animation: slideup 5s forwards;
-    -webkit-animation: slideup 5s forwards;
-    -moz-animation: slideup 5s forwards;
-
-
-
-    .liste-texte {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-    }
-}
-
-p {
-    margin-top: -15px;
-    margin-left: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 300;
-}
-
-
-.prix-menu {
-    font-size: 14px;
-    font-weight: 700;
-    color: #2c2b2b;
-    padding-bottom: 20px;
-    align-self: flex-end;
+    justify-content: space-between;
     align-items: stretch;
-    white-space: nowrap;
-}
-
-
-.validation__box {
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    align-items: center;
-    padding: 35px 15px 0px 15px;
-    border-radius: 0px 12px 12px 0px;
-    background-color: $color-three;
-    color: #ffffff;
-    height: 100%;
-    width: 12%;
-    font-size: 20px;
-    opacity: 0;
-    margin-left: 10px;
+    min-width: 30%;
+    height: 70px;
+    border-radius: 12px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 4px 4px 2px lightgrey;
+    margin: 10px;
+    opacity: 1;
+    animation: delais 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+    transform: scale(0);
 
     &:hover {
-        width: 12%;
-        padding: 35px 15px 0px 20px;
-        align-items: center;
-        opacity: 1;
-        margin-left: 50px;
-        transform: translateX(20%);
-
-    }
-
-    /*
-    .icone-chekmark {
-        color: white;
-        transform: rotateZ(-180deg);
-        font-size: 28px;
-        font-weight: bold;
-        opacity: 1;
-
-        &:hover {
-            animation: icone-rotate 1s forwards;
-            opacity: 1;
-            font-size: 30px;
-            font-weight: bold;
-            z-index: -100;
-            padding-right: 20px;
+        .liste-detail {
+            max-width: 200px;
+            min-width: 200px;
         }
 
-    }*/
+        .validation__box {
+            .icone-chekmark {
+                transform: rotate(0);
+                transition: 0.5s;
+            }
+        }
+    }
 }
 
-/*début de teste de Bloc-repas page à la française*/
-.Bloc-repasX {
+.liste-texte {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    min-width: 32%;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: stretch;
+    cursor: pointer;
+
+    &:hover {
+        .validation__box {
+            margin: -10px 0px -10px 10px;
+
+
+            .icone-chekmark {
+                transform: rotate(0);
+                transition: 0.5s;
+            }
+        }
+    }
 }
 
-.validation__boxX {
+
+.liste-texte-titre {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.liste-texte-p {
+    margin: -15px 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.validation__box {
     background-color: $color-three;
     color: $color-white;
     display: flex;
     justify-content: flex-end;
     align-self: center;
     align-items: center;
-    border-radius: 0 10px 10px 0px;
+    border-radius: 0 12px 12px 0px;
     padding: $padding;
     height: 100%;
     width: 6%;
@@ -731,78 +685,15 @@ p {
     }
 }
 
-.liste-repasX {
-
-    min-width: 30%;
-    height: 68px;
-    border-radius: 10px;
-    border: 1px solid #f2f2f2;
-    box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
-    margin: 10px;
-    opacity: 0;
-    animation: delais 1s;
-    animation-delay: 0.6s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
-    transform: scale(0);
-
-    &:hover {
-        .liste-detail {
-            max-width: 180px;
-            min-width: 180px;
-        }
-
-        .validation__boxX {
-            .icone-chekmark {
-                transform: rotate(0);
-                transition: 0.5s;
-            }
-        }
-    }
-}
-
-.liste-texteX {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: space-between;
-    cursor: pointer;
-
-    &:hover {
-        .validation__boxX {
-            margin: -10px 0px -10px 10px;
-
-            .icone-chekmark {
-                transform: rotate(0);
-                transition: 0.5s;
-            }
-        }
-    }
-}
-
-.liste-texte-titre {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.liste-texte-p {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.prix-menuX {
+.prix-menu {
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
     align-self: flex-end;
     white-space: nowrap;
     margin: 30px -70px 20px 0;
-
 }
 
-/*fin de teste*/
 .commande {
     display: flex;
     justify-content: center;

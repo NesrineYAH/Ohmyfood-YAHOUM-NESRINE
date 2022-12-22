@@ -1,12 +1,12 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /*box-shadow: 1px 2px 2px 1px lightgrey;*/
 body {
   max-width: 1500px;
   font-family: "Roboto", "shrikhand";
-  opacity: 10;
+  opacity: 100;
   -webkit-animation: run-spinner 3s;
           animation: run-spinner 3s;
+  /* animation: loading 3s;*/
 }
 
 header {
@@ -110,8 +110,8 @@ h1 {
           animation: loading 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,6 @@ h1 {
 }
 
 button {
-  /* max-width: 100%;*/
   background: linear-gradient(170deg, #ff79da, #9356dc);
   color: #ffffff;
   border-radius: 50px;
@@ -255,11 +254,6 @@ button {
   border-radius: 20px;
   background-color: #ffffff;
   overflow: hidden;
-  /*&:hover {
-      transform: scale(1.02);
-      box-shadow: 1px 1px 1px 1px $color-two;
-      transition: 0.5s;
-  }*/
 }
 .carte-restaurant img {
   width: 100%;
@@ -401,15 +395,16 @@ footer {
   bottom: -35%;
 }
 
+/*
 .contact {
-  margin-top: 20px;
-  margin-right: 5px;
-}
-
+    margin-top: 20px;
+    margin-right: 5px;
+}*/
 /**************** Mise en page -page resaturant-**********/
 body {
   max-width: 1500px;
   font-family: "Roboto", "shrikhand";
+  opacity: 100;
 }
 
 .lien-retour {
@@ -545,8 +540,6 @@ body {
   flex-basis: auto;
   gap: 15px;
   margin: 25px;
-  margin-left: 0%;
-  margin-right: 10%;
 }
 
 h3 {
@@ -558,152 +551,33 @@ h3 {
 .Bloc-repas {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
-  min-width: 32%;
+  justify-content: space-around;
   row-gap: 10px;
+  min-width: 32%;
 }
 
 .liste-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
-  min-width: 30%;
-  -webkit-animation: slideup 5s forwards;
-          animation: slideup 5s forwards;
+  /* align-items: stretch;*/
+  min-width: 32%;
+  gap: 15px;
+  /* animation: slideup 5s forwards;*/
 }
 
 .liste-repas {
-  min-width: 35%;
-  height: 72px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border-radius: 12px;
-  border: 1px solid #f2f2f2;
-  box-shadow: 6px 6px 6px 6px lightgrey;
-  /* border-radius: 12px;
-  border: 2px solid #f2f2f2;
-  box-shadow: 2px 4px 4px 2px lightgray;*/
-  margin: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding: 0;
-  animation: slideup 5s forwards;
-  -webkit-animation: slideup 5s forwards;
-  -moz-animation: slideup 5s forwards;
-}
-.liste-repas .liste-texte {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-p {
-  margin-top: -15px;
-  margin-left: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: 300;
-}
-
-.prix-menu {
-  font-size: 14px;
-  font-weight: 700;
-  color: #2c2b2b;
-  padding-bottom: 20px;
-  align-self: flex-end;
-  align-items: stretch;
-  white-space: nowrap;
-}
-
-.validation__box {
-  display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
-  align-items: center;
-  padding: 35px 15px 0px 15px;
-  border-radius: 0px 12px 12px 0px;
-  background-color: #99E2D0;
-  color: #ffffff;
-  height: 100%;
-  width: 12%;
-  font-size: 20px;
-  opacity: 0;
-  margin-left: 10px;
-  /*
-  .icone-chekmark {
-      color: white;
-      transform: rotateZ(-180deg);
-      font-size: 28px;
-      font-weight: bold;
-      opacity: 1;
-
-      &:hover {
-          animation: icone-rotate 1s forwards;
-          opacity: 1;
-          font-size: 30px;
-          font-weight: bold;
-          z-index: -100;
-          padding-right: 20px;
-      }
-
-  }*/
-}
-.validation__box:hover {
-  width: 12%;
-  padding: 35px 15px 0px 20px;
-  align-items: center;
-  opacity: 1;
-  margin-left: 50px;
-  transform: translateX(20%);
-}
-
-/*début de teste de Bloc-repas page à la française*/
-.Bloc-repasX {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  min-width: 32%;
-}
-
-.validation__boxX {
-  background-color: #99E2D0;
-  color: #ffffff;
-  display: flex;
-  justify-content: flex-end;
-  align-self: center;
-  align-items: center;
-  border-radius: 0 10px 10px 0px;
-  padding: 20px;
-  height: 100%;
-  width: 6%;
-  font-size: 20px;
-  transition: 0.5s;
-  margin: -10px -80px -10px 10px;
-}
-.validation__boxX .icone-chekmark {
-  font-size: 28px;
-  font-weight: bold;
-  transform: rotate(180deg);
-  transition: 0.5s;
-}
-
-.liste-repasX {
   min-width: 30%;
-  height: 68px;
-  border-radius: 10px;
+  height: 70px;
+  border-radius: 12px;
   border: 1px solid #f2f2f2;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 2px lightgrey;
   margin: 10px;
-  opacity: 0;
+  opacity: 1;
   -webkit-animation: delais 1s;
           animation: delais 1s;
   -webkit-animation-delay: 0.6s;
@@ -714,26 +588,28 @@ p {
           animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   transform: scale(0);
 }
-.liste-repasX:hover .liste-detail {
-  max-width: 180px;
-  min-width: 180px;
+.liste-repas:hover .liste-detail {
+  max-width: 200px;
+  min-width: 200px;
 }
-.liste-repasX:hover .validation__boxX .icone-chekmark {
+.liste-repas:hover .validation__box .icone-chekmark {
   transform: rotate(0);
   transition: 0.5s;
 }
 
-.liste-texteX {
+.liste-texte {
+  width: 100%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   justify-content: space-between;
+  align-items: stretch;
   cursor: pointer;
 }
-.liste-texteX:hover .validation__boxX {
+.liste-texte:hover .validation__box {
   margin: -10px 0px -10px 10px;
 }
-.liste-texteX:hover .validation__boxX .icone-chekmark {
+.liste-texte:hover .validation__box .icone-chekmark {
   transform: rotate(0);
   transition: 0.5s;
 }
@@ -745,12 +621,35 @@ p {
 }
 
 .liste-texte-p {
+  margin: -15px 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.prix-menuX {
+.validation__box {
+  background-color: #99E2D0;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  align-items: center;
+  border-radius: 0 12px 12px 0px;
+  padding: 20px;
+  height: 100%;
+  width: 6%;
+  font-size: 20px;
+  transition: 0.5s;
+  margin: -10px -80px -10px 10px;
+}
+.validation__box .icone-chekmark {
+  font-size: 28px;
+  font-weight: bold;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.prix-menu {
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
@@ -759,7 +658,6 @@ p {
   margin: 30px -70px 20px 0;
 }
 
-/*fin de teste*/
 .commande {
   display: flex;
   justify-content: center;
