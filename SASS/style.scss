@@ -7,7 +7,7 @@ body {
     max-width: 1500px;
     font-family: "Roboto", "shrikhand";
     opacity: 100;
-     animation: loading 3s;
+    animation: loading 3s;
 }
 
 header {
@@ -133,6 +133,10 @@ button {
     border: none;
     padding: 15px 20px 15px 20px;
     box-shadow: 3px 2px 2px lightgrey;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 #Fonctionnement {
