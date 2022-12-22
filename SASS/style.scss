@@ -7,8 +7,7 @@ body {
     max-width: 1500px;
     font-family: "Roboto", "shrikhand";
     opacity: 100;
-    animation: run-spinner 3s;
-    /* animation: loading 3s;*/
+     animation: loading 3s;
 }
 
 header {
@@ -75,31 +74,6 @@ h1 {
     justify-content: center;
 }
 
-/*
-.loadspinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    animation: run-spinner 1s forwards;
-    animation-delay: 2.5s;
-    animation-fill-mode: both;
-}
-
-.spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid $color-three;
-    border-top: 7px solid $color-one;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    left: 44%;
-    top: 250px;
-    animation: red-spinner 3s linear infinite;
-}*/
 .loadingscreen {
     position: fixed;
     top: 0;
@@ -240,6 +214,7 @@ button {
     padding-top: 50px;
 
 }
+
 #conteneur-Resto {
     width: 100%;
     display: flex;
@@ -278,6 +253,7 @@ button {
     height: 20px;
     color: #3b8468;
     background-color: #a9e0d1;
+    text-align: center;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
@@ -286,6 +262,7 @@ button {
     margin-top: 20px;
     z-index: 0;
     font-size: 15px;
+    animation: opacity 1500ms linear alternate infinite both;
 }
 
 .Nouveau2 {
@@ -294,6 +271,7 @@ button {
     height: 20px;
     color: #3b8468;
     background-color: #a9e0d1;
+    text-align: center;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
@@ -302,6 +280,7 @@ button {
     margin-top: 20px;
     z-index: 0;
     font-size: 15px;
+    animation: opacity 1500ms linear alternate infinite both;
 }
 
 .detail-carte-restaurant {
@@ -331,14 +310,11 @@ button {
     font-size: 28px;
     margin-top: 10px;
     cursor: pointer;
-
-
 }
 
 .coeur-full {
     color: $color-white;
-
-
+    z-index: 2;
 }
 
 .coeur-empty {
@@ -349,6 +325,21 @@ button {
     color: $color-white;
     animation: coeur 2s linear infinite;
 }
+
+.icone-coeur:hover .coeur-full {
+    color: linear-gradient($color-two, $color-one);
+    background: -webkit-linear-gradient($color-two, $color-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    animation: coeur 2s linear infinite;
+    transition: 0.5s;
+    z-index: 2;
+}
+
 
 .icone-coeur:hover .coeur-full {
     color: linear-gradient($color-two, $color-one);
@@ -401,16 +392,14 @@ footer {
     text-decoration: none;
     display: flex;
     min-width: 10%;
-
-
 }
 
 .icone-footer {
     position: relative;
     left: -110%;
     bottom: -35%;
-
 }
+
 /*
 .contact {
     margin-top: 20px;
@@ -443,7 +432,6 @@ body {
     top: 1%;
     margin-bottom: 50px;
     transform: translateX(40%);
-
 }
 
 #Titre-de-page {
@@ -480,13 +468,14 @@ body {
     color: #000000;
 }
 
-.icone-coeur:hover .coeur-empty-page {
+.coeur-page:hover .coeur-empty-page {
     color: $color-white;
     animation: coeur 2s linear infinite;
-    opacity: 0;
+
 }
 
-.icone-coeur:hover .coeur-full-page {
+.coeur-page:hover .coeur-full-page {
+    color: linear-gradient($color-two, $color-one);
     background: -webkit-linear-gradient($color-two, $color-one);
     background-clip: text;
     -webkit-background-clip: text;
@@ -496,8 +485,8 @@ body {
     position: relative;
     transition: 0.5s;
     animation: coeur 2s linear infinite;
-
 }
+
 
 #page-restaurant {
     display: flex;
@@ -505,21 +494,22 @@ body {
     max-width: 100%;
     border: 3px solid $color-white;
     background-color: $color-white;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
     position: relative;
     top: -50px;
     background-color: #f6f6f6;
 }
 
 .carte-page {
-    margin-top: 120px;
+    margin-top: 80px;
     border-top: 2px solid #c5c1c1;
+    height: 450px;
 
     img {
         width: 100%;
-        height: 350px;
-        -o-object-fit: cover;
-        object-fit: cover;
+        height: 450px;
+        -o-object-fit: fill;
+        object-fit: fill;
     }
 }
 
@@ -536,17 +526,17 @@ body {
     color: #353535;
     font-weight: normal;
     position: relative;
-    left: 10%;
-
+    left: 4%;
+    animation: delais 1s linear forwards;
 
     &::after {
         content: "";
         display: block;
-        width: 80px;
+        width: 60px;
         height: 4px;
         background-color: $color-three;
         position: relative;
-        left: -16%;
+        left: -13%;
         margin-top: 35px;
         z-index: 5;
     }
@@ -563,16 +553,13 @@ body {
     gap: 15px;
     margin: 25px;
 
-
 }
-
 
 h3 {
     font-size: 16px;
     margin-left: 20px;
     font-weight: 500;
 }
-
 
 .Bloc-repas {
     display: flex;
@@ -596,15 +583,14 @@ h3 {
 .liste-repas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: flex-end;
+    align-content: stretch;
     min-width: 30%;
     height: 70px;
     border-radius: 12px;
     border: 1px solid #f2f2f2;
     box-shadow: 0px 4px 4px 2px lightgrey;
     margin: 10px;
-    opacity: 1;
     animation: delais 1s;
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
@@ -613,8 +599,8 @@ h3 {
 
     &:hover {
         .liste-detail {
-            max-width: 200px;
-            min-width: 200px;
+            max-width: 40%;
+            min-width: 40%;
         }
 
         .validation__box {
@@ -632,7 +618,7 @@ h3 {
     flex-direction: row;
     overflow: hidden;
     justify-content: space-between;
-    align-items: stretch;
+
     cursor: pointer;
 
     &:hover {
@@ -648,6 +634,9 @@ h3 {
     }
 }
 
+.liste-detail {
+    min-width: 70%;
+}
 
 .liste-texte-titre {
     white-space: nowrap;
@@ -657,6 +646,7 @@ h3 {
 
 .liste-texte-p {
     margin: -15px 15px;
+    font-weight: 200;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -666,16 +656,15 @@ h3 {
     background-color: $color-three;
     color: $color-white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-self: center;
     align-items: center;
     border-radius: 0 12px 12px 0px;
-    padding: $padding;
     height: 100%;
-    width: 6%;
+    width: 15%;
     font-size: 20px;
     transition: 0.5s;
-    margin: -10px -80px -10px 10px;
+    margin: -10px -70px -10px 0px;
 
     .icone-chekmark {
         font-size: 28px;
@@ -686,12 +675,13 @@ h3 {
 }
 
 .prix-menu {
+    width: 10%;
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
-    align-self: flex-end;
-    white-space: nowrap;
-    margin: 30px -70px 20px 0;
+    align-items: flex-end;
+    align-self: center;
+    font-weight: 400;
+    margin: -100px;
 }
 
 .commande {
@@ -758,13 +748,13 @@ h3 {
 
 
 
-@keyframes icone-rotate {
+@keyframes opacity {
     0% {
-        transform: rotateZ(-180deg);
+        opacity: 0;
     }
 
     100% {
-        transform: rotateZ(0deg);
+        opacity: 100%;
     }
 }
 

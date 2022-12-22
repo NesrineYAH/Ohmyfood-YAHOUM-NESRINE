@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
+$color-one: #9356DC;
+$color-two: #FF79DA;
+$color-three: #99E2D0;
+$color-white: #ffffff;
+$padding: 20px;
 
 @media (max-width:768px) {
     body {
@@ -361,7 +366,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: $Padding +40px;
+        padding-left: 60px;
     }
 
     .titre-footer {
@@ -552,11 +557,6 @@
         border: 1px solid #f2f2f2;
         box-shadow: 0px 4px 4px 2px lightgrey;
         margin: 10px;
-        opacity: 0;
-        overflow: hidden;
-        /*  white-space: nowrap;
-        text-overflow: ellipsis;*/
-        color: #000000;
         animation-delay: 0.6s;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
@@ -564,8 +564,8 @@
 
         &:hover {
             .liste-detail {
-                max-width: 100px;
-                min-width: 100px;
+                max-width: 30%;
+                min-width: 30%;
             }
 
         }
@@ -578,13 +578,18 @@
         }
     }
 
+    .liste-detail {
+        min-width: 70%;
+        /*transform-origin: left;*/
+    }
+
     .liste-texte {
         width: 100%;
         align-items: flex-start;
         flex-direction: row;
         justify-content: space-between;
         cursor: pointer;
-        align-items: stretch;
+
 
         &:hover {
             .validation__box {
@@ -606,31 +611,32 @@
 
     .liste-texte-p {
         margin-top: -10px;
+        font-weight: 200;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
 
     .prix-menu {
+        width: 10%;
         display: flex;
         justify-content: flex-end;
-        align-items: stretch;
-        align-self: flex-end;
+        align-items: flex-end;
+        align-self: center;
         white-space: nowrap;
-        font-weight: 100;
+        font-weight: 400;
     }
 
     .validation__box {
         background-color: $color-three;
         color: $color-white;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-self: center;
         align-items: center;
-        border-radius: 0 10px 10px 0px;
-        padding: $padding;
+        border-radius: 0 12px 12px 0px;
         height: 100%;
-        width: 6%;
+        width: 15%;
         font-size: 20px;
         transition: 0.5s;
         margin: -45px -80px -10px 10px;
@@ -649,7 +655,7 @@
         display: flex;
         justify-content: center;
         padding: 20px 40px 20px 40px;
-        @include button;
+
 
         &:hover {
             transform: scale(1.1);
@@ -676,7 +682,7 @@
         border: 2px solid #f2f2f2;
         padding: 6px;
         margin: 25px;
-        @include shadow;
+        box-shadow: 0px 4px 4px 2px lightgrey;
         color: #000000;
 
         &:hover {
@@ -687,4 +693,52 @@
         }
     }
 
+}
+
+
+/*            Animation             */
+
+
+@keyframes delais {
+
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 100;
+    }
+
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes delais {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@-moz-keyframes delais {
+
+
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 100;
+    }
 }
