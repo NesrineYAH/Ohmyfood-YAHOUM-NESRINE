@@ -1,8 +1,8 @@
 # Ohmyfood-YAHOUM-NESRINE
 
-Le troisième projet du parcours "Développeur web" chez OpenClassroom qui est pour but d'intégrer une maquette et puis dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
+Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !
 
-![screenshot du site](./images/capture_maquette_omf.png);
+Le troisième projet du parcours "Développeur web" chez OpenClassroom qui est pour but d'intégrer une maquette et puis dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass.
 
 Vous pouvez retrouver le [brief complet ici] https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf
 
@@ -85,3 +85,6 @@ Sinon, clonez le projet
 ```terminal
 git clone https://github.com/NesrineYAH/Ohmyfood-YAHOUM-NESRINE.git
 ```
+
+[def]: ./imges/capture_maquette_omf.png
+[def2]: ./images/capture_maquette_omf.png

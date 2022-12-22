@@ -586,14 +586,9 @@
         cursor: pointer;
         align-items: stretch;
 
-        /* overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;*/
-
-
         &:hover {
             .validation__box {
-                margin: -20px 0px -10px 10px;
+                margin: -10px 0px -10px 10px;
 
                 .icone-chekmark {
                     transform: rotate(0);
@@ -625,8 +620,6 @@
         font-weight: 100;
     }
 
-
-
     .validation__box {
         background-color: $color-three;
         color: $color-white;
@@ -640,15 +633,16 @@
         width: 6%;
         font-size: 20px;
         transition: 0.5s;
-        margin: -10px -80px -10px 10px;
-
-        .icone-chekmark {
-            font-size: 28px;
-            font-weight: bold;
-            transform: rotate(180deg);
-            transition: 0.5s;
-        }
+        margin: -45px -80px -10px 10px;
     }
+
+    .icone-chekmark {
+        font-size: 28px;
+        font-weight: bold;
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+
 
 
     .commande {
@@ -682,7 +676,7 @@
         border: 2px solid #f2f2f2;
         padding: 6px;
         margin: 25px;
-        box-shadow: 2px 4px 4px 2px lightgray;
+        @include shadow;
         color: #000000;
 
         &:hover {
