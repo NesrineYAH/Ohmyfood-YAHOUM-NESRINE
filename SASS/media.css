@@ -69,11 +69,12 @@
   .loadingscreen {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0%;
+    margin-right: 20%;
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 95%;
+    opacity: 97%;
     -webkit-animation: loading 1s;
             animation: loading 1s;
     -webkit-animation-fill-mode: both;
@@ -90,6 +91,7 @@
     border: 5px solid #9356DC;
     position: absolute;
     border-radius: 10px;
+    margin-right: 120px;
   }
   .loading .textload {
     font-family: "Shrikhand", cursive;
@@ -326,7 +328,14 @@
   }
   .icone-footer {
     position: relative;
-    left: -63%;
+    left: -78%;
+    bottom: 3%;
+    margin-top: 25px;
+    width: 7%;
+  }
+  .icone-footer2 {
+    position: relative;
+    left: -65%;
     bottom: 3%;
     margin-top: 25px;
     width: 7%;
@@ -494,7 +503,7 @@
     overflow: hidden;
   }
   .liste-texte-p {
-    margin-top: -10px;
+    margin-top: -15px;
     font-weight: 200;
     white-space: nowrap;
     text-overflow: ellipsis;

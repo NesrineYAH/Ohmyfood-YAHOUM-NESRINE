@@ -79,7 +79,7 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: white;
-  opacity: 95%;
+  opacity: 97%;
   -webkit-animation: loading 1s;
           animation: loading 1s;
   -webkit-animation-fill-mode: both;
@@ -100,7 +100,7 @@ h1 {
 }
 .loading .textload {
   font-family: "Shrikhand", cursive;
-  margin-left: 15%;
+  margin-left: 10%;
   padding-top: 25px;
   position: absolute;
   font-size: 20px;
@@ -563,7 +563,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 32%;
+  min-width: 30%;
   gap: 15px;
 }
 
@@ -773,7 +773,8 @@ h3 {
         transform: scale(1);
 
     }
-}*/
+}
+*/
 @-webkit-keyframes coeur {
   0% {
     transform: scale3d(1, 1, 1);
