@@ -474,7 +474,7 @@ $padding: 20px;
         position: absolute;
         right: 10%;
         font-size: 25px;
-        transform: translateX(10px);
+        transform: translateX(25px);
     }
 
     h3 {
@@ -564,10 +564,6 @@ $padding: 20px;
         box-shadow: 0px 4px 4px 2px lightgrey;
         margin: 10px;
         animation: delais 1s;
-        animation-delay: 0.6s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
-        transform: scale(0);
 
         &:hover {
             .liste-detail {
@@ -673,6 +669,33 @@ $padding: 20px;
     }
 }
 
+
+.stage-1,
+{
+animation: delais 0s;
+animation-fill-mode: both;
+animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+transform: scale(0);
+}
+
+.stage-2 {
+    animation: delais 0.3s;
+    animation-fill-mode:both;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+    transform: scale(0);
+}
+
+.stage-3 {
+    animation: delais 0.5s;
+
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    transform: scale(0);
+}
+
+.Bloc-sp {
+    margin-bottom: 0px;
+}
 /***********************version tablette*******************************/
 
 @media (max-width: 992px) {

@@ -569,8 +569,8 @@ h3 {
     border: 1px solid #f2f2f2;
     box-shadow: 0px 4px 4px 2px lightgrey;
     margin: 10px;
-  animation: delais 1s;
- 
+    /*  animation: delais 1s;*/
+
 
     &:hover {
         .liste-detail {
@@ -672,30 +672,29 @@ h3 {
 }
 
 .stage-1 {
-    animation: delais 0.1s;
-    animation-delay: 0.6s;
+    animation: delais;
     animation-fill-mode: both;
-    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
 
 .stage-2 {
-    animation: delais 0.3s;
-  animation-delay: 0.6s;
+    animation: delais;
     animation-fill-mode: both;
-    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275)  ;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
 
 .stage-3 {
-    animation: delais 0.6s;
-  animation-delay: 0.6s;
+    animation: delais;
+
     animation-fill-mode: both;
-    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275)  ;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
-.Bloc-sp{
-   margin-bottom: -100px;
+
+.Bloc-sp {
+    margin-bottom: -100px;
 }
 
 /***********Animation*******************/
@@ -869,6 +868,6 @@ h3 {
 
 @for $i from 1 to 3 {
     .stage-#{$i} {
-        animation-delay: #{$i/3}s;
+        animation-delay: ($i * 3)s;
     }
 }
