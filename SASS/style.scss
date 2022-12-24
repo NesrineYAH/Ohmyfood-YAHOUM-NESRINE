@@ -6,6 +6,10 @@
 body {
     max-width: 1500px;
     font-family: "Roboto", "shrikhand";
+
+}
+
+.page-accueil {
     opacity: 100;
     animation: loading 3s;
 }
@@ -181,11 +185,6 @@ button {
     font-size: 14px;
     transform: rotate(0deg);
     transition: 0.5s;
-
-    &:hover {
-        transform: rotate(360deg);
-        transition: 0.5s;
-    }
 }
 
 .icone-info {
@@ -310,53 +309,43 @@ button {
     }
 }
 
+
 .icone-coeur {
     font-size: 28px;
     margin-top: 10px;
     cursor: pointer;
+
+   &:hover .coeur-empty {
+    color: $color-white;
+} 
+  &:hover .coeur-full {
+    color: linear-gradient($color-two, $color-one);
+    background: -webkit-linear-gradient($color-two, $color-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: 0.5s;
+    transform: scale(1.025);
+    position: relative;
+    left: -50%;
+}
 }
 
 .coeur-full {
-    color: $color-white;
-    z-index: 2;
+    color: $color-white !important;  
 }
 
 .coeur-empty {
     color: #000000;
 }
 
-.icone-coeur:hover .coeur-empty {
-    color: $color-white;
-    animation: coeur 2s linear infinite;
-}
-
-.icone-coeur:hover .coeur-full {
-    color: linear-gradient($color-two, $color-one);
-    background: -webkit-linear-gradient($color-two, $color-one);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    position: relative;
-    animation: coeur 2s linear infinite;
-    transition: 0.5s;
-    z-index: 2;
-}
 
 
-.icone-coeur:hover .coeur-full {
-    color: linear-gradient($color-two, $color-one);
-    background: -webkit-linear-gradient($color-two, $color-one);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    position: relative;
-    animation: coeur 2s linear infinite;
-    transition: 0.5s;
-}
+
+
+
 
 footer {
     background-color: #353535;
@@ -404,17 +393,10 @@ footer {
     bottom: -35%;
 }
 
-/*
-.contact {
-    margin-top: 20px;
-    margin-right: 5px;
-}*/
+
+
 
 /**************** Mise en page -page resaturant-**********/
-body {
-    max-width: 1500px;
-    font-family: "Roboto", "shrikhand";
-}
 
 .lien-retour {
     position: absolute;
@@ -592,11 +574,11 @@ h3 {
     border: 1px solid #f2f2f2;
     box-shadow: 0px 4px 4px 2px lightgrey;
     margin: 10px;
-    animation: delais 1s;
+    /* animation: delais 1s;
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
-    transform: scale(0);
+    transform: scale(0);*/
 
     &:hover {
         .liste-detail {

@@ -10,8 +10,11 @@ $padding: 20px;
 
 @media (max-width:768px) {
     body {
-        max-width: 768 px;
+        max-width: 768px;
         font-family: "Roboto", "shrikhand";
+    }
+
+    .page-accueil {
         opacity: 100;
         animation: loading 3s;
     }
@@ -105,7 +108,7 @@ $padding: 20px;
         border: 5px solid $color-one;
         position: absolute;
         border-radius: 10px;
-        margin-right: 120px;
+        margin-right: 50px;
 
         .textload {
             font-family: 'Shrikhand', cursive;
@@ -313,33 +316,45 @@ $padding: 20px;
         }
     }
 
-    .icone-coeur {
-        font-size: 24px;
-        margin-right: 5px;
-    }
-
     .coeur-full {
-        color: #ffffff;
+        color: $color-white !important;
+       
     }
 
     .coeur-empty {
         color: #000000;
     }
 
-    .icone-coeur:hover .coeur-empty {
-        color: #ffffff;
+    .icone-coeur {
+        font-size: 26px;
+        margin-right: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:hover .coeur-empty {
+            color: #ffffff;
+
+        }
+
+        &:hover .coeur-full {
+
+            background-image: -webkit-linear-gradient($color-two, $color-one);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            transition: 0.5s;
+            transform: scale(1.025);
+           /* position: absolute;
+            left: 80%;*/
+            position: relative;
+            left:-60%;
+        }
+
     }
 
-    .icone-coeur:hover .coeur-full {
-        background: -webkit-linear-gradient($color-two, $color-one);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        position: relative;
-        transition: 0.5s;
-    }
+
 
     footer {
         width: 90%;
@@ -361,7 +376,7 @@ $padding: 20px;
         font-size: 22px;
         width: 100%;
         position: absolute;
-        left: 30%
+        left: 6%
     }
 
     .conatiner-lien-footer {
@@ -371,7 +386,7 @@ $padding: 20px;
         justify-content: center;
         gap: 0px;
         margin: 20px;
-        margin-left: 50px;
+
 
 
     }
@@ -382,16 +397,19 @@ $padding: 20px;
         display: flex;
         width: 75%;
         gap: 0;
+        margin: -18px;
+        font-weight: 5px;
     }
 
     .icone-footer {
         position: relative;
-        left: -78%;
+        left: -77%;
         bottom: 3%;
         margin-top: 25px;
         width: 7%;
     }
-    .icone-footer2{
+
+    .icone-footer1 {
         position: relative;
         left: -65%;
         bottom: 3%;
@@ -400,9 +418,12 @@ $padding: 20px;
     }
 
     .contact {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
+    .lien-footer1 {
+        margin-left: -50px;
+    }
 }
 
 /********************* mise en page Page Restaurant ***************/
@@ -490,8 +511,7 @@ $padding: 20px;
         font-size: 22px;
         margin-top: 12px;
         margin-left: 0;
-        -webkit-animation: slideup 1s forwards;
-        animation: slideup 1s forwards;
+        animation: delais 1s linear forwards;
     }
 
     #Titre-article::after {
@@ -513,8 +533,7 @@ $padding: 20px;
         align-self: center;
         gap: 20px;
 
-        /* margin-right: 3%;
-        margin-left: -3%;*/
+
     }
 
     .Bloc-repas {
@@ -547,7 +566,7 @@ $padding: 20px;
         animation-delay: 0.6s;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
-        transform: scale(0);
+       /* transform: scale(0);*/
 
         &:hover {
             .liste-detail {

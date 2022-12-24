@@ -2,8 +2,10 @@
 /*box-shadow: 1px 2px 2px 1px lightgrey;*/
 @media (max-width: 768px) {
   body {
-    max-width: 768 px;
+    max-width: 768px;
     font-family: "Roboto", "shrikhand";
+  }
+  .page-accueil {
     opacity: 100;
     -webkit-animation: loading 3s;
             animation: loading 3s;
@@ -91,7 +93,7 @@
     border: 5px solid #9356DC;
     position: absolute;
     border-radius: 10px;
-    margin-right: 120px;
+    margin-right: 50px;
   }
   .loading .textload {
     font-family: "Shrikhand", cursive;
@@ -266,28 +268,34 @@
     margin-left: 0;
     font-weight: 300;
   }
-  .icone-coeur {
-    font-size: 24px;
-    margin-right: 5px;
-  }
   .coeur-full {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   .coeur-empty {
     color: #000000;
+  }
+  .icone-coeur {
+    font-size: 26px;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
   }
   .icone-coeur:hover .coeur-empty {
     color: #ffffff;
   }
   .icone-coeur:hover .coeur-full {
-    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    position: relative;
     transition: 0.5s;
+    transform: scale(1.025);
+    /* position: absolute;
+     left: 80%;*/
+    position: relative;
+    left: -60%;
   }
   footer {
     width: 90%;
@@ -308,7 +316,7 @@
     font-size: 22px;
     width: 100%;
     position: absolute;
-    left: 30%;
+    left: 6%;
   }
   .conatiner-lien-footer {
     width: 100%;
@@ -317,7 +325,6 @@
     justify-content: center;
     gap: 0px;
     margin: 20px;
-    margin-left: 50px;
   }
   .lien-footer {
     color: #ffffff;
@@ -325,15 +332,17 @@
     display: flex;
     width: 75%;
     gap: 0;
+    margin: -18px;
+    font-weight: 5px;
   }
   .icone-footer {
     position: relative;
-    left: -78%;
+    left: -77%;
     bottom: 3%;
     margin-top: 25px;
     width: 7%;
   }
-  .icone-footer2 {
+  .icone-footer1 {
     position: relative;
     left: -65%;
     bottom: 3%;
@@ -341,7 +350,10 @@
     width: 7%;
   }
   .contact {
-    margin-top: 0px;
+    margin-top: 20px;
+  }
+  .lien-footer1 {
+    margin-left: -50px;
   }
 }
 /********************* mise en page Page Restaurant ***************/
@@ -416,8 +428,8 @@
     font-size: 22px;
     margin-top: 12px;
     margin-left: 0;
-    -webkit-animation: slideup 1s forwards;
-    animation: slideup 1s forwards;
+    -webkit-animation: delais 1s linear forwards;
+            animation: delais 1s linear forwards;
   }
   #Titre-article::after {
     content: "";
@@ -436,8 +448,6 @@
     align-items: center;
     align-self: center;
     gap: 20px;
-    /* margin-right: 3%;
-    margin-left: -3%;*/
   }
   .Bloc-repas {
     display: flex;
@@ -470,7 +480,7 @@
             animation-fill-mode: forwards;
     -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
             animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
+    /* transform: scale(0);*/
   }
   .liste-repas:hover .liste-detail {
     max-width: 30%;

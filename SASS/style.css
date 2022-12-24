@@ -3,6 +3,9 @@
 body {
   max-width: 1500px;
   font-family: "Roboto", "shrikhand";
+}
+
+.page-accueil {
   opacity: 100;
   -webkit-animation: loading 3s;
           animation: loading 3s;
@@ -175,10 +178,6 @@ button:hover {
   transform: rotate(0deg);
   transition: 0.5s;
 }
-.nomber:hover {
-  transform: rotate(360deg);
-  transition: 0.5s;
-}
 
 .icone-info {
   display: flex;
@@ -303,49 +302,29 @@ button:hover {
   margin-top: 10px;
   cursor: pointer;
 }
+.icone-coeur:hover .coeur-empty {
+  color: #ffffff;
+}
+.icone-coeur:hover .coeur-full {
+  color: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: 0.5s;
+  transform: scale(1.025);
+  position: relative;
+  left: -50%;
+}
 
 .coeur-full {
-  color: #ffffff;
-  z-index: 2;
+  color: #ffffff !important;
 }
 
 .coeur-empty {
   color: #000000;
-}
-
-.icone-coeur:hover .coeur-empty {
-  color: #ffffff;
-  -webkit-animation: coeur 2s linear infinite;
-          animation: coeur 2s linear infinite;
-}
-
-.icone-coeur:hover .coeur-full {
-  color: linear-gradient(#FF79DA, #9356DC);
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  position: relative;
-  -webkit-animation: coeur 2s linear infinite;
-          animation: coeur 2s linear infinite;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.icone-coeur:hover .coeur-full {
-  color: linear-gradient(#FF79DA, #9356DC);
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  position: relative;
-  -webkit-animation: coeur 2s linear infinite;
-          animation: coeur 2s linear infinite;
-  transition: 0.5s;
 }
 
 footer {
@@ -394,17 +373,7 @@ footer {
   bottom: -35%;
 }
 
-/*
-.contact {
-    margin-top: 20px;
-    margin-right: 5px;
-}*/
 /**************** Mise en page -page resaturant-**********/
-body {
-  max-width: 1500px;
-  font-family: "Roboto", "shrikhand";
-}
-
 .lien-retour {
   position: absolute;
   top: 30px;
@@ -577,15 +546,11 @@ h3 {
   border: 1px solid #f2f2f2;
   box-shadow: 0px 4px 4px 2px lightgrey;
   margin: 10px;
-  -webkit-animation: delais 1s;
-          animation: delais 1s;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  transform: scale(0);
+  /* animation: delais 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+  transform: scale(0);*/
 }
 .liste-repas:hover .liste-detail {
   max-width: 40%;
