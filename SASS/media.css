@@ -203,6 +203,8 @@
   .carte-restaurant {
     display: flex;
     flex-direction: column;
+    /*  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;*/
     width: 92%;
     height: 280px;
     border: 2px solid #ffffff;
@@ -292,10 +294,10 @@
     -moz-text-fill-color: transparent;
     transition: 0.5s;
     transform: scale(1.025);
-    /* position: absolute;
-    left: 80%;*/
     position: relative;
-    left: -60%;
+    left: -62%;
+    -webkit-animation: coeur 2s linear;
+            animation: coeur 2s linear;
   }
   footer {
     width: 90%;
@@ -348,9 +350,6 @@
     bottom: 3%;
     margin-top: 25px;
     width: 7%;
-  }
-  .contact {
-    margin-top: 20px;
   }
   .lien-footer1 {
     margin-left: -50px;

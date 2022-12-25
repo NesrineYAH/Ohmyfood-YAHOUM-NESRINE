@@ -241,8 +241,8 @@ $padding: 20px;
     .carte-restaurant {
         display: flex;
         flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
+        /*  -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;*/
         width: 92%;
         height: 280px;
         border: 2px solid #ffffff;
@@ -333,11 +333,9 @@ $padding: 20px;
 
         &:hover .coeur-empty {
             color: #ffffff;
-
         }
 
         &:hover .coeur-full {
-
             background-image: -webkit-linear-gradient($color-two, $color-one);
             background-clip: text;
             -webkit-background-clip: text;
@@ -346,15 +344,12 @@ $padding: 20px;
             -moz-text-fill-color: transparent;
             transition: 0.5s;
             transform: scale(1.025);
-            /* position: absolute;
-            left: 80%;*/
             position: relative;
-            left: -60%;
+            left: -62%;
+            animation: coeur 2s linear;
         }
 
     }
-
-
 
     footer {
         width: 90%;
@@ -386,9 +381,6 @@ $padding: 20px;
         justify-content: center;
         gap: 0px;
         margin: 20px;
-
-
-
     }
 
     .lien-footer {
@@ -415,10 +407,6 @@ $padding: 20px;
         bottom: 3%;
         margin-top: 25px;
         width: 7%;
-    }
-
-    .contact {
-        margin-top: 20px;
     }
 
     .lien-footer1 {
@@ -680,7 +668,7 @@ transform: scale(0);
 
 .stage-2 {
     animation: delais 0.3s;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
@@ -696,6 +684,7 @@ transform: scale(0);
 .Bloc-sp {
     margin-bottom: 0px;
 }
+
 /***********************version tablette*******************************/
 
 @media (max-width: 992px) {
