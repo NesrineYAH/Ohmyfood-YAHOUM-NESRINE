@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
-@import "./mixins.scss";
+@import "mixins.scss";
 
 
 body {
-    max-width: 1500px;
+    max-width: 1400px;
     font-family: "Roboto", "shrikhand";
 
 }
@@ -252,37 +252,20 @@ button {
 
 .Nouveau1 {
 
-    width: 70px;
-    height: 20px;
-    color: #3b8468;
-    background-color: #a9e0d1;
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
+    @include Nouveau;
     position: absolute;
-    right: 10%;
-    margin-top: 20px;
+    right: 8%;
     z-index: 0;
-    font-size: 15px;
+
     /* animation: opacity 1500ms linear alternate infinite both;*/
 }
 
 .Nouveau2 {
-
-    width: 70px;
-    height: 20px;
-    color: #3b8468;
-    background-color: #a9e0d1;
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
+    @include Nouveau;
     position: absolute;
-    right: 56%;
-    margin-top: 20px;
+    right: 54%;
     z-index: 0;
-    font-size: 15px;
+
     /*nimation: opacity 1500ms linear alternate infinite both;*/
 }
 
@@ -388,8 +371,6 @@ footer {
     left: -110%;
     bottom: -35%;
 }
-
-
 
 
 /**************** Mise en page -page resaturant-**********/

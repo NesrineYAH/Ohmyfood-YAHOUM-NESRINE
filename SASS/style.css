@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /*box-shadow: 1px 2px 2px 1px lightgrey;*/
 body {
-  max-width: 1500px;
+  max-width: 1400px;
   font-family: "Roboto", "shrikhand";
 }
 
@@ -248,11 +248,10 @@ button:hover {
   font-weight: 500;
   padding: 10px;
   border-radius: 5px;
-  position: absolute;
-  right: 10%;
-  margin-top: 20px;
-  z-index: 0;
   font-size: 15px;
+  position: absolute;
+  right: 8%;
+  z-index: 0;
   /* animation: opacity 1500ms linear alternate infinite both;*/
 }
 
@@ -265,11 +264,10 @@ button:hover {
   font-weight: 500;
   padding: 10px;
   border-radius: 5px;
-  position: absolute;
-  right: 56%;
-  margin-top: 20px;
-  z-index: 0;
   font-size: 15px;
+  position: absolute;
+  right: 54%;
+  z-index: 0;
   /*nimation: opacity 1500ms linear alternate infinite both;*/
 }
 
