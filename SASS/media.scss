@@ -317,8 +317,7 @@ $padding: 20px;
     }
 
     .coeur-full {
-        color: $color-white !important;
-
+        color: $color-white;
     }
 
     .coeur-empty {
@@ -348,7 +347,6 @@ $padding: 20px;
             left: -62%;
             animation: coeur 2s linear;
         }
-
     }
 
     footer {
@@ -456,13 +454,42 @@ $padding: 20px;
         justify-content: space-between;
     }
 
-    .coeur-page {
+
+   .coeur-full-page {
+        color: $color-white;
+    }
+
+    &-empty-page {
+        color: #000000;
+    }
+     &-page {
         display: flex;
         margin-top: 45px;
         position: absolute;
         right: 10%;
         font-size: 25px;
         transform: translateX(25px);
+        cursor: pointer;
+    }
+   
+
+        &:hover .coeur-empty-page {
+            color: #ffffff;
+        }
+
+        &:hover .coeur-full-page {
+            background-image: -webkit-linear-gradient($color-two, $color-one);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            transition: 0.5s;
+            transform: scale(1.025);
+            position: relative;
+            
+            animation: coeur 2s linear;
+        }
     }
 
     h3 {
@@ -658,23 +685,23 @@ $padding: 20px;
 }
 
 
-.stage-1,
-{
-animation: delais 0s;
-animation-fill-mode: both;
-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-transform: scale(0);
+.stage-1 {
+    animation: delais .3s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    transform: scale(0);
 }
 
 .stage-2 {
-    animation: delais 0.3s;
+    animation: delais .6s;
+
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
 
 .stage-3 {
-    animation: delais 0.5s;
+    animation: delais 0.9s;
 
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
@@ -682,7 +709,7 @@ transform: scale(0);
 }
 
 .Bloc-sp {
-    margin-bottom: 0px;
+    padding-top: 40px;
 }
 
 /***********************version tablette*******************************/
