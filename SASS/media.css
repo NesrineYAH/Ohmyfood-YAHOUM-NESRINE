@@ -8,7 +8,7 @@
   .page-accueil {
     opacity: 100;
     -webkit-animation: loading 3s;
-            animation: loading 3s;
+    animation: loading 3s;
   }
   header {
     align-items: center;
@@ -42,7 +42,7 @@
     border: none;
     background-color: #e4e2e1;
     -webkit-text-decoration: #000000;
-            text-decoration: #000000;
+    text-decoration: #000000;
     font-size: 16px;
     font-weight: bold;
   }
@@ -74,11 +74,11 @@
     background-color: white;
     opacity: 97%;
     -webkit-animation: loading 1s;
-            animation: loading 1s;
+    animation: loading 1s;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    animation-delay: 2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@
   .loading {
     width: 200px;
     height: 20px;
-    border: 5px solid #9356DC;
+    border: 5px solid #9356dc;
     position: absolute;
     border-radius: 10px;
   }
@@ -96,13 +96,13 @@
     padding-top: 25px;
     position: absolute;
     font-size: 20px;
-    color: #FF79DA;
+    color: #ff79da;
   }
   .loading .ball {
     display: block;
     width: 20px;
     height: 100%;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     -webkit-animation: slide 2s infinite ease-in-out alternate;
     animation: slide 2s infinite ease-in-out alternate;
     border-radius: 5px;
@@ -173,7 +173,7 @@
     display: flex;
     padding: 5px 15px 0px 10px;
     -webkit-text-decoration: black;
-            text-decoration: black;
+    text-decoration: black;
   }
   .icone-info i {
     margin: 12px 5px 5px 40px;
@@ -217,7 +217,7 @@
     height: 200px;
     border-radius: 20px 20px 0 0;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .Nouveau1 {
     width: 70px;
@@ -286,7 +286,7 @@
     color: #ffffff;
   }
   .icone-coeur:hover .coeur-full {
-    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -297,7 +297,7 @@
     position: relative;
     left: -62%;
     -webkit-animation: coeur 2s linear;
-            animation: coeur 2s linear;
+    animation: coeur 2s linear;
   }
   .footer {
     width: 90%;
@@ -398,7 +398,7 @@
     color: #ffffff;
   }
   .coeur_page:hover .coeur-full-page {
-    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -408,7 +408,7 @@
     transform: scale(1.025);
     position: relative;
     -webkit-animation: coeur 2s linear;
-            animation: coeur 2s linear;
+    animation: coeur 2s linear;
   }
   h3 {
     font-size: 16px;
@@ -440,14 +440,14 @@
     margin-top: 12px;
     margin-left: 0;
     -webkit-animation: delais 1s linear forwards;
-            animation: delais 1s linear forwards;
+    animation: delais 1s linear forwards;
   }
   #Titre-article::after {
     content: "";
     display: block;
     width: 60px;
     height: 5px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     position: absolute;
     left: 10px;
   }
@@ -486,7 +486,7 @@
     box-shadow: 0px 4px 4px 2px lightgrey;
     margin: 10px;
     -webkit-animation: delais 1s;
-            animation: delais 1s;
+    animation: delais 1s;
   }
   .liste-repas:hover .liste-detail {
     max-width: 30%;
@@ -536,7 +536,7 @@
     margin-left: -15px;
   }
   .validation__box {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -567,29 +567,29 @@
   }
   .stage-1 {
     -webkit-animation: delais 0.3s;
-            animation: delais 0.3s;
+    animation: delais 0.3s;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-            animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
   }
   .stage-2 {
     -webkit-animation: delais 0.6s;
-            animation: delais 0.6s;
+    animation: delais 0.6s;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-            animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+    animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
     transform: scale(0);
   }
   .stage-3 {
     -webkit-animation: delais 0.9s;
-            animation: delais 0.9s;
+    animation: delais 0.9s;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-            animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
   }
   .Bloc-sp {
@@ -616,4 +616,4 @@
     width: 100%;
     gap: 5px;
   }
-}/*# sourceMappingURL=media.css.map */
+} /*# sourceMappingURL=media.css.map */
