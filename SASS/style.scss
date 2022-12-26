@@ -18,7 +18,6 @@ body {
 header {
     align-items: center;
     font-size: 24px;
-
 }
 
 #Logo {
@@ -29,6 +28,13 @@ header {
     position: absolute;
     left: 35%;
     top: 1%;
+}
+
+h1 {
+    display: flex;
+    font-size: 20px;
+    margin-top: 60px;
+    justify-content: center;
 }
 
 .petit-texte {
@@ -143,11 +149,13 @@ button {
         transform: scale(1.05);
     }
 }
-.titre-section1{
+
+.titre-section1 {
     margin-left: 10px;
     display: flex;
     width: 100%;
 }
+
 #Fonctionnement {
     width: 100%;
     gap: 10px;
@@ -231,8 +239,9 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    margin-left: 30px;
-    overflow-anchor: none;
+    margin-left: 35px;
+    padding-bottom: 100px;
+
 }
 
 .carte-restaurant {
@@ -259,14 +268,14 @@ button {
 
     @include Nouveau;
     position: absolute;
-    right: 7%;
+    right: 12%;
     margin-top: 20px;
 }
 
 .Nouveau2 {
     @include Nouveau;
     position: absolute;
-    right: 54%;
+    right: 58%;
     margin-top: 20px;
 }
 
@@ -281,7 +290,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 14px;
+    font-size: 12px;
     color: #000000;
     margin-left: 15px;
 
@@ -364,6 +373,7 @@ button {
         text-decoration: none;
         display: flex;
         min-width: 10%;
+
     }
 
     &__icone {
@@ -372,6 +382,7 @@ button {
         bottom: -35%;
     }
 }
+
 
 /**************** Mise en page -page resaturant-**********/
 
@@ -387,16 +398,17 @@ button {
     font-family: "Shrikhand";
     font-size: 30px;
     display: flex;
+    font-weight: 700;
     margin: 40px -20px 20px 0;
-    font-weight: lighter;
-    transform: translateX(-100%);
+    position: relative;
+    left: 2%
 }
 
 .titre-et-coeur {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 40px;
 
 }
@@ -446,7 +458,7 @@ button {
 
 .coeur-page:hover .coeur-empty-page {
     color: $color-white;
-    /* animation: coeur 2s linear infinite;*/
+    animation: coeur 2s linear;
 }
 
 .coeur-page:hover .coeur-full-page {
@@ -476,7 +488,7 @@ button {
     font-weight: normal;
     position: relative;
     left: 4%;
-    /*animation: delais 1s linear forwards;*/
+
 
     &::after {
         content: "";
@@ -487,7 +499,6 @@ button {
         position: absolute;
         left: 0;
         bottom: -12px;
-
     }
 }
 
@@ -502,6 +513,7 @@ button {
     gap: 15px;
     margin-right: 3%;
     margin-left: 0%;
+    margin-bottom: 100px;
 
 }
 
@@ -512,18 +524,18 @@ h3 {
 }
 
 .Bloc-repas {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;*/
     row-gap: 10px;
     min-width: 32%;
     overflow: hidden;
 }
 
 .liste-menu {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
     min-width: 30%;
     gap: 15px;
 }
@@ -538,7 +550,7 @@ h3 {
     border: 1px solid #f2f2f2;
     box-shadow: 0px 4px 4px 2px lightgrey;
     margin: 10px;
-    animation: delais;
+
 
     &:hover {
         .liste-detail {
@@ -577,7 +589,7 @@ h3 {
 }
 
 .liste-detail {
-    width: 65%;
+    width: 75%;
 }
 
 .liste-texte-titre {
@@ -639,31 +651,53 @@ h3 {
 
 /*
 .stage-1 {
-    animation: delais .2s;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
-}
-
-.stage-2 {
-    animation: delais .5s;
+    animation: delais;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
 }
 
-.stage-3 {
-    animation: delais .7s;
+.stage-2 {
+    animation: delais;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     transform: scale(0);
-}*/
+}
+
+.stage-3 {
+    animation: delais;
+    animation-fill-mode: both;
+    transform: scale(0);
+
+}
+*/
+.stage-1 {
+    animation: delais 100ms;
+
+}
+
+.stage-2 {
+    animation: delais 1000ms;
+
+}
+
+.stage-3 {
+    animation: delais 1000ms;
+
+}
+
+.titre-la-note {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
 .Bloc-spc {
-    gap: 0;
-    position: relative;
-    bottom: -11%;
+    margin-bottom: -85px;
 }
+
 
 /***********Animation*******************/
 
@@ -793,7 +827,7 @@ h3 {
 
 @for $i from 1 to 3 {
     .stage-#{$i} {
-        animation: delais;
+        animation: delais 1s;
         animation-delay: ($i*3)s;
     }
 }
