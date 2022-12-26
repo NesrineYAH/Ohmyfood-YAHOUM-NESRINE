@@ -441,6 +441,7 @@
     margin-left: 0;
     -webkit-animation: delais 1s linear forwards;
             animation: delais 1s linear forwards;
+    margin-bottom: 10px;
   }
   #Titre-article::after {
     content: "";
