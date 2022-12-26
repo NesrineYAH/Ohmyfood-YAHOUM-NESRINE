@@ -626,7 +626,8 @@
   .Bloc-spc2 {
     margin-top: 85px;
   }
-  /* .Bloc-spc3 {
-      margin-top: 85px;
-  } */
+  .footer__titre {
+    position: absolute;
+    left: 40%;
+  }
 }/*# sourceMappingURL=media.css.map */
