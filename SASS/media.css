@@ -31,13 +31,14 @@
     justify-content: center;
     border-top: 2px solid #c5c1c1;
     background-color: #e4e2e1;
-    padding-left: 20px;
+    padding-left: 5px;
     margin: 80px 0 10px 0;
   }
-  .icone-maps {
+  .localisation__icone {
     margin-right: 15px;
+    margin-left: -15px;
   }
-  .localisation-txt {
+  .localisation__txt {
     border: none;
     background-color: #e4e2e1;
     -webkit-text-decoration: #000000;
@@ -299,7 +300,7 @@
     -webkit-animation: coeur 2s linear;
             animation: coeur 2s linear;
   }
-  footer {
+  .footer {
     width: 90%;
     background-color: #353535;
     color: #ffffff;
@@ -309,7 +310,7 @@
     justify-content: center;
     padding-left: 60px;
   }
-  .titre-footer {
+  .footer__titre {
     align-content: stretch;
     display: flex;
     justify-content: stretch;
@@ -320,15 +321,16 @@
     position: absolute;
     left: 6%;
   }
-  .conatiner-lien-footer {
+  .footer__conatiner {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 0px;
     margin: 20px;
   }
-  .lien-footer {
+  .footer__lien {
     color: #ffffff;
     text-decoration: none;
     display: flex;
@@ -337,21 +339,21 @@
     margin: -18px;
     font-weight: 5px;
   }
-  .icone-footer {
+  .footer__icone {
     position: relative;
     left: -77%;
     bottom: 3%;
     margin-top: 25px;
     width: 7%;
   }
-  .icone-footer1 {
+  .footer__icone1 {
     position: relative;
     left: -65%;
     bottom: 3%;
     margin-top: 25px;
     width: 7%;
   }
-  .lien-footer1 {
+  .footer__lien1 {
     margin-left: -50px;
   }
 }
@@ -363,18 +365,6 @@
     left: 10px;
     color: #000000;
     font-size: larger;
-  }
-  #Logo-page {
-    max-width: 45%;
-    font-size: 20px;
-    padding: 20px 15px 30px 35px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 20%;
-    top: 1%;
-    margin-bottom: 50px;
-    transform: translateX(4%);
   }
   #Titre-de-page {
     font-family: "Shrikhand";
@@ -606,28 +596,12 @@
   .Bloc-sp {
     padding-top: 40px;
   }
-  /***********************version tablette*******************************/
 }
-@media (max-width: 768px) and (max-width: 992px) {
+/***********************version tablette*******************************/
+@media (max-width: 992px) {
   body {
     max-width: 992px;
     font-family: "Roboto", "shrikhand";
-  }
-  .carte-info {
-    display: flex;
-    border-radius: 20px;
-    text-decoration: none;
-    border: 2px solid #f2f2f2;
-    padding: 6px;
-    margin: 25px;
-    box-shadow: 0px 4px 4px 2px lightgrey;
-    color: #000000;
-  }
-  .carte-info:hover {
-    background-color: #f5edff;
-    transform: scale(1.1);
-    transition: 400ms;
-    cursor: pointer;
   }
   .validation__box {
     height: 100%;
@@ -636,16 +610,11 @@
     margin: -10px -112px -10px 0px;
   }
   .validation__box .icone-chekmark {
-    font-size: 28px;
-    font-weight: bold;
     transform: rotate(180deg);
     transition: 0.5s;
   }
   #container {
     width: 100%;
     gap: 5px;
-  }
-  .footer__conatiner {
-    margin: 25px 0px 0 0;
   }
 }/*# sourceMappingURL=media.css.map */
