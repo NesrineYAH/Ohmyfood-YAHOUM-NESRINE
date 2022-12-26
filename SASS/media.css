@@ -534,7 +534,7 @@
     align-self: center;
     white-space: nowrap;
     font-weight: 400;
-    margin-left: -15px;
+    margin-left: -45px;
   }
   .validation__box {
     background-color: #99E2D0;
@@ -560,7 +560,7 @@
     display: flex;
     justify-content: center;
     padding: 20px 40px 20px 40px;
-    margin-bottom: 0;
+    margin-bottom: -40px;
   }
   .commande:hover {
     transform: scale(1.1);
@@ -626,6 +626,6 @@
     margin-top: 85px;
   }
   /* .Bloc-spc3 {
-       margin-top: 85px;
-   } */
+      margin-top: 85px;
+  } */
 }/*# sourceMappingURL=media.css.map */
