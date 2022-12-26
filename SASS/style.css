@@ -9,6 +9,7 @@ body {
   opacity: 100;
   -webkit-animation: loading 3s;
           animation: loading 3s;
+  align-items: center;
 }
 
 header {
@@ -250,9 +251,8 @@ button:hover {
   border-radius: 5px;
   font-size: 15px;
   position: absolute;
-  right: 8%;
-  z-index: 0;
-  /* animation: opacity 1500ms linear alternate infinite both;*/
+  right: 7%;
+  margin-top: 20px;
 }
 
 .Nouveau2 {
@@ -267,8 +267,7 @@ button:hover {
   font-size: 15px;
   position: absolute;
   right: 54%;
-  z-index: 0;
-  /*nimation: opacity 1500ms linear alternate infinite both;*/
+  margin-top: 20px;
 }
 
 .detail-carte-restaurant {
@@ -293,11 +292,11 @@ button:hover {
   font-weight: 300;
 }
 
-.coeur-full {
+.coeur__full {
   color: #ffffff;
 }
 
-.coeur-empty {
+.coeur__empty {
   color: #000000;
 }
 
@@ -306,10 +305,10 @@ button:hover {
   margin-top: 10px;
   cursor: pointer;
 }
-.icone-coeur:hover .coeur-empty {
+.icone-coeur:hover .coeur__empty {
   color: #ffffff;
 }
-.icone-coeur:hover .coeur-full {
+.icone-coeur:hover .coeur__full {
   color: linear-gradient(#FF79DA, #9356DC);
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
@@ -320,10 +319,10 @@ button:hover {
   transition: 0.5s;
   transform: scale(1.025);
   position: relative;
-  left: -50%;
+  left: -56%;
 }
 
-footer {
+.footer {
   background-color: #353535;
   color: #ffffff;
   display: flex;
@@ -333,8 +332,7 @@ footer {
   padding: 60px;
   max-width: 93%;
 }
-
-.titre-footer {
+.footer__titre {
   align-content: stretch;
   display: flex;
   justify-content: stretch;
@@ -345,8 +343,7 @@ footer {
   position: absolute;
   left: 45%;
 }
-
-.conatiner-lien-footer {
+.footer__conatiner {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -355,15 +352,13 @@ footer {
   gap: 20px;
   margin: 25px 20px 0 20px;
 }
-
-.lien-footer {
+.footer__lien {
   color: #ffffff;
   text-decoration: none;
   display: flex;
   min-width: 10%;
 }
-
-.icone-footer {
+.footer__icone {
   position: relative;
   left: -110%;
   bottom: -35%;

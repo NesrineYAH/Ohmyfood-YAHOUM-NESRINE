@@ -316,11 +316,11 @@ $padding: 20px;
         }
     }
 
-    .coeur-full {
+    .coeur__full {
         color: $color-white;
     }
 
-    .coeur-empty {
+    .coeur__empty {
         color: #000000;
     }
 
@@ -459,10 +459,10 @@ $padding: 20px;
         color: $color-white;
     }
 
-    &-empty-page {
+    &_empty-page {
         color: #000000;
     }
-     &-page {
+     &_page {
         display: flex;
         margin-top: 45px;
         position: absolute;
