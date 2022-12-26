@@ -5,12 +5,12 @@ $color-white: #ffffff;
 $padding: 20px;
 
 
-@mixin carte-info {
+@mixin carte {
     border-radius: 20px;
     text-decoration: none;
     border: 2px solid #f2f2f2;
     padding: 6px;
-    margin: 25px;
+    margin: 15px;
     box-shadow: 2px 4px 4px 2px lightgray;
     color: #000000;
 }
@@ -19,12 +19,10 @@ $padding: 20px;
 
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: #ffffff;
-    border-radius: 50px;
+    border-radius: 40px;
     border: none;
     padding: 15px 20px 15px 20px;
-    display: flex;
-    justify-content: center;
-
+    box-shadow: 0px 4px 4px 2px lightgrey;
 }
 
 @mixin shadow {
@@ -53,5 +51,5 @@ $padding: 20px;
     padding: 10px;
     border-radius: 5px;
     font-size: 15px;
-    
+
 }

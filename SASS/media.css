@@ -36,7 +36,7 @@
   }
   .localisation__icone {
     margin-right: 15px;
-    margin-left: -15px;
+    margin-left: -20px;
   }
   .localisation__txt {
     border: none;
@@ -55,25 +55,20 @@
     margin-top: 20px;
     padding: 40px 40px 0px 40px;
   }
-  h1 {
-    display: flex;
-    font-size: 20px;
-    margin-top: 60px;
-    justify-content: center;
-  }
   .petit-texte {
     max-width: 100%;
     display: flex;
     text-align: center;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 20px;
     justify-content: center;
+    font-weight: 300;
   }
   .loadingscreen {
     position: fixed;
     top: 0;
     left: 0%;
-    margin-right: 20%;
+    margin-right: 15%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -94,7 +89,6 @@
     border: 5px solid #9356DC;
     position: absolute;
     border-radius: 10px;
-    margin-right: 50px;
   }
   .loading .textload {
     font-family: "Shrikhand", cursive;
@@ -118,38 +112,43 @@
     justify-content: center;
   }
   button {
+    max-width: 100%;
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: #ffffff;
-    border-radius: 50px;
+    border-radius: 40px;
     border: none;
     padding: 15px 20px 15px 20px;
-    box-shadow: 3px 2px 2px lightgrey;
+    box-shadow: 0px 4px 4px 2px lightgrey;
   }
   button:hover {
     transform: scale(1.05);
   }
-  .titre-section {
+  .titre-section1 {
     margin-left: 10px;
+    display: flex;
+    width: 100%;
+  }
+  .titre-section2 {
+    margin-left: 16px;
     display: flex;
     width: 100%;
   }
   #Fonctionnement {
     width: 100%;
-    margin: 20px;
-    margin-top: 60px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 3px;
   }
   .carte-info {
     display: flex;
-    width: 75%;
+    flex-direction: column;
+    width: 80%;
     border-radius: 20px;
     text-decoration: none;
     border: 2px solid #f2f2f2;
     padding: 6px;
-    margin: 25px;
+    margin: 15px;
     box-shadow: 2px 4px 4px 2px lightgray;
     color: #000000;
   }
