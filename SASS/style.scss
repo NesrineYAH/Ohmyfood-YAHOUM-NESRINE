@@ -151,9 +151,13 @@ button {
 }
 
 .titre-section1 {
-    margin-left: 10px;
+    margin-left: 40px;
     display: flex;
     width: 100%;
+}
+
+.titre-section2 {
+    margin-left: 40px;
 }
 
 #Fonctionnement {
@@ -268,15 +272,16 @@ button {
 
     @include Nouveau;
     position: absolute;
-    right: 10%;
+    right: 57%;
     margin-top: 20px;
 }
 
 .Nouveau2 {
     @include Nouveau;
     position: absolute;
-    right: 55%;
+    right: 9%;
     margin-top: 20px;
+   
 }
 
 .detail-carte-restaurant {
