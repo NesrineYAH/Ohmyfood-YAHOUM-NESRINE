@@ -638,54 +638,28 @@ h3 {
     }
 }
 
-/*
-.stage-1 {
-    animation: delais;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
-}
-
-.stage-2 {
-    animation: delais;
-    animation-fill-mode: both;
-animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
-}
-
-.stage-3 {
-    animation: delais;
-    animation-fill-mode: both;
-    transform: scale(0);
-
-}
-*/
-.stage-1 {
-    animation: delais 100ms;
-
-}
-
-.stage-2 {
-    animation: delais 1000ms;
-
-}
-
-.stage-3 {
-    animation: delais 1000ms;
-
-}
-
-.titre-la-note {
-    font-family: "Shrikhand";
-    font-size: 30px;
-    display: flex;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
 .Bloc-spc {
     margin-bottom: -85px;
 }
+
+.stage-1 {
+    animation: delais 1000ms;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+}
+
+.stage-2 {
+    animation: delais 2000ms;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+}
+
+.stage-3 {
+    animation: delais 3000ms;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+}
+
+
+
+
 
 
 /***********Animation*******************/
@@ -737,15 +711,6 @@ animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
     }
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
 
 @keyframes delais {
 
@@ -816,7 +781,7 @@ animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 
 @for $i from 1 to 3 {
     .stage-#{$i} {
-        animation: delais 1s;
+        animation: delais 1000ms;
         animation-delay: ($i*3)s;
     }
 }

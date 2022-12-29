@@ -605,53 +605,29 @@ h3 {
   font-weight: bold;
 }
 
-/*
-.stage-1 {
-    animation: delais;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
-}
-
-.stage-2 {
-    animation: delais;
-    animation-fill-mode: both;
-animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-    transform: scale(0);
-}
-
-.stage-3 {
-    animation: delais;
-    animation-fill-mode: both;
-    transform: scale(0);
-
-}
-*/
-.stage-1 {
-  -webkit-animation: delais 100ms;
-          animation: delais 100ms;
-}
-
-.stage-2 {
-  -webkit-animation: delais 1000ms;
-          animation: delais 1000ms;
-}
-
-.stage-3 {
-  -webkit-animation: delais 1000ms;
-          animation: delais 1000ms;
-}
-
-.titre-la-note {
-  font-family: "Shrikhand";
-  font-size: 30px;
-  display: flex;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
 .Bloc-spc {
   margin-bottom: -85px;
+}
+
+.stage-1 {
+  -webkit-animation: delais 1000ms;
+          animation: delais 1000ms;
+  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+}
+
+.stage-2 {
+  -webkit-animation: delais 2000ms;
+          animation: delais 2000ms;
+  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+}
+
+.stage-3 {
+  -webkit-animation: delais 3000ms;
+          animation: delais 3000ms;
+  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
 }
 
 /***********Animation*******************/
@@ -675,22 +651,6 @@ animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 @-webkit-keyframes slide {
   to {
     margin-left: 90%;
-  }
-}
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
   }
 }
 @keyframes delais {
@@ -738,15 +698,15 @@ animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
   }
 }
 .stage-1 {
-  -webkit-animation: delais 1s;
-          animation: delais 1s;
+  -webkit-animation: delais 1000ms;
+          animation: delais 1000ms;
   -webkit-animation-delay: 3 s;
           animation-delay: 3 s;
 }
 
 .stage-2 {
-  -webkit-animation: delais 1s;
-          animation: delais 1s;
+  -webkit-animation: delais 1000ms;
+          animation: delais 1000ms;
   -webkit-animation-delay: 6 s;
           animation-delay: 6 s;
 }/*# sourceMappingURL=style.css.map */
