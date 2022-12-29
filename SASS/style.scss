@@ -327,8 +327,6 @@ button {
     }
 }
 
-
-
 .footer {
     background-color: #353535;
     color: #ffffff;
@@ -505,7 +503,6 @@ button {
     align-items: center;
     flex-basis: auto;
     gap: 15px;
-    margin-right: 3%;
     margin-left: 0%;
     margin-bottom: 100px;
 
@@ -643,12 +640,12 @@ h3 {
 }
 
 .stage-1 {
-    animation: delais 1000ms;
+    animation: delais 500ms;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
 .stage-2 {
-    animation: delais 2000ms;
+    animation: delais 1000ms;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
