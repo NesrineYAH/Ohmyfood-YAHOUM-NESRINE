@@ -26,13 +26,13 @@ $padding: 20px;
     }
 
     #Logo {
-        max-width: 32%;
+        max-width: 40%;
         font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 20%;
+        left: 3%;
         top: 1%
     }
 
@@ -679,7 +679,7 @@ $padding: 20px;
 
 /***********************version tablette*******************************/
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     body {
         max-width: 992px;
