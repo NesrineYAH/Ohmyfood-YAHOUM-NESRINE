@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
   body {
     max-width: 768px;
+    width: 100%;
     font-family: "Roboto", "shrikhand";
   }
   .page-accueil {
@@ -45,6 +46,12 @@
     font-size: 16px;
     font-weight: bold;
   }
+  h1 {
+    display: flex;
+    font-size: 20px;
+    margin-top: 60px;
+    justify-content: center;
+  }
   .titre-du-site {
     display: flex;
     justify-content: center;
@@ -86,7 +93,8 @@
     width: 200px;
     height: 20px;
     border: 5px solid #9356DC;
-    position: absolute;
+    position: fixed;
+    right: 45%;
     border-radius: 10px;
   }
   .loading .textload {

@@ -4,7 +4,8 @@
 
 
 body {
-    max-width: 1400px;
+    max-width: 1600px;
+    width: 100%;
     font-family: "Roboto", "shrikhand";
 
 }
@@ -30,21 +31,6 @@ header {
     top: 1%;
 }
 
-h1 {
-    display: flex;
-    font-size: 20px;
-    margin-top: 60px;
-    justify-content: center;
-}
-
-.petit-texte {
-    display: flex;
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
-}
-
 .localisation {
     display: flex;
     justify-content: center;
@@ -54,18 +40,19 @@ h1 {
     background-color: #e4e2e1;
     padding: $padding;
     margin: 120px 0 10px -40px;
-}
 
-.localisation_txt {
-    border: none;
-    background-color: #e4e2e1;
-    text-decoration: #000000;
-    font-size: 16px;
-    font-weight: bold;
-}
+    &__txt {
+        border: none;
+        background-color: #e4e2e1;
+        text-decoration: #000000;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
-.icone-maps {
-    margin-right: 15px;
+    &__icone {
+        margin-right: 15px;
+        margin-left: -20px;
+    }
 }
 
 .titre-du-site {
@@ -82,6 +69,14 @@ h1 {
     display: flex;
     font-size: 20px;
     margin-top: 60px;
+    justify-content: center;
+}
+
+.petit-texte {
+    display: flex;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
@@ -530,18 +525,13 @@ h3 {
 }
 
 .Bloc-repas {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;*/
-    row-gap: 10px;
+  
+   gap: 15px;
     min-width: 32%;
-    overflow: hidden;
+
 }
 
 .liste-menu {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;*/
     min-width: 30%;
     gap: 15px;
 }
@@ -623,7 +613,7 @@ h3 {
     height: 100%;
     width: 15%;
     transition: 0.5s;
-    margin: -10px -70px -10px 0px;
+    margin: -10px -75px -10px 0px;
 
     .icone-chekmark {
         font-size: 28px;

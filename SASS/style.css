@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
-  max-width: 1400px;
+  max-width: 1600px;
+  width: 100%;
   font-family: "Roboto", "shrikhand";
 }
 
@@ -26,8 +27,6 @@ header {
   top: 1%;
 }
 
-
-
 .localisation {
   display: flex;
   justify-content: center;
@@ -38,8 +37,7 @@ header {
   padding: 20px;
   margin: 120px 0 10px -40px;
 }
-
-.localisation_txt {
+.localisation__txt {
   border: none;
   background-color: #e4e2e1;
   -webkit-text-decoration: #000000;
@@ -47,10 +45,21 @@ header {
   font-size: 16px;
   font-weight: bold;
 }
-
-.icone-maps {
+.localisation__icone {
   margin-right: 15px;
+  margin-left: -20px;
 }
+
+.titre-du-site {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 40px 40px 0px 40px;
+}
+
 h1 {
   display: flex;
   font-size: 20px;
@@ -64,15 +73,6 @@ h1 {
   margin-top: 40px;
   margin-bottom: 40px;
   justify-content: center;
-}
-.titre-du-site {
-  display: flex;
-  justify-content: center;
-  font-size: 28px;
-  text-align: center;
-  overflow: hidden;
-  margin-top: 20px;
-  padding: 40px 40px 0px 40px;
 }
 
 .loadingscreen {
@@ -507,18 +507,11 @@ h3 {
 }
 
 .Bloc-repas {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-around;*/
-  row-gap: 10px;
+  gap: 15px;
   min-width: 32%;
-  overflow: hidden;
 }
 
 .liste-menu {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;*/
   min-width: 30%;
   gap: 15px;
 }
@@ -588,7 +581,7 @@ h3 {
   height: 100%;
   width: 15%;
   transition: 0.5s;
-  margin: -10px -70px -10px 0px;
+  margin: -10px -75px -10px 0px;
 }
 .validation__box .icone-chekmark {
   font-size: 28px;
