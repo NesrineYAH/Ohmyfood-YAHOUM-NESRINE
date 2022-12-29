@@ -15,11 +15,11 @@
     font-size: 14px;
   }
   #Logo {
-    max-width: 40%;
+    max-width: 32%;
     font-size: 20px;
-    padding: 20px 15px 30px 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     left: 20%;
     top: 1%;
@@ -94,7 +94,7 @@
     height: 20px;
     border: 5px solid #9356DC;
     position: fixed;
-    right: 45%;
+    right: 32%;
     border-radius: 10px;
   }
   .loading .textload {
@@ -322,7 +322,7 @@
     font-size: 22px;
     width: 100%;
     position: absolute;
-    left: 6%;
+    left: 7%;
   }
   .footer__conatiner {
     width: 100%;
@@ -633,9 +633,5 @@
   }
   .Bloc-spc2 {
     margin-top: 85px;
-  }
-  .footer__titre {
-    position: absolute;
-    left: 40%;
   }
 }/*# sourceMappingURL=media.css.map */

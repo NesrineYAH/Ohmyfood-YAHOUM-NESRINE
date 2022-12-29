@@ -26,11 +26,11 @@ $padding: 20px;
     }
 
     #Logo {
-        max-width: 40%;
+        max-width: 32%;
         font-size: 20px;
-        padding: 20px 15px 30px 35px;
         display: flex;
         justify-content: center;
+        align-items: center;
         position: absolute;
         left: 20%;
         top: 1%
@@ -110,7 +110,7 @@ $padding: 20px;
         height: 20px;
         border: 5px solid $color-one;
         position: fixed;
-        right: 45%;
+        right: 32%;
         border-radius: 10px;
 
         .textload {
@@ -328,6 +328,7 @@ $padding: 20px;
             left: -62%;
             animation: coeur 2s linear;
         }
+
     }
 
     .footer {
@@ -347,7 +348,7 @@ $padding: 20px;
             font-size: 22px;
             width: 100%;
             position: absolute;
-            left: 6%
+            left: 7%
         }
 
         &__conatiner {
@@ -579,7 +580,6 @@ $padding: 20px;
         justify-content: space-between;
         cursor: pointer;
 
-
         &:hover {
             .validation__box {
                 margin: -10px 0px -10px 10px;
@@ -730,8 +730,4 @@ $padding: 20px;
         margin-top: 85px;
     }
 
-    .footer__titre {
-        position: absolute;
-        left: 40%;
-    }
 }
