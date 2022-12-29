@@ -137,13 +137,13 @@ button:hover {
 }
 
 .titre-section1 {
-  margin-left: 40px;
+  margin-left: 50px;
   display: flex;
   width: 100%;
 }
 
 .titre-section2 {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 #Fonctionnement {
@@ -200,16 +200,10 @@ button:hover {
   color: #989292;
 }
 
-.Titre {
+.Titre-carte-info {
   font-size: 14px;
   font-weight: 500;
   margin-left: 20px;
-}
-
-.titre-section {
-  margin-left: 30px;
-  display: flex;
-  width: 100%;
 }
 
 #Restaurants {
@@ -226,9 +220,9 @@ button:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 35px;
-  padding-bottom: 100px;
+  gap: 40px;
+  margin-left: 3%;
+  padding-bottom: 60px;
 }
 
 .carte-restaurant {
