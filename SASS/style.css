@@ -26,20 +26,7 @@ header {
   top: 1%;
 }
 
-h1 {
-  display: flex;
-  font-size: 20px;
-  margin-top: 60px;
-  justify-content: center;
-}
 
-.petit-texte {
-  display: flex;
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  justify-content: center;
-}
 
 .localisation {
   display: flex;
@@ -64,7 +51,20 @@ h1 {
 .icone-maps {
   margin-right: 15px;
 }
+h1 {
+  display: flex;
+  font-size: 20px;
+  margin-top: 60px;
+  justify-content: center;
+}
 
+.petit-texte {
+  display: flex;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
 .titre-du-site {
   display: flex;
   justify-content: center;
@@ -73,13 +73,6 @@ h1 {
   overflow: hidden;
   margin-top: 20px;
   padding: 40px 40px 0px 40px;
-}
-
-h1 {
-  display: flex;
-  font-size: 20px;
-  margin-top: 60px;
-  justify-content: center;
 }
 
 .loadingscreen {
