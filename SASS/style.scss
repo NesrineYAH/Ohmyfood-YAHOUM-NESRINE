@@ -4,8 +4,7 @@
 
 
 body {
-    max-width: 1600px;
-
+    max-width: 1000px;
     font-family: "Roboto", "shrikhand";
     margin: auto;
 }
@@ -13,7 +12,6 @@ body {
 .page-accueil {
     opacity: 100;
     animation: loading 3s;
-    align-items: center;
 }
 
 header {
@@ -259,18 +257,22 @@ button {
     }
 }
 
-.Nouveau1 {
-    @include Nouveau;
-    position: absolute;
-    right: 57%;
-    margin-top: 20px;
+.img-tag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.Nouveau2 {
+.Nouveau {
     @include Nouveau;
-    position: absolute;
-    right: 9%;
-    margin-top: 20px;
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    left: 77%;
+    bottom: 71%;
+    margin-top: -35px;
+    white-space: nowrap;
 
 }
 
@@ -442,7 +444,7 @@ button {
 }
 
 .coeur-full-page {
-    color: $color-white;
+    color: transparent;
 }
 
 .coeur-empty-page {
@@ -450,7 +452,7 @@ button {
 }
 
 .coeur-page:hover .coeur-empty-page {
-    color: $color-white;
+    color: transparent;
     animation: coeur 2s linear;
 }
 
@@ -482,7 +484,6 @@ button {
     position: relative;
     left: 4%;
     margin-bottom: 20px;
-
 
     &::after {
         content: "";
@@ -759,24 +760,27 @@ h3 {
         opacity: 100%;
     }
 }
+
 .stage-1 {
     animation: delais;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
 .stage-2 {
-    animation: delais 1750ms;
+    animation: delais;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
 .stage-3 {
-    animation: delais 3000ms;
+    animation: delais;
     animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
-@for $i from 1 to 3 {
+@for $i from 1 through 3 {
     .stage-#{$i} {
-        animation: delais 1000ms;
-        animation-delay: ($i, 3)s;
+        animation: delais 2s;
+        animation-delay: ($i*3)s;
     }
 }
+
+$i: 2s;

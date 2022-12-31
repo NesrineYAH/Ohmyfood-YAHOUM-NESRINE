@@ -254,7 +254,7 @@ $padding: 20px;
             object-fit: cover;
         }
     }
-
+/*
     .Nouveau1 {
         @include Nouveau;
         position: absolute;
@@ -269,7 +269,7 @@ $padding: 20px;
         margin-top: 20px;
         font-size: 15px;
     }
-
+*/
     h2 {
         margin-top: 10px;
     }
@@ -655,20 +655,7 @@ $padding: 20px;
         }
     }
 
-    .stage-1 {
-        animation: delais;
-
-    }
-
-    .stage-2 {
-        animation: delais;
-
-    }
-
-    .stage-3 {
-        animation: delais;
-
-    }
+  
 
     .Bloc-spc2 {
         margin-top: 85px;

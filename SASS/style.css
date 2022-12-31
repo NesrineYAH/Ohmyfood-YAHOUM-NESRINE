@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
-  max-width: 1600px;
+  max-width: 1000px;
   font-family: "Roboto", "shrikhand";
   margin: auto;
 }
@@ -9,7 +9,6 @@ body {
   opacity: 100;
   -webkit-animation: loading 3s;
           animation: loading 3s;
-  align-items: center;
 }
 
 header {
@@ -244,23 +243,14 @@ button:hover {
      object-fit: cover;
 }
 
-.Nouveau1 {
-  width: 70px;
-  height: 20px;
-  color: #3b8468;
-  background-color: #a9e0d1;
-  text-align: center;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 15px;
-  position: absolute;
-  right: 57%;
-  margin-top: 20px;
+.img-tag {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Nouveau2 {
-  width: 70px;
+.Nouveau {
+  width: 62px;
   height: 20px;
   color: #3b8468;
   background-color: #a9e0d1;
@@ -269,9 +259,13 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
-  position: absolute;
-  right: 9%;
-  margin-top: 20px;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  left: 77%;
+  bottom: 71%;
+  margin-top: -35px;
+  white-space: nowrap;
 }
 
 .detail-carte-restaurant {
@@ -429,7 +423,7 @@ button:hover {
 }
 
 .coeur-full-page {
-  color: #ffffff;
+  color: transparent;
 }
 
 .coeur-empty-page {
@@ -437,7 +431,7 @@ button:hover {
 }
 
 .coeur-page:hover .coeur-empty-page {
-  color: #ffffff;
+  color: transparent;
   -webkit-animation: coeur 2s linear;
           animation: coeur 2s linear;
 }
@@ -684,29 +678,36 @@ h3 {
 }
 
 .stage-2 {
-  -webkit-animation: delais 1750ms;
-          animation: delais 1750ms;
+  -webkit-animation: delais;
+          animation: delais;
   -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
           animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
 }
 
 .stage-3 {
-  -webkit-animation: delais 3000ms;
-          animation: delais 3000ms;
+  -webkit-animation: delais;
+          animation: delais;
   -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
           animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
 }
 
 .stage-1 {
-  -webkit-animation: delais 1000ms;
-          animation: delais 1000ms;
-  -webkit-animation-delay: 1, 3 s;
-          animation-delay: 1, 3 s;
+  -webkit-animation: delais 2s;
+          animation: delais 2s;
+  -webkit-animation-delay: 3 s;
+          animation-delay: 3 s;
 }
 
 .stage-2 {
-  -webkit-animation: delais 1000ms;
-          animation: delais 1000ms;
-  -webkit-animation-delay: 2, 3 s;
-          animation-delay: 2, 3 s;
+  -webkit-animation: delais 2s;
+          animation: delais 2s;
+  -webkit-animation-delay: 6 s;
+          animation-delay: 6 s;
+}
+
+.stage-3 {
+  -webkit-animation: delais 2s;
+          animation: delais 2s;
+  -webkit-animation-delay: 9 s;
+          animation-delay: 9 s;
 }/*# sourceMappingURL=style.css.map */

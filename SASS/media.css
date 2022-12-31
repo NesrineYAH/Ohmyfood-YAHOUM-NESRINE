@@ -227,35 +227,22 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .Nouveau1 {
-    width: 70px;
-    height: 20px;
-    color: #3b8468;
-    background-color: #a9e0d1;
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 15px;
-    position: absolute;
-    right: 10%;
-    margin-top: 20px;
-  }
-  .Nouveau2 {
-    width: 70px;
-    height: 20px;
-    color: #3b8468;
-    background-color: #a9e0d1;
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 15px;
-    position: absolute;
-    right: 10%;
-    margin-top: 20px;
-    font-size: 15px;
-  }
+  /*
+      .Nouveau1 {
+          @include Nouveau;
+          position: absolute;
+          right: 10%;
+          margin-top: 20px;
+      }
+
+      .Nouveau2 {
+          @include Nouveau;
+          position: absolute;
+          right: 10%;
+          margin-top: 20px;
+          font-size: 15px;
+      }
+  */
   h2 {
     margin-top: 10px;
   }
@@ -575,18 +562,6 @@
     transform: scale(1.1);
     transition: 0.2s;
     font-weight: bold;
-  }
-  .stage-1 {
-    -webkit-animation: delais;
-            animation: delais;
-  }
-  .stage-2 {
-    -webkit-animation: delais;
-            animation: delais;
-  }
-  .stage-3 {
-    -webkit-animation: delais;
-            animation: delais;
   }
   .Bloc-spc2 {
     margin-top: 85px;
