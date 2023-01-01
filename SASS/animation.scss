@@ -119,6 +119,13 @@
     100% {
         opacity: 100%;
     }
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 @for $i from 1 to 3 {

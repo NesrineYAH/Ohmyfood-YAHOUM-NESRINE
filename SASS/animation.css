@@ -71,6 +71,12 @@
   100% {
     opacity: 100%;
   }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 @keyframes coeur {
   0% {
@@ -78,6 +84,12 @@
   }
   100% {
     opacity: 100%;
+  }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 .stage-1 {

@@ -27,13 +27,14 @@ $padding: 20px;
     }
 
     #Logo {
-        max-width: 40%;
+        max-width: 35%;
+        width: 20%;
         font-size: 20px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 30px;
+        align-self: center;
         position: absolute;
-        left: 3%;
+        left: 15%;
         top: 1%
     }
 
@@ -307,7 +308,7 @@ $padding: 20px;
         cursor: pointer;
 
         &:hover .coeur-empty {
-            color: #ffffff;
+            color: $color-white;
         }
 
         &:hover .coeur-full {
@@ -321,7 +322,7 @@ $padding: 20px;
             transform: scale(1.025);
             position: relative;
             left: -62%;
-            animation: coeur 2s linear;
+            animation: coeur 2s linear forwards;
         }
 
     }
