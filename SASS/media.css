@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     max-width: 768px;
     width: 100%;
@@ -239,10 +239,9 @@
     border-radius: 5px;
     font-size: 15px;
     position: relative;
-    left: 70%;
+    left: 75%;
     bottom: 71%;
     margin-top: -40px;
-    white-space: nowrap;
   }
   h2 {
     margin-top: 10px;
@@ -583,6 +582,22 @@
   .validation__box .icone-chekmark {
     transform: rotate(180deg);
     transition: 0.5s;
+  }
+  .Nouveau {
+    width: 70px;
+    height: 16px;
+    color: #3b8468;
+    background-color: #a9e0d1;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    left: 70%;
+    bottom: 71%;
+    margin-top: -40px;
   }
   .Bloc-repas {
     /*display: flex;

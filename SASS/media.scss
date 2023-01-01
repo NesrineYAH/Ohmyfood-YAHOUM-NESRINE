@@ -8,7 +8,7 @@ $padding: 20px;
 
 @import "mixins.scss";
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
     body {
         max-width: 768px;
         width: 100%;
@@ -254,13 +254,15 @@ $padding: 20px;
             object-fit: cover;
         }
     }
+
     .Nouveau {
         @include Nouveau;
         position: relative;
-        left: 70%;
+        left: 75%;
         bottom: 71%;
         margin-top: -40px;
-        white-space: nowrap;
+      
+
     }
 
     h2 {
@@ -333,8 +335,6 @@ $padding: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
 
         &__titre {
             margin: -40px 2px;
@@ -659,7 +659,7 @@ $padding: 20px;
 
 /***********************version tablette*******************************/
 
-@media screen and (max-width: 992px) {
+@media screen (min-width:770px) and (max-width: 992px) {
 
     body {
         max-width: 992px;
@@ -676,6 +676,14 @@ $padding: 20px;
             transform: rotate(180deg);
             transition: 0.5s;
         }
+    }
+    .Nouveau {
+        @include Nouveau;
+        position: relative;
+        left: 70%;
+        bottom: 71%;
+        margin-top: -40px;
+     
     }
 
     .Bloc-repas {
