@@ -7,6 +7,7 @@ body {
     max-width: 1600px;
     font-family: "Roboto", "shrikhand";
     margin: auto;
+    overflow-x: hidden;
 }
 
 .page-accueil {
@@ -326,6 +327,7 @@ button {
         transform: scale(1.025);
         position: relative;
         left: -56%;
+        animation: coeur 2s linear forwards;
     }
 }
 
@@ -358,7 +360,7 @@ button {
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 20px;
-        margin: 25px 20px 0 20px;
+        margin: 25px 0 0 0 ;
     }
 
     &__lien {
