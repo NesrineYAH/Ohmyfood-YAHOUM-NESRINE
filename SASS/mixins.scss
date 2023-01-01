@@ -41,14 +41,14 @@ $padding: 20px;
 
 
 @mixin Nouveau {
-    width: 62px;
-    height: 20px;
+    width: 70px;
+    height: 16px;
     color: #3b8468;
     background-color: #a9e0d1;
     text-align: center;
+    align-items: center;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
     font-size: 15px;
-
 }

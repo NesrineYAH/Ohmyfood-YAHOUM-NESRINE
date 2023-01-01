@@ -27,7 +27,7 @@
   }
   .localisation {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     border-top: 2px solid #c5c1c1;
@@ -45,7 +45,7 @@
     -webkit-text-decoration: #000000;
             text-decoration: #000000;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bo;
   }
   h1 {
     display: flex;
@@ -95,7 +95,7 @@
     height: 20px;
     border: 5px solid #9356DC;
     position: fixed;
-    left: 15%;
+    left: 26%;
     border-radius: 10px;
   }
   .loading .textload {
@@ -227,22 +227,23 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  /*
-      .Nouveau1 {
-          @include Nouveau;
-          position: absolute;
-          right: 10%;
-          margin-top: 20px;
-      }
-
-      .Nouveau2 {
-          @include Nouveau;
-          position: absolute;
-          right: 10%;
-          margin-top: 20px;
-          font-size: 15px;
-      }
-  */
+  .Nouveau {
+    width: 70px;
+    height: 16px;
+    color: #3b8468;
+    background-color: #a9e0d1;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    left: 70%;
+    bottom: 71%;
+    margin-top: -40px;
+    white-space: nowrap;
+  }
   h2 {
     margin-top: 10px;
   }
@@ -310,7 +311,7 @@
     font-size: 22px;
     width: 100%;
     position: absolute;
-    left: 7%;
+    left: 8%;
   }
   .footer__conatiner {
     width: 100%;

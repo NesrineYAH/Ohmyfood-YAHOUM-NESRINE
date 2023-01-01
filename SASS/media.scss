@@ -39,7 +39,7 @@ $padding: 20px;
 
     .localisation {
         display: flex;
-        max-width: 100%;
+        width: 100%;
         align-items: center;
         justify-content: center;
         border-top: 2px solid #c5c1c1;
@@ -57,7 +57,7 @@ $padding: 20px;
             background-color: #e4e2e1;
             text-decoration: #000000;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: bo;
         }
     }
 
@@ -111,7 +111,7 @@ $padding: 20px;
         height: 20px;
         border: 5px solid $color-one;
         position: fixed;
-        left: 15%;
+        left: 26%;
         border-radius: 10px;
 
         .textload {
@@ -254,22 +254,15 @@ $padding: 20px;
             object-fit: cover;
         }
     }
-/*
-    .Nouveau1 {
+    .Nouveau {
         @include Nouveau;
-        position: absolute;
-        right: 10%;
-        margin-top: 20px;
+        position: relative;
+        left: 70%;
+        bottom: 71%;
+        margin-top: -40px;
+        white-space: nowrap;
     }
 
-    .Nouveau2 {
-        @include Nouveau;
-        position: absolute;
-        right: 10%;
-        margin-top: 20px;
-        font-size: 15px;
-    }
-*/
     h2 {
         margin-top: 10px;
     }
@@ -349,7 +342,7 @@ $padding: 20px;
             font-size: 22px;
             width: 100%;
             position: absolute;
-            left: 7%
+            left: 8%
         }
 
         &__conatiner {
@@ -655,7 +648,7 @@ $padding: 20px;
         }
     }
 
-  
+
 
     .Bloc-spc2 {
         margin-top: 85px;
