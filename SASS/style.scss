@@ -344,8 +344,8 @@ button {
         margin-top: -30px;
         font-family: "shrikhand";
         font-size: 26px;
-        width: 100%;
-        position: absolute;
+        max-width: 100%;
+        position: relative;
         left: 45%
     }
 
@@ -362,15 +362,20 @@ button {
     &__lien {
         color: $color-white;
         text-decoration: none;
+        min-width: 15%;
         display: flex;
-        min-width: 10%;
+        flex-direction: row;
+    }
 
+    & a {
+        text-decoration: none;
     }
 
     &__icone {
+        margin-top: 22px;
         position: relative;
         left: -110%;
-        bottom: -35%;
+
     }
 }
 
