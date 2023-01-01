@@ -261,7 +261,7 @@ $padding: 20px;
         left: 75%;
         bottom: 71%;
         margin-top: -40px;
-      
+
 
     }
 
@@ -632,8 +632,6 @@ $padding: 20px;
         transition: 0.5s;
     }
 
-
-
     .commande {
         display: flex;
         justify-content: center;
@@ -648,8 +646,6 @@ $padding: 20px;
         }
     }
 
-
-
     .Bloc-spc2 {
         margin-top: 85px;
     }
@@ -659,7 +655,7 @@ $padding: 20px;
 
 /***********************version tablette*******************************/
 
-@media screen (min-width:770px) and (max-width: 992px) {
+@media all screen (min-width: 770px) and (max-width: 992px) {
 
     body {
         max-width: 992px;
@@ -677,14 +673,8 @@ $padding: 20px;
             transition: 0.5s;
         }
     }
-    .Nouveau {
-        @include Nouveau;
-        position: relative;
-        left: 70%;
-        bottom: 71%;
-        margin-top: -40px;
-     
-    }
+
+
 
     .Bloc-repas {
         /*display: flex;
