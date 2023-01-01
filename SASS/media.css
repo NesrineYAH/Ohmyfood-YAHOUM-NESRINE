@@ -152,7 +152,6 @@
   }
   .carte-info {
     display: flex;
-    flex-direction: column;
     width: 80%;
     border-radius: 20px;
     text-decoration: none;
@@ -303,11 +302,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*
+      &__icone {
+          position: relative;
+          left: -74%;
+          bottom: 7%;
+          margin-top: 25px;
+          width: 7%;
+      }*/
   }
   .footer__titre {
     margin: -40px 2px;
     font-family: "shrikhand";
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
     position: absolute;
     left: 8%;
@@ -323,6 +330,20 @@
     left: -18%;
     margin-top: 0;
   }
+  .footer__lienX {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    max-width: 75%;
+    gap: 0;
+  }
+  .footer__iconeX {
+    position: relative;
+    bottom: 7%;
+    margin-top: 25px;
+    width: 7%;
+    margin-right: 0;
+  }
   .footer__lien {
     color: #ffffff;
     text-decoration: none;
@@ -330,18 +351,15 @@
     width: 75%;
     gap: 0;
     margin: -18px;
-  }
-  .footer__icone {
-    position: absolute;
-    left: 4%;
-    bottom: 78%;
-    margin-top: 25px;
-    width: 7%;
+    flex-direction: row;
+    width: 75%;
+    gap: 0;
+    margin: -18px;
   }
   .footer__icone1 {
-    position: absolute;
-    left: 4%;
-    bottom: 52%;
+    position: relative;
+    left: -62%;
+    bottom: 4%;
     margin-top: 25px;
     width: 7%;
   }
@@ -568,7 +586,7 @@
   }
 }
 /***********************version tablette*******************************/
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   body {
     max-width: 992px;
     font-family: "Roboto", "shrikhand";
@@ -582,22 +600,6 @@
   .validation__box .icone-chekmark {
     transform: rotate(180deg);
     transition: 0.5s;
-  }
-  .Nouveau {
-    width: 70px;
-    height: 16px;
-    color: #3b8468;
-    background-color: #a9e0d1;
-    text-align: center;
-    align-items: center;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 15px;
-    position: relative;
-    left: 70%;
-    bottom: 71%;
-    margin-top: -40px;
   }
   .Bloc-repas {
     /*display: flex;

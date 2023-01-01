@@ -176,7 +176,6 @@ $padding: 20px;
 
     .carte-info {
         display: flex;
-        flex-direction: column;
         width: 80%;
         @include carte;
 
@@ -330,7 +329,7 @@ $padding: 20px;
     .footer {
         width: 100%;
         background-color: #353535;
-        color: #ffffff;
+        color: $color-white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -339,7 +338,7 @@ $padding: 20px;
         &__titre {
             margin: -40px 2px;
             font-family: "shrikhand";
-            font-size: 22px;
+            font-size: 20px;
             width: 100%;
             position: absolute;
             left: 8%
@@ -357,6 +356,24 @@ $padding: 20px;
             margin-top: 0;
         }
 
+        &__lienX {
+            color: $color-white;
+            display: flex;
+            flex-direction: row;
+            max-width: 75%;
+            gap: 0;
+        
+
+        }
+
+        &__iconeX {
+            position: relative;
+            bottom: 7%;
+            margin-top: 25px;
+            width: 7%;
+            margin-right: 0;
+        }
+
         &__lien {
             color: #ffffff;
             text-decoration: none;
@@ -364,21 +381,26 @@ $padding: 20px;
             width: 75%;
             gap: 0;
             margin: -18px;
+            flex-direction: row;
+            width: 75%;
+            gap: 0;
+            margin: -18px;
 
         }
 
+      /*
         &__icone {
-            position: absolute;
-            left: 4%;
-            bottom: 78%;
+            position: relative;
+            left: -74%;
+            bottom: 7%;
             margin-top: 25px;
             width: 7%;
-        }
+        }*/
 
         &__icone1 {
-            position: absolute;
-            left: 4%;
-            bottom: 52%;
+            position: relative;
+            left: -62%;
+            bottom: 4%;
             margin-top: 25px;
             width: 7%;
         }
@@ -655,7 +677,7 @@ $padding: 20px;
 
 /***********************version tablette*******************************/
 
-@media all screen (min-width: 770px) and (max-width: 992px) {
+@media (max-width: 992px) {
 
     body {
         max-width: 992px;
@@ -673,8 +695,6 @@ $padding: 20px;
             transition: 0.5s;
         }
     }
-
-
 
     .Bloc-repas {
         /*display: flex;
