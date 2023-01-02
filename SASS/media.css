@@ -307,11 +307,9 @@
     margin: -40px 2px;
     font-family: "shrikhand";
     font-size: 20px;
-    max-width: 100%;
-    position: absolute;
-    left: 8%;
+    position: relative;
+    left: -94%;
     display: flex;
-    flex-basis: 100%;
   }
   .footer__conatiner {
     max-width: 100%;
@@ -359,7 +357,7 @@
   /********************* mise en page Page Restaurant ***************/
   .lien-retour {
     position: absolute;
-    top: 35px;
+    top: 27px;
     left: 10px;
     color: #000000;
     font-size: larger;
@@ -425,7 +423,7 @@
     background: color #f4f4f4;
   }
   .carte-page {
-    margin-top: 100px;
+    margin-top: 15px;
     border-top: 2px solid #c5c1c1;
   }
   .carte-page img {
