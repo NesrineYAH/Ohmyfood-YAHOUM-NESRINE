@@ -203,9 +203,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 0;
-    margin-right: 25px;
-    gap: 40px;
+    margin: auto;
+    gap: 30px;
     overflow-anchor: none;
   }
   .carte-restaurant {
