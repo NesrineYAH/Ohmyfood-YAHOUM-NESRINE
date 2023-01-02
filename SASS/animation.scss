@@ -1,4 +1,3 @@
-
 @keyframes loading {
     to {
         opacity: 0;
@@ -119,6 +118,7 @@
     100% {
         opacity: 100%;
     }
+
     from {
         transform: scale(0);
     }
@@ -126,6 +126,21 @@
     to {
         transform: scale(1);
     }
+}
+
+.stage-1 {
+    animation: delais;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+}
+
+.stage-2 {
+    animation: delais;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
+}
+
+.stage-3 {
+    animation: delais;
+    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
 }
 
 @for $i from 1 to 3 {

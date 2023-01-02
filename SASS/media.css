@@ -225,6 +225,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .img-tag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .Nouveau {
     width: 70px;
     height: 16px;
@@ -576,10 +581,6 @@
     max-width: 992px;
     font-family: "Roboto", "shrikhand";
   }
-  /*
-  #Logo {
-      transform: translateX(-25%)
-  }*/
   .validation__box {
     height: 100%;
     width: 15%;
@@ -594,9 +595,6 @@
     transform: translateX(-25%);
   }
   .Bloc-repas {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;*/
     row-gap: 10px;
     min-width: 80%;
   }
