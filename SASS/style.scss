@@ -4,7 +4,7 @@
 
 
 body {
-    max-width: 1600px;
+    max-width: 1200px;
     font-family: "Roboto", "shrikhand";
     margin: auto;
     overflow-x: hidden;
@@ -28,9 +28,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*  position: relative;
-    left: 36%;
-    top: 25%;*/
     margin: auto;
 
 }
@@ -55,7 +52,6 @@ header {
 
     &__icone {
         margin-right: 15px;
-        margin-left: -20px;
     }
 }
 

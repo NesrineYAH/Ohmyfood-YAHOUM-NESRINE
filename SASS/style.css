@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
-  max-width: 1600px;
+  max-width: 1200px;
   font-family: "Roboto", "shrikhand";
   margin: auto;
   overflow-x: hidden;
@@ -25,9 +25,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*  position: relative;
-  left: 36%;
-  top: 25%;*/
   margin: auto;
 }
 
@@ -51,7 +48,6 @@ header {
 }
 .localisation__icone {
   margin-right: 15px;
-  margin-left: -20px;
 }
 
 .titre-du-site {
