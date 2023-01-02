@@ -1,0 +1,39 @@
+#conteneur-Resto {
+    width: 100%;
+    display: flex;
+    justify-content: space-arround;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 3%;
+    padding-bottom: 60px;
+
+}
+
+.footer__conatiner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 25px 0 0 0;
+}
+
+
+/**************page resataurant********************/
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    gap: 15px;
+    margin-right: 3%;
+    margin-left: 0%;
+    margin-bottom: 100px;
+
+}

@@ -1,0 +1,83 @@
+/* Version mobile first*/
+
+header {
+    align-items: center;
+    font-size: 14px;
+}
+
+#Logo {
+    max-width: 100%;
+    width: 40%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+.localisation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #c5c1c1;
+    background-color: #e4e2e1;
+    padding-left: 5px;
+    margin: 20px 0 10px 0;
+
+    &__icone {
+        margin-right: 15px;
+        margin-left: -20px;
+    }
+
+    &__txt {
+        border: none;
+        background-color: #e4e2e1;
+        text-decoration: #000000;
+        font-size: 16px;
+        font-weight: bo;
+    }
+}
+
+/* version desktop*/
+
+
+header {
+    align-items: center;
+    font-size: 24px;
+}
+
+#Logo {
+    max-width: 100%;
+    width: 15%;
+    padding: 20px 100px 30px 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.localisation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #c5c1c1;
+    background-color: #e4e2e1;
+    padding: $padding;
+    margin: 20px 0 10px -40px;
+
+    &__txt {
+        border: none;
+        background-color: #e4e2e1;
+        text-decoration: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__icone {
+        margin-right: 15px;
+    }
+}
