@@ -21,16 +21,17 @@ header {
 }
 
 #Logo {
-    max-width: 20%;
+    max-width: 100%;
     width: 15%;
     padding: 20px 100px 30px 100px;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /*  position: relative;
     left: 36%;
-    top: 25%;
+    top: 25%;*/
+    margin: auto;
 
 }
 
@@ -360,7 +361,7 @@ button {
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 20px;
-        margin: 25px 0 0 0 ;
+        margin: 25px 0 0 0;
     }
 
     &__lien {

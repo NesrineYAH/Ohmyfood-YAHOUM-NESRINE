@@ -21,10 +21,12 @@
     font-size: 20px;
     display: flex;
     margin-top: 30px;
+    justify-content: center;
     align-self: center;
-    position: absolute;
-    left: 25%;
-    top: 1%;
+    /* position: absolute;
+     left: 25%;
+     top: 1%*/
+    margin: auto;
   }
   .localisation {
     display: flex;
@@ -580,6 +582,10 @@
     max-width: 992px;
     font-family: "Roboto", "shrikhand";
   }
+  /*
+      #Logo {
+          transform: translateX(-25%)
+      }*/
   .validation__box {
     height: 100%;
     width: 15%;
@@ -589,6 +595,9 @@
   .validation__box .icone-chekmark {
     transform: rotate(180deg);
     transition: 0.5s;
+  }
+  .Nouveau {
+    transform: translateX(-25%);
   }
   .Bloc-repas {
     /*display: flex;
