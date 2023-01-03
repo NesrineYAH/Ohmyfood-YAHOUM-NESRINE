@@ -128,24 +128,10 @@
     }
 }
 
-.stage-1 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
-
-.stage-2 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
-
-.stage-3 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
-
-@for $i from 1 to 3 {
+@for $i from 1 to 4 {
     .stage-#{$i} {
-        animation: delais;
-        animation-delay: ($i*3)s;
+        animation: delais 1s* $i;
+        animation-delay: ($anim-duration* $i)s;
+        animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     }
 }

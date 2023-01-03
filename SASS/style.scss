@@ -519,15 +519,12 @@ h3 {
 }
 
 .Bloc-repas {
-
     gap: 15px;
     min-width: 32%;
-
     animation: delais;
     animation-duration: $anim-duration;
     animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     animation-fill-mode: both;
-
 }
 
 .liste-menu {
