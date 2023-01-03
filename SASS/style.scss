@@ -523,6 +523,11 @@ h3 {
     gap: 15px;
     min-width: 32%;
 
+    animation: delais;
+    animation-duration: $anim-duration;
+    animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+    animation-fill-mode: both;
+
 }
 
 .liste-menu {
@@ -544,8 +549,8 @@ h3 {
 
     &:hover {
         .liste-detail {
-            max-width: 40%;
-            min-width: 40%;
+            max-width: 50%;
+            min-width: 50%;
         }
 
         .validation__box {
@@ -694,7 +699,6 @@ h3 {
     }
 }
 
-
 @keyframes delais {
 
     from {
@@ -770,26 +774,11 @@ h3 {
     }
 }
 
-.stage-1 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
 
-.stage-2 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
-
-.stage-3 {
-    animation: delais;
-    animation-timing-function: cubic-bezier (0.5, 1.58, 0.34, 0.82);
-}
-
-@for $i from 1 through 3 {
+@for $i from 1 to 4 {
     .stage-#{$i} {
-        animation: delais 2s;
-        animation-delay: ($i*3)s;
+        animation: delais 1s* $i;
+        animation-delay: ($anim-duration* $i)s;
+        animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     }
 }
-
-$i: 2s;

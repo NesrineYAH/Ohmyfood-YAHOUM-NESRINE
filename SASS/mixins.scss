@@ -3,7 +3,8 @@ $color-two: #FF79DA;
 $color-three: #99E2D0;
 $color-white: #ffffff;
 $padding: 20px;
-
+$anim-duration: 1000ms;
+$i: 3;
 
 @mixin carte {
     border-radius: 20px;

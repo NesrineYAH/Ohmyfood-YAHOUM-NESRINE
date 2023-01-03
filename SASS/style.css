@@ -499,6 +499,14 @@ h3 {
 .Bloc-repas {
   gap: 15px;
   min-width: 32%;
+  -webkit-animation: delais;
+          animation: delais;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+          animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .liste-menu {
@@ -518,8 +526,8 @@ h3 {
   margin: 10px;
 }
 .liste-repas:hover .liste-detail {
-  max-width: 40%;
-  min-width: 40%;
+  max-width: 50%;
+  min-width: 50%;
 }
 .liste-repas:hover .validation__box .icone-chekmark {
   transform: rotate(0);
@@ -685,43 +693,28 @@ h3 {
   }
 }
 .stage-1 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-}
-
-.stage-2 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-}
-
-.stage-3 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-}
-
-.stage-1 {
-  -webkit-animation: delais 2s;
-          animation: delais 2s;
-  -webkit-animation-delay: 3 s;
-          animation-delay: 3 s;
+  -webkit-animation: delais 1s;
+          animation: delais 1s;
+  -webkit-animation-delay: 1000ms s;
+          animation-delay: 1000ms s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+          animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
 
 .stage-2 {
   -webkit-animation: delais 2s;
           animation: delais 2s;
-  -webkit-animation-delay: 6 s;
-          animation-delay: 6 s;
+  -webkit-animation-delay: 2000ms s;
+          animation-delay: 2000ms s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+          animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
 
 .stage-3 {
-  -webkit-animation: delais 2s;
-          animation: delais 2s;
-  -webkit-animation-delay: 9 s;
-          animation-delay: 9 s;
+  -webkit-animation: delais 3s;
+          animation: delais 3s;
+  -webkit-animation-delay: 3000ms s;
+          animation-delay: 3000ms s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+          animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }/*# sourceMappingURL=style.css.map */
