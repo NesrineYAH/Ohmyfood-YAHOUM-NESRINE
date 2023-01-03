@@ -427,7 +427,7 @@
     background: color #f4f4f4;
   }
   .carte-page {
-    margin-top: 15px;
+    margin-top: -15px;
     border-top: 2px solid #c5c1c1;
   }
   .carte-page img {
