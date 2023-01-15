@@ -311,8 +311,7 @@ button {
     }
 
     &:hover .coeur__full {
-        color: $couleur-coeur;
-        background: -webkit-linear-gradient($color-two, $color-one);
+        background-image: -webkit-linear-gradient($color-two, $color-one);
         background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -454,8 +453,7 @@ button {
 }
 
 .coeur-page:hover .coeur-full-page {
-    color: linear-gradient($color-two, $color-one);
-    background: -webkit-linear-gradient($color-two, $color-one);
+    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -770,7 +768,7 @@ h3 {
 @for $i from 1 to 4 {
     .stage-#{$i} {
         animation: delais 1s* $i;
-    
+
         animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     }
 }

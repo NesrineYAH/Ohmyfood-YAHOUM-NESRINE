@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
-$color-one: #9356DC;
-$color-two: #FF79DA;
-$color-three: #99E2D0;
-$color-white: #ffffff;
-$padding: 20px;
 
 @import "mixins.scss";
 
@@ -228,9 +223,9 @@ $padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
         gap: 30px;
-        overflow-anchor: none;
+
+
     }
 
     .carte-restaurant {
@@ -678,7 +673,7 @@ $padding: 20px;
         height: 100%;
         width: 15%;
         transition: 0.5s;
-        margin: -10px -112px -10px 0px;
+        margin: -10px -116px -10px 0px;
 
         .icone-chekmark {
             transform: rotate(180deg);
