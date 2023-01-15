@@ -97,7 +97,7 @@ h1 {
 .loading {
   width: 200px;
   height: 20px;
-  border: 5px solid #9356DC;
+  border: 5px solid rgb(147, 86, 220);
   position: absolute;
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@ h1 {
   padding-top: 25px;
   position: absolute;
   font-size: 20px;
-  color: #FF79DA;
+  color: rgb(255, 121, 218);
 }
 .loading .ball {
   display: block;
@@ -216,9 +216,6 @@ button:hover {
 #conteneur-Resto {
   width: 100%;
   display: flex;
-  justify-content: space-arround;
-  align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
   margin-left: 3%;
@@ -306,8 +303,8 @@ button:hover {
   color: #ffffff;
 }
 .icone-coeur:hover .coeur__full {
-  color: linear-gradient(#FF79DA, #9356DC);
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  color: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  background: -webkit-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -390,7 +387,6 @@ button:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -439,8 +435,8 @@ button:hover {
 }
 
 .coeur-page:hover .coeur-full-page {
-  color: linear-gradient(#FF79DA, #9356DC);
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  color: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  background: -webkit-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -695,8 +691,7 @@ h3 {
 .stage-1 {
   -webkit-animation: delais 1s;
           animation: delais 1s;
-  -webkit-animation-delay: 1000ms s;
-          animation-delay: 1000ms s;
+  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
@@ -704,8 +699,7 @@ h3 {
 .stage-2 {
   -webkit-animation: delais 2s;
           animation: delais 2s;
-  -webkit-animation-delay: 2000ms s;
-          animation-delay: 2000ms s;
+  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
@@ -713,8 +707,7 @@ h3 {
 .stage-3 {
   -webkit-animation: delais 3s;
           animation: delais 3s;
-  -webkit-animation-delay: 3000ms s;
-          animation-delay: 3000ms s;
+  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }/*# sourceMappingURL=style.css.map */

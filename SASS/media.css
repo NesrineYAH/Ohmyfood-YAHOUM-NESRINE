@@ -44,7 +44,7 @@
     -webkit-text-decoration: #000000;
             text-decoration: #000000;
     font-size: 16px;
-    font-weight: bo;
+    font-weight: bold;
   }
   h1 {
     display: flex;
@@ -91,7 +91,7 @@
   .loading {
     width: 200px;
     height: 20px;
-    border: 5px solid #9356DC;
+    border: 5px solid rgb(147, 86, 220);
     position: fixed;
     left: 22.5%;
     border-radius: 10px;
@@ -103,7 +103,7 @@
     padding-top: 25px;
     position: absolute;
     font-size: 20px;
-    color: #FF79DA;
+    color: rgb(255, 121, 218);
   }
   .loading .ball {
     display: block;
@@ -284,7 +284,7 @@
     color: #ffffff;
   }
   .icone-coeur:hover .coeur-full {
-    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -399,7 +399,7 @@
     color: #ffffff;
   }
   .coeur_page:hover .coeur-full-page {
-    background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -424,7 +424,7 @@
     border-radius: 60px 60px 0px 0px;
     position: relative;
     top: -120px;
-    background: color #f4f4f4;
+    background-color: #f4f4f4;
   }
   .carte-page {
     margin-top: -15px;
@@ -436,7 +436,7 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
-  #Titre-article {
+  .Titre-article {
     font-size: 22px;
     margin-top: 12px;
     margin-left: 0;
@@ -444,7 +444,7 @@
             animation: delais 1s linear forwards;
     margin-bottom: 10px;
   }
-  #Titre-article::after {
+  .Titre-article::after {
     content: "";
     display: block;
     width: 60px;

@@ -227,9 +227,6 @@ button {
 #conteneur-Resto {
     width: 100%;
     display: flex;
-    justify-content: space-arround;
-    align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
     margin-left: 3%;
@@ -314,7 +311,7 @@ button {
     }
 
     &:hover .coeur__full {
-        color: linear-gradient($color-two, $color-one);
+        color: $couleur-coeur;
         background: -webkit-linear-gradient($color-two, $color-one);
         background-clip: text;
         -webkit-background-clip: text;
@@ -406,7 +403,6 @@ button {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 40px;
 
 }
@@ -472,7 +468,7 @@ button {
 
 }
 
-#Titre-article {
+.Titre-article {
 
     font-size: 22px;
     margin: 0 0;
@@ -775,7 +771,7 @@ h3 {
 @for $i from 1 to 4 {
     .stage-#{$i} {
         animation: delais 1s* $i;
-        animation-delay: ($anim-duration* $i)s;
+        /* animation-delay: (1* $i)s;*/
         animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     }
 }

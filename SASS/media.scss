@@ -56,7 +56,7 @@ $padding: 20px;
             background-color: #e4e2e1;
             text-decoration: #000000;
             font-size: 16px;
-            font-weight: bo;
+            font-weight: bold;
         }
     }
 
@@ -481,7 +481,7 @@ $padding: 20px;
         border-radius: 60px 60px 0px 0px;
         position: relative;
         top: -120px;
-        background: color #f4f4f4;
+        background-color: #f4f4f4;
     }
 
     .carte-page {
@@ -496,22 +496,22 @@ $padding: 20px;
         }
     }
 
-    #Titre-article {
+    .Titre-article {
         font-size: 22px;
         margin-top: 12px;
         margin-left: 0;
         animation: delais 1s linear forwards;
         margin-bottom: 10px;
-    }
 
-    #Titre-article::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 5px;
-        background-color: #99E2D0;
-        position: absolute;
-        left: 10px;
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 5px;
+            background-color: #99E2D0;
+            position: absolute;
+            left: 10px;
+        }
     }
 
     #container {

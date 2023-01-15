@@ -1,10 +1,15 @@
-$color-one: #9356DC;
-$color-two: #FF79DA;
+$color-one: rgb(147,
+        86,
+        220);
+$color-two: rgb(255,
+        121,
+        218);
 $color-three: #99E2D0;
 $color-white: #ffffff;
 $padding: 20px;
-$anim-duration: 1000ms;
 $i: 3;
+$couleur-coeur: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+
 
 @mixin carte {
     border-radius: 20px;
