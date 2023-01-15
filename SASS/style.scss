@@ -479,7 +479,7 @@ button {
     color: #353535;
     font-weight: normal;
     position: relative;
-    left: 4%;
+    left: 5%;
     margin-bottom: 20px;
 
     &::after {
@@ -518,7 +518,6 @@ h3 {
     gap: 15px;
     min-width: 32%;
     animation: delais;
-    animation-duration: $anim-duration;
     animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     animation-fill-mode: both;
 }
@@ -771,7 +770,7 @@ h3 {
 @for $i from 1 to 4 {
     .stage-#{$i} {
         animation: delais 1s* $i;
-        /* animation-delay: (1* $i)s;*/
+    
         animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
     }
 }

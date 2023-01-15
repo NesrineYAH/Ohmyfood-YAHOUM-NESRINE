@@ -449,7 +449,7 @@ button:hover {
           animation: coeur 2s linear forwards;
 }
 
-#Titre-article {
+.Titre-article {
   font-size: 22px;
   margin: 0 0;
   display: flex;
@@ -459,10 +459,10 @@ button:hover {
   color: #353535;
   font-weight: normal;
   position: relative;
-  left: 4%;
+  left: 5%;
   margin-bottom: 20px;
 }
-#Titre-article::after {
+.Titre-article::after {
   content: "";
   display: block;
   width: 60px;
@@ -497,8 +497,6 @@ h3 {
   min-width: 32%;
   -webkit-animation: delais;
           animation: delais;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
   -webkit-animation-fill-mode: both;
@@ -691,7 +689,6 @@ h3 {
 .stage-1 {
   -webkit-animation: delais 1s;
           animation: delais 1s;
-  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
@@ -699,7 +696,6 @@ h3 {
 .stage-2 {
   -webkit-animation: delais 2s;
           animation: delais 2s;
-  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
@@ -707,7 +703,6 @@ h3 {
 .stage-3 {
   -webkit-animation: delais 3s;
           animation: delais 3s;
-  /* animation-delay: (1* $i)s;*/
   -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
           animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }/*# sourceMappingURL=style.css.map */
