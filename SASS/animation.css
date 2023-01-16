@@ -92,37 +92,26 @@
     transform: scale(1);
   }
 }
+
 .stage-1 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+  -webkit-animation: delais 1s;
+  animation: delais 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
 
 .stage-2 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
+  -webkit-animation: delais 2s;
+  animation: delais 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
 }
 
 .stage-3 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-          animation-timing-function: cubic-bezier 0.5, 1.58, 0.34, 0.82;
-}
+  -webkit-animation: delais 3s;
+  animation: delais 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+  animation-timing-function: cubic-bezier(0.38, 0.1, 0.67, 0.99);
+} 
 
-.stage-1 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-delay: 3 s;
-          animation-delay: 3 s;
-}
-
-.stage-2 {
-  -webkit-animation: delais;
-          animation: delais;
-  -webkit-animation-delay: 6 s;
-          animation-delay: 6 s;
-}/*# sourceMappingURL=animation.css.map */
+/*# sourceMappingURL=animation.css.map */
