@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
+/****************** version mobile***************/
 
 @import "mixins.scss";
 
@@ -25,7 +26,7 @@
         max-width: 100%;
         width: 40%;
         font-size: 20px;
-        font-family: "Shrikhand",
+        font-family: "Shrikhand";
         display: flex;
         justify-content: center;
         align-self: center;
